@@ -20,3 +20,4 @@ func _on_area_entered(area_2d: Area2D)->void:
 				GameStatus.add_learned_word(item.item_resource.id)
 				GameEvents.new_learn_word_added.emit(item.item_resource.id)
 				
+#Test

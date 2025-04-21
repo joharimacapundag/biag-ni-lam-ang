@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3wbc60vq74gc"]
+
+[ext_resource type="Texture2D" uid="uid://5yf10fy8irnk" path="res://assets/village_stops/house2.png" id="1_k6jow"]
+
+[node name="SampleVillageStop" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_k6jow")

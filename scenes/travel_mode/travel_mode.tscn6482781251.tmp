@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://fjdph61htgra"]
+
+[ext_resource type="PackedScene" uid="uid://ba5bqxca71sot" path="res://scenes/backgrounds/background_1.tscn" id="1_1dggj"]
+[ext_resource type="Script" uid="uid://b781f6j3npt85" path="res://scenes/travel_mode/travel_mode.gd" id="1_ml84r"]
+[ext_resource type="Script" uid="uid://c2acfev3wd23j" path="res://objects/spawner/entity_spawner.gd" id="3_32id7"]
+[ext_resource type="Script" uid="uid://do6b2w33xg6aw" path="res://scenes/travel_mode/camera_2d.gd" id="4_62ayu"]
+[ext_resource type="Script" uid="uid://cqgopfskpxwv8" path="res://scripts/components/mile_component.gd" id="5_bvaav"]
+[ext_resource type="Script" uid="uid://b5voxcla4dym0" path="res://scripts/components/mile_spawn_trigger_component.gd" id="6_ovamt"]
+[ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="7_njowd"]
+
+[node name="TravelMode" type="Node2D" node_paths=PackedStringArray("mile_spawn_trigger_component")]
+script = ExtResource("1_ml84r")
+mile_spawn_trigger_component = NodePath("MileSpawnTriggerComponent")
+
+[node name="MileComponent" type="Node" parent="."]
+script = ExtResource("5_bvaav")
+metadata/_custom_type_script = "uid://cqgopfskpxwv8"
+
+[node name="MileSpawnTriggerComponent" type="Node" parent="." node_paths=PackedStringArray("label")]
+script = ExtResource("6_ovamt")
+label = NodePath("../CanvasLayer/Label")
+metadata/_custom_type_script = "uid://b5voxcla4dym0"
+
+[node name="DayAndNightComponent" type="Node" parent="." node_paths=PackedStringArray("node")]
+script = ExtResource("7_njowd")
+node = NodePath("../Backgrounds")
+metadata/_custom_type_script = "uid://c0d8bw5d80jkx"
+
+[node name="Backgrounds" type="Node2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="Background1" parent="Backgrounds" instance=ExtResource("1_1dggj")]
+
+[node name="EntitySpawner" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(375, 428)
+script = ExtResource("3_32id7")
+metadata/_custom_type_script = "uid://c2acfev3wd23j"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(576, 324)
+zoom = Vector2(2, 2)
+script = ExtResource("4_62ayu")
+speed = 100
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "Miles: 0"

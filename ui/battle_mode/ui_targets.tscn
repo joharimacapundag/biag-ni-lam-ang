@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5b5tdek7t6h5"]
+
+[ext_resource type="Script" uid="uid://nrf7goas21af" path="res://ui/battle_mode/ui_targets.gd" id="1_agsnb"]
+
+[node name="UITargets" type="PanelContainer"]
+script = ExtResource("1_agsnb")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Select Target"
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 2

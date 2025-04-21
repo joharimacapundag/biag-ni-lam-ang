@@ -1,0 +1,316 @@
+[gd_scene load_steps=40 format=3 uid="uid://2bigrjgf5crm"]
+
+[ext_resource type="Script" uid="uid://ddmsusn3b5rko" path="res://scripts/resources/traveler_resource.gd" id="1_eepj2"]
+[ext_resource type="Texture2D" uid="uid://b1p8nyf2mldch" path="res://assets/sprites/travelers/lam-ang/attack.png" id="2_l7dfk"]
+[ext_resource type="Texture2D" uid="uid://mlxrdyconule" path="res://assets/sprites/travelers/lam-ang/death.png" id="3_dxnkw"]
+[ext_resource type="Texture2D" uid="uid://04t6ljx45pfh" path="res://assets/sprites/travelers/lam-ang/idle.png" id="4_o3usg"]
+[ext_resource type="Texture2D" uid="uid://d0rpwuspwjnv4" path="res://assets/sprites/travelers/lam-ang/run.png" id="5_1cpyj"]
+[ext_resource type="Script" uid="uid://5wahg8855uwc" path="res://scripts/components/stats_component.gd" id="6_r5iwt"]
+[ext_resource type="Script" uid="uid://dhgpgbnigqauj" path="res://scripts/components/action_component.gd" id="7_cbak2"]
+[ext_resource type="Script" uid="uid://bt1jgs8ay53ji" path="res://scripts/components/take_damage_component.gd" id="9_5tgvl"]
+[ext_resource type="Script" uid="uid://dmmrpgpve7ae2" path="res://scripts/components/heal_component.gd" id="10_332sc"]
+[ext_resource type="Script" uid="uid://46mmkxtqysuy" path="res://scripts/components/die_component.gd" id="11_xu61x"]
+[ext_resource type="Script" uid="uid://de6h0g2roehmm" path="res://scripts/components/health_component.gd" id="12_duxg1"]
+[ext_resource type="Script" uid="uid://csnhgvnb6fmxd" path="res://scripts/components/attack_component.gd" id="13_2d8dk"]
+[ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="16_uwcsv"]
+
+[sub_resource type="GDScript" id="GDScript_5kmyg"]
+script/source = "extends Node2D
+
+
+signal died
+
+signal flipped
+signal damage_taken
+signal damage_taken_finished
+
+signal travel_started
+
+signal attacked(targets: Array)
+signal healed
+signal stopped
+
+signal direction_changed(value: int)
+
+signal action_used(action_name: String, targets: Array)
+signal action_finished
+
+@export var traveler_resource: TravelerResource
+@export var flip_enabled: bool
+var is_died: bool
+
+func _ready() -> void:
+	if flip_enabled:
+		flip()
+	
+func start_travel()-> void:
+	travel_started.emit()
+
+func use_action(action_name: String, targets: Array) -> void:
+	action_used.emit(action_name, targets)
+
+func attack(targets: Array)-> void:
+	attacked.emit(targets)
+
+func heal()-> void:
+	healed.emit()
+
+func stop() -> void:
+	stopped.emit()
+
+func flip()->void:
+	flipped.emit()
+	
+func take_damage()-> void:
+	damage_taken.emit()
+
+func change_direction(value: int)-> void:
+	direction_changed.emit(value)
+	
+func die() -> void:
+	is_died = true
+	died.emit()
+	#process_mode = ProcessMode.PROCESS_MODE_DISABLED
+"
+
+[sub_resource type="Resource" id="Resource_q8xg4"]
+script = ExtResource("1_eepj2")
+id = "doggie"
+name = "Doggie"
+description = ""
+actions = Array[String](["fight", "cry"])
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_05i6r"]
+atlas = ExtResource("2_l7dfk")
+region = Rect2(0, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o3cvt"]
+atlas = ExtResource("2_l7dfk")
+region = Rect2(77, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_77xpp"]
+atlas = ExtResource("2_l7dfk")
+region = Rect2(154, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vhjr1"]
+atlas = ExtResource("2_l7dfk")
+region = Rect2(231, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26jnh"]
+atlas = ExtResource("2_l7dfk")
+region = Rect2(308, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3bfv"]
+atlas = ExtResource("2_l7dfk")
+region = Rect2(385, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hd5dh"]
+atlas = ExtResource("3_dxnkw")
+region = Rect2(0, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mh24x"]
+atlas = ExtResource("3_dxnkw")
+region = Rect2(77, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7en7v"]
+atlas = ExtResource("3_dxnkw")
+region = Rect2(154, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yfqgy"]
+atlas = ExtResource("3_dxnkw")
+region = Rect2(231, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v35sd"]
+atlas = ExtResource("4_o3usg")
+region = Rect2(0, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2pxx"]
+atlas = ExtResource("4_o3usg")
+region = Rect2(77, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yr01k"]
+atlas = ExtResource("4_o3usg")
+region = Rect2(154, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5rid"]
+atlas = ExtResource("4_o3usg")
+region = Rect2(231, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bskqp"]
+atlas = ExtResource("5_1cpyj")
+region = Rect2(0, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g13ck"]
+atlas = ExtResource("5_1cpyj")
+region = Rect2(77, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvws3"]
+atlas = ExtResource("5_1cpyj")
+region = Rect2(154, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkwfw"]
+atlas = ExtResource("5_1cpyj")
+region = Rect2(231, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvqut"]
+atlas = ExtResource("5_1cpyj")
+region = Rect2(308, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5atr"]
+atlas = ExtResource("5_1cpyj")
+region = Rect2(385, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dpg82"]
+atlas = ExtResource("5_1cpyj")
+region = Rect2(462, 0, 77, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_im830"]
+atlas = ExtResource("5_1cpyj")
+region = Rect2(539, 0, 77, 71)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2d1my"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_05i6r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o3cvt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_77xpp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vhjr1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26jnh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3bfv")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hd5dh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mh24x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7en7v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yfqgy")
+}],
+"loop": false,
+"name": &"die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v35sd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2pxx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yr01k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5rid")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bskqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g13ck")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvws3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kkwfw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvqut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5atr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dpg82")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_im830")
+}],
+"loop": false,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j8b15"]
+height = 48.0
+
+[node name="Doggie" type="Node2D" groups=["player"]]
+script = SubResource("GDScript_5kmyg")
+traveler_resource = SubResource("Resource_q8xg4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_2d1my")
+animation = &"die"
+autoplay = "idle"
+
+[node name="StatsComponent" type="Node" parent="." node_paths=PackedStringArray("traveler")]
+script = ExtResource("6_r5iwt")
+traveler = NodePath("..")
+
+[node name="ActionComponent" type="Node" parent="." node_paths=PackedStringArray("node", "stats_component")]
+script = ExtResource("7_cbak2")
+node = NodePath("..")
+stats_component = NodePath("../StatsComponent")
+
+[node name="TakeDamageComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprited_2d")]
+script = ExtResource("9_5tgvl")
+traveler = NodePath("..")
+animated_sprited_2d = NodePath("../AnimatedSprite2D")
+
+[node name="HealComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprited_2d")]
+script = ExtResource("10_332sc")
+traveler = NodePath("..")
+animated_sprited_2d = NodePath("../AnimatedSprite2D")
+
+[node name="DieComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d")]
+script = ExtResource("11_xu61x")
+traveler = NodePath("..")
+animated_sprite_2d = NodePath("../AnimatedSprite2D")
+
+[node name="HealthComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "stats_component")]
+script = ExtResource("12_duxg1")
+traveler = NodePath("..")
+stats_component = NodePath("../StatsComponent")
+
+[node name="AttackComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d")]
+script = ExtResource("13_2d8dk")
+traveler = NodePath("..")
+animated_sprite_2d = NodePath("../AnimatedSprite2D")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-18, 11)
+shape = SubResource("CapsuleShape2D_j8b15")
+
+[node name="DayAndNightComponent" type="Node" parent="." node_paths=PackedStringArray("node")]
+script = ExtResource("16_uwcsv")
+node = NodePath("..")

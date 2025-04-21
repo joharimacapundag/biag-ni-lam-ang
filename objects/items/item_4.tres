@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3 uid="uid://bbrduq2nwyk3k"]
+
+[ext_resource type="Script" uid="uid://cxprkjr4scuu5" path="res://scripts/resources/item_resource.gd" id="1_k323f"]
+
+[resource]
+script = ExtResource("1_k323f")
+id = "shield"
+name = "Shield"
+description = ""

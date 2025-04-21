@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=3 uid="uid://l68phlgqbfiu"]
+
+[ext_resource type="Script" uid="uid://dm1pn6a8minl5" path="res://ui/battle_mode_multiplier/multiple_choice/multiple_choice.gd" id="1_8t3ei"]
+
+[node name="MultipleChoice" type="PanelContainer"]
+script = ExtResource("1_8t3ei")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="IlocanoWordLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Ilocano Word"
+uppercase = true
+
+[node name="TimeLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Time: 00:00"
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="QuestionaireLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis fringilla orci vulputate gravida. Nullam quis facilisis orci, in scelerisque mauris. Donec vitae libero faucibus, facilisis mauris ut, posuere purus. Praesent aliquet volutpat quam, sed porta enim tincidunt quis. Ut eu velit sit amet nisi consectetur facilisis. Etiam feugiat quis sem cursus tristique. Etiam aliquam tortor a vestibulum blandit. Mauris vestibulum lectus a libero dictum euismod. Ut aliquet purus metus, in faucibus sem blandit efficitur. Aliquam erat volutpat. Vestibulum bibendum pellentesque dui ut consectetur. "
+
+[node name="ChoicesContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.556953, 0.556953, 0.556953, 1)
+text = "Choose only one answer"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Multiplier: ##"

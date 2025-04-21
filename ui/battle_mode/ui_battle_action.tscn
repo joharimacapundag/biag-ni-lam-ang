@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://hkvw4oc0dp6u"]
+
+[ext_resource type="Script" uid="uid://doa2erud1svyq" path="res://ui/battle_mode/ui_battle_action.gd" id="1_jo4p0"]
+[ext_resource type="Script" uid="uid://x2fnqvm5ytls" path="res://scenes/data_button.gd" id="2_w6lfs"]
+
+[node name="PanelContainer" type="PanelContainer"]
+script = ExtResource("1_jo4p0")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Category Action"
+horizontal_alignment = 1
+
+[node name="DataButton" type="Button" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Action"
+script = ExtResource("2_w6lfs")
+metadata/_custom_type_script = "uid://x2fnqvm5ytls"

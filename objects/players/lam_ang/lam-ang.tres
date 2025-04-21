@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TravelerResource" load_steps=4 format=3 uid="uid://bqo62c42ctain"]
+
+[ext_resource type="Texture2D" uid="uid://chs7qm2rp7sl5" path="res://assets/backgrounds/lam ang full body.jpg" id="1_akdti"]
+[ext_resource type="Script" uid="uid://ddmsusn3b5rko" path="res://scripts/resources/traveler_resource.gd" id="1_sx0br"]
+[ext_resource type="Texture2D" uid="uid://topgwcui4nsb" path="res://assets/sprites/travelers/lam-ang/lam ang profile.jpeg" id="2_q7hd0"]
+
+[resource]
+script = ExtResource("1_sx0br")
+id = "lam-ang"
+name = "Lam Ang"
+profile = ExtResource("2_q7hd0")
+full_body_image = ExtResource("1_akdti")
+description = "[b]Lam-ang[/b]
+Lam-ang is renowned for his extraordinary strength, keen intellect, and unwavering determination. From a very young age, his remarkable abilities set him apart as a figure of legend. With a natural charm and fearless spirit, he embodies the ideals of courage and honor, inspiring those around him without revealing the many adventures that lie ahead."
+actions = Array[String](["challenge", "live", "fight"])

@@ -1,0 +1,61 @@
+[gd_scene load_steps=7 format=3 uid="uid://clb2kabkykf3x"]
+
+[ext_resource type="Script" uid="uid://be3hg88wjl5bd" path="res://objects/items/item.gd" id="1_wlbv8"]
+[ext_resource type="Resource" uid="uid://dutnwv7d6jq7q" path="res://objects/items/item_7.tres" id="2_wlbv8"]
+[ext_resource type="Script" uid="uid://dx2ifla8vp7k7" path="res://objects/items/collect_component.gd" id="3_4h2sg"]
+[ext_resource type="Script" uid="uid://c33vihy42e8ll" path="res://objects/items/liquor_dialogue.gd" id="4_066rf"]
+[ext_resource type="Texture2D" uid="uid://f5baggvoc607" path="res://assets/sprites/items/potion_black_big.png" id="4_x76ol"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_npygi"]
+
+[node name="Coffee" type="Node2D" node_paths=PackedStringArray("sprite_2d", "canvas_layer", "picked_up_label")]
+script = ExtResource("1_wlbv8")
+item_resource = ExtResource("2_wlbv8")
+sprite_2d = NodePath("Sprite2D")
+canvas_layer = NodePath("CanvasLayer")
+picked_up_label = NodePath("CanvasLayer/PanelContainer/MarginContainer/PickedUp")
+
+[node name="CollectComponent" type="Node" parent="." node_paths=PackedStringArray("area_2d", "item")]
+script = ExtResource("3_4h2sg")
+area_2d = NodePath("../Area2D")
+item = NodePath("..")
+
+[node name="TriggerDialogue" type="Node" parent="." node_paths=PackedStringArray("item")]
+script = ExtResource("4_066rf")
+item = NodePath("..")
+metadata/_custom_type_script = "uid://c33vihy42e8ll"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_x76ol")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_npygi")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="PickedUp" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Label"
+horizontal_alignment = 1

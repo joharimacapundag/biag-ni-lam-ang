@@ -1,0 +1,16 @@
+{
+	"act_1_scene_2_a": {
+		"0":{
+			"questionaire": "Lam-Ang sees a hunter about to kill a frightened rooster. He wants to convince the hunter to let the rooster go. What should  you say?",
+			"options": [
+				{"ilocano": "Kayatko nga kanen atoy nga manok.", "translation": "I want to eat this chicken.", "correct": false},
+				{"ilocano": "Saan mo nga diswan ata nga manok ta  nasirib ata nga manok.", "translation": "Don’t hit that rooster because it is a wise one.", "correct": true},
+				{"ilocano": "Isu daytoy ti napili a taraon ti Igorot!", "translation": "This is the chosen meal of the Igorots!", "correct": false},
+				{"ilocano": "Kayatko laeng ti pumatay ti manok.", "translation": "I just want to kill a rooster.", "correct": false}
+			]
+		}
+		
+	},
+	
+	
+}

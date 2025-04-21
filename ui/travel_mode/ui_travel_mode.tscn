@@ -1,0 +1,145 @@
+[gd_scene load_steps=5 format=3 uid="uid://d4on0egdbfxo"]
+
+[ext_resource type="Script" uid="uid://cnjaru81sf53k" path="res://ui/travel_mode/ui_travel_mode.gd" id="1_8x1lx"]
+[ext_resource type="PackedScene" uid="uid://wohcgj2aq60p" path="res://ui/in_game_menu/ui_in_game_menu.tscn" id="2_8x1lx"]
+[ext_resource type="Texture2D" uid="uid://cvdyn8hofjnib" path="res://assets/sprites/items/coin_gold_1.png" id="2_im4nt"]
+[ext_resource type="Texture2D" uid="uid://bnbcqmf6jlrwh" path="res://assets/sprites/items/beef.png" id="2_qbqua"]
+
+[node name="UITravelMode" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8x1lx")
+
+[node name="StatusContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 205.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatusContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="GridContainer" type="GridContainer" parent="StatusContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 16
+columns = 3
+
+[node name="ResourceContainer" type="HBoxContainer" parent="StatusContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="DayLbl" type="Label" parent="StatusContainer/VBoxContainer/ResourceContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Day: 0"
+horizontal_alignment = 1
+
+[node name="HungerLbl" type="Label" parent="StatusContainer/VBoxContainer/ResourceContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.964706, 0.423529, 0, 1)
+text = "Hunger: 0"
+horizontal_alignment = 1
+
+[node name="TextureRect2" type="TextureRect" parent="StatusContainer/VBoxContainer/ResourceContainer/HungerLbl"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 115.0
+offset_top = -10.5
+offset_right = 144.0
+offset_bottom = 11.5
+grow_vertical = 2
+texture = ExtResource("2_qbqua")
+expand_mode = 1
+
+[node name="GoldLbl" type="Label" parent="StatusContainer/VBoxContainer/ResourceContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.808049, 0.785594, 0, 1)
+text = "Gold: 0"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="StatusContainer/VBoxContainer/ResourceContainer/GoldLbl"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = -20.5
+offset_right = -35.0
+offset_bottom = 19.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_im4nt")
+expand_mode = 1
+
+[node name="MileContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -24.0
+offset_bottom = 25.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="MileLbl" type="Label" parent="MileContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Miles: 0
+"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -57.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="MenuButton" type="Button" parent="MarginContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "MENU"
+
+[node name="UIInGameMenu" parent="." instance=ExtResource("2_8x1lx")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1

@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://da244603g1nxw"]
+
+[ext_resource type="Script" uid="uid://cma4h6uketb4i" path="res://ui/battle_mode/ui_battle_traveler_status.gd" id="1_610g7"]
+[ext_resource type="StyleBox" uid="uid://brwxs60bb206y" path="res://ui/travel_mode/health_color.tres" id="1_vh0bm"]
+[ext_resource type="StyleBox" uid="uid://cpgy5tov7vr0c" path="res://ui/travel_mode/stamina_color.tres" id="2_610g7"]
+[ext_resource type="StyleBox" uid="uid://phfeli3p5wjq" path="res://ui/background_button.tres" id="2_yekat"]
+
+[node name="UIBattleTravelerStatus" type="MarginContainer"]
+script = ExtResource("1_610g7")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="NameLbl" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "NAME"
+
+[node name="HealthBar" type="ProgressBar" parent="VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_styles/background = ExtResource("2_yekat")
+theme_override_styles/fill = ExtResource("1_vh0bm")
+value = 10.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="VBoxContainer/HealthBar"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Health"
+horizontal_alignment = 1
+
+[node name="StaminaBar" type="ProgressBar" parent="VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_styles/background = ExtResource("2_yekat")
+theme_override_styles/fill = ExtResource("2_610g7")
+show_percentage = false
+
+[node name="Label" type="Label" parent="VBoxContainer/StaminaBar"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Stamina"
+horizontal_alignment = 1

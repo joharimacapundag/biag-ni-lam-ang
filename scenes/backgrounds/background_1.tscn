@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://ba5bqxca71sot"]
+
+[ext_resource type="Texture2D" uid="uid://caj171hyxs3da" path="res://assets/backgrounds/summer 1/1.png" id="1_7abpb"]
+[ext_resource type="Texture2D" uid="uid://cpw48mihctwa" path="res://assets/backgrounds/summer 1/2.png" id="2_hijjt"]
+[ext_resource type="Texture2D" uid="uid://dfhfs6docufke" path="res://assets/backgrounds/summer 1/3.png" id="3_8iqyt"]
+[ext_resource type="Texture2D" uid="uid://c5w3kvhnr34v7" path="res://assets/backgrounds/summer 1/4.png" id="4_lgnde"]
+
+[node name="Background1" type="Node2D"]
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(576, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+texture = ExtResource("1_7abpb")
+
+[node name="Parallax2D2" type="Parallax2D" parent="."]
+repeat_size = Vector2(576, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
+texture = ExtResource("2_hijjt")
+
+[node name="Parallax2D3" type="Parallax2D" parent="."]
+repeat_size = Vector2(576, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3"]
+texture = ExtResource("3_8iqyt")
+
+[node name="Parallax2D4" type="Parallax2D" parent="."]
+repeat_size = Vector2(576, 0)
+repeat_times = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4"]
+texture = ExtResource("4_lgnde")

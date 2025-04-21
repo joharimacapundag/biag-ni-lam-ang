@@ -1,0 +1,409 @@
+{
+  "coffee": {
+	"name": "Coffee",
+	"ilocano_word": "Kape",
+	"action_type": "item_action",
+	"type": "consumable",
+	"stack_size": 1,
+	"max_stack_size": 10,
+	"image": "uid://b565lukh2rw37",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "target": {
+		"add": {
+		  "health": 10,
+		  "stamina": 5
+		}
+	  }
+	},
+	"description": "Coffee (Ilocano: Kape) restores +10 health and +5 stamina when consumed."
+  },
+  "porridge": {
+	"name": "Porridge",
+	"ilocano_word": "Lugaw",
+	"action_type": "item_action",
+	"type": "consumable",
+	"stack_size": 1,
+	"max_stack_size": 10,
+	"image": "res://assets/sprites/items/porridge.png",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "target": {
+		"add": {
+		  "health": 15
+		}
+	  }
+	},
+	"description": "Porridge (Ilocano: Lugaw) restores +15 health when consumed."
+  },
+  "sugarcane_wine": {
+	"name": "Sugarcane Wine",
+	"ilocano_word": "Basi",
+	"action_type": "item_action",
+	"type": "consumable",
+	"stack_size": 1,
+	"max_stack_size": 10,
+	"image": "res://assets/sprites/items/bottle_wine.png",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "target": {
+		"add": {
+		  "health": 12,
+		  "stamina": 4
+		}
+	  }
+	},
+	"description": "Sugarcane Wine (Ilocano: Basi) restores +12 health and +4 stamina when consumed."
+  },
+  "bread": {
+	"name": "Bread",
+	"ilocano_word": "Tinapay",
+	"action_type": "item_action",
+	"type": "consumable",
+	"stack_size": 1,
+	"max_stack_size": 20,
+	"image": "res://assets/sprites/items/bread.png",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "target": {
+		"add": {
+		  "hunger": -25
+		}
+	  }
+	},
+	"description": "Bread (Ilocano: Tinapay) reduces hunger by 25 when eaten."
+  },
+  "bolo_knife": {
+	"name": "Bolo Knife",
+	"ilocano_word": "Buneng",
+	"action_type": "item_action",
+	"type": "weapon",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/bolo_knife.png",
+	"size": "Vector2i(2, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "strength": 8 }
+	  }
+	},
+	"description": "Bolo Knife (Ilocano: Buneng) is a weapon that provides +8 strength when used."
+  },
+  "spear": {
+	"name": "Spear",
+	"ilocano_word": "Bangkaw",
+	"action_type": "item_action",
+	"type": "weapon",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/spear.png",
+	"size": "Vector2i(2, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "strength": 7 }
+	  }
+	},
+	"description": "Spear (Ilocano: Bangkaw) grants +7 strength."
+  },
+"axe": {
+	"name": "Axe",
+	"ilocano_word": "Bauang",
+	"action_type": "item_action",
+	"type": "weapon",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/axe.png",
+	"size": "Vector2i(2, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "strength": 10 }
+	  }
+	},
+	"description": "Axe (Ilocano: Bauang) grants +10 strength."
+  },
+  "shield": {
+	"name": "Shield",
+	"ilocano_word": "Sarapa",
+	"action_type": "item_action",
+	"type": "armor",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "uid://bh31f7hbpho43",
+	"size": "Vector2i(2, 2)",
+	"modifiers": {
+	  "source": {
+		"add": { "defense": 12 }
+	  }
+	},
+	"description": "Shield (Ilocano: Salungso) adds +12 defense."
+  },
+  "liquor": {
+	"name": "Liquor",
+	"ilocano_word": "Arak",
+	"action_type": "item_action",
+	"type": "consumable",
+	"stack_size": 1,
+	"max_stack_size": 10,
+	"image": "uid://vypv0gcvd63g",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "target": {
+		"add": { "health": 10 }
+	  }
+	},
+	"description": "Liquor (Ilocano: Arak) restores +10 health."
+  },
+  "earrings": {
+	"name": "Earrings",
+	"ilocano_word": "Aritos",
+	"action_type": "item_action",
+	"type": "accessory",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/earrings.png",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": 3 }
+	  }
+	},
+	"description": "Earrings (Ilocano: Aritos) boost +3 stamina."
+  },
+  "salt": {
+	"name": "Salt",
+	"ilocano_word": "Asin",
+	"action_type": "item_action",
+	"type": "ingredient",
+	"stack_size": 1,
+	"max_stack_size": 20,
+	"image": "res://assets/sprites/items/salt.png",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "target": {
+		"add": { "hunger": -5 }
+	  }
+	},
+	"description": "Salt (Ilocano: Asin) reduces hunger by 5."
+  },
+  "loincloth": {
+	"name": "Loincloth",
+	"ilocano_word": "Baag",
+	"action_type": "item_action",
+	"type": "clothing",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/loincloth.png",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "defense": 2 }
+	  }
+	},
+	"description": "Loincloth (Ilocano: Baag) gives +2 defense."
+  },
+  "clothing": {
+	"name": "Clothing",
+	"ilocano_word": "Bado",
+	"action_type": "item_action",
+	"type": "clothing",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/clothing.png",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "defense": 3 }
+	  }
+	},
+	"description": "Clothing (Ilocano: Bado) gives +3 defense."
+  },
+  "knife": {
+	"name": "Knife",
+	"ilocano_word": "Kutsilio",
+	"action_type": "item_action",
+	"type": "weapon",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/knife_iron.png",
+	"size": "Vector2i(2, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "strength": 5 }
+	  }
+	},
+	"description": "Knife (Ilocano: Kutsilio) provides +5 strength."
+  },
+  "slingshot": {
+	"name": "Slingshot",
+	"ilocano_word": "Palsiit",
+	"action_type": "item_action",
+	"type": "weapon",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/slingshot.png",
+	"size": "Vector2i(2, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "strength": 4 }
+	  }
+	},
+	"description": "Slingshot (Ilocano: Palsiit) adds +4 strength."
+  },
+  "whistle": {
+	"name": "Whistle",
+	"ilocano_word": "Pito",
+	"action_type": "item_action",
+	"type": "accessory",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/whistle.png",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "speed": 1 }
+	  }
+	},
+	"description": "Whistle (Ilocano: Pito) increases +1 speed."
+  },
+  "saw": {
+	"name": "Saw",
+	"ilocano_word": "Ragadi",
+	"action_type": "item_action",
+	"type": "tool",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/saw.png",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "strength": 3 }
+	  }
+	},
+	"description": "Saw (Ilocano: Ragadi) boosts +3 strength."
+  },
+  "shoes": {
+	"name": "Shoes",
+	"ilocano_word": "Sapatos",
+	"action_type": "item_action",
+	"type": "footwear",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/shoes.png",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "speed": 2 }
+	  }
+	},
+	"description": "Shoes (Ilocano: Sapatos) give +2 speed."
+  },
+  "slippers": {
+	"name": "Slippers",
+	"ilocano_word": "Tsinelas",
+	"action_type": "item_action",
+	"type": "footwear",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/slippers.png",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "speed": 1 }
+	  }
+	},
+	"description": "Slippers (Ilocano: Tsinelas) grant +1 speed."
+  },
+  "ring": {
+	"name": "Ring",
+	"ilocano_word": "Singsing",
+	"action_type": "item_action",
+	"type": "accessory",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/ring.png",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": 2 }
+	  }
+	},
+	"description": "Ring (Ilocano: Singsing) gives +2 stamina."
+  },
+  "armor": {
+	"name": "Armor",
+	"ilocano_word": "Armadillo",
+	"action_type": "item_action",
+	"type": "armor",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/armor.png",
+	"size": "Vector2i(2, 2)",
+	"modifiers": {
+	  "source": {
+		"add": { "defense": 20 }
+	  }
+	},
+	"description": "Armor (Ilocano: Armadillo) grants +20 defense."
+  },
+  "drum": {
+	"name": "Drum",
+	"ilocano_word": "Tambor",
+	"action_type": "item_action",
+	"type": "instrument",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/drum.png",
+	"size": "Vector2i(2, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": 2 }
+	  }
+	},
+	"description": "Drum (Ilocano: Tambor) increases +2 stamina."
+  },
+  "bow": {
+	"name": "Bow",
+	"ilocano_word": "Bannuar",
+	"action_type": "item_action",
+	"type": "weapon",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/bow_oak.png",
+	"size": "Vector2i(2, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "strength": 6 }
+	  }
+	},
+	"description": "Bow (Ilocano: Bannuar) grants +6 strength."
+  },
+  "dagger": {
+	"name": "Dagger",
+	"ilocano_word": "Panagdi",
+	"action_type": "item_action",
+	"type": "weapon",
+	"stack_size": 1,
+	"max_stack_size": 1,
+	"image": "res://assets/sprites/items/dagger_bronze.png",
+	"size": "Vector2i(2, 1)",
+	"modifiers": {
+	  "source": {
+		"add": { "strength": 8 }
+	  }
+	},
+	"description": "Dagger (Ilocano: Panagdi) provides +8 strength."
+  }, 
+	"rope": {
+	  "name": "Rope",
+	  "ilocano_word": "Tali",
+	  "action_type": "item_action",
+	  "type": "tool",
+	  "stack_size": 1,
+	  "max_stack_size": 5,
+	  "image": "res://assets/sprites/items/rope.png",
+	  "size": "Vector2i(1, 1)",
+	  "modifiers": {},
+	  "description": "Rope (Ilocano: Tali) is a tool used for binding or climbing, with no additional stat modifiers."
+	},
+
+}

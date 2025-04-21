@@ -1,0 +1,392 @@
+{
+  "challenge": {
+	"name": "To challenge",
+	"ilocano_word": "Agsangbay",
+	"action_type": "combat_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -5 }
+	  },
+	  "target": {
+		"add": { "health": -8 }
+	  }
+	}
+  },
+  "cry": {
+	"name": "To cry",
+	"ilocano_word": "Agsangit",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -3 }
+	  },
+	  "target": {
+		"add": { "stamina": 2 }
+	  }
+	}
+  },
+  "go_away": {
+	"name": "To leave, to go away",
+	"ilocano_word": "Agpanaw",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -4 }
+	  },
+	  "target": {
+		"add": { "speed": 3 }
+	  }
+	}
+  },
+  "live": {
+	"name": "To live",
+	"ilocano_word": "Agbiag",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -2 }
+	  },
+	  "target": {
+		"add": { "health": 10 }
+	  }
+	}
+  },
+  "fight": {
+	"name": "To fight",
+	"ilocano_word": "Agtutudo",
+	"action_type": "combat_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -6 }
+	  },
+	  "target": {
+		"add": { "health": -10 }
+	  }
+	}
+  },
+  "return": {
+	"name": "To return",
+	"ilocano_word": "Agsubli",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -3 }
+	  },
+	  "target": {
+		"add": { "stamina": 5 }
+	  }
+	}
+  },
+  "obey": {
+	"name": "To obey",
+	"ilocano_word": "Agtulnog",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -2 }
+	  },
+	  "target": {
+		"add": { "defense": 4 }
+	  }
+	}
+  },
+  "pray": {
+	"name": "To pray",
+	"ilocano_word": "Agkarkararag",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -2 }
+	  },
+	  "target": {
+		"add": { "health": 5 }
+	  }
+	}
+  },
+  "avenge": {
+	"name": "To avenge",
+	"ilocano_word": "Agpaliwawa",
+	"action_type": "combat_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -7 }
+	  },
+	  "target": {
+		"add": { "health": -12 }
+	  }
+	}
+  },
+  "travel": {
+	"name": "To travel",
+	"ilocano_word": "Agpasiar",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -3 }
+	  },
+	  "target": {
+		"add": { "speed": 4 }
+	  }
+	}
+  },
+  "scream": {
+	"name": "To shout or to scream",
+	"ilocano_word": "Aglaklaka",
+	"action_type": "combat_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -5 }
+	  },
+	  "target": {
+		"add": { "defense": -3 }
+	  }
+	}
+  },
+  "work": {
+	"name": "To work",
+	"ilocano_word": "Agtrabaho",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -6 }
+	  },
+	  "target": {
+		"add": { "strength": 4 }
+	  }
+	}
+  },
+  "grieve": {
+	"name": "To grieve",
+	"ilocano_word": "Agdama",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -4 }
+	  },
+	  "target": {
+		"add": { "health": -3 }
+	  }
+	}
+  },
+  "resist": {
+	"name": "To resist",
+	"ilocano_word": "Agkeddeng",
+	"action_type": "combat_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -3 }
+	  },
+	  "target": {
+		"add": { "defense": 5 }
+	  }
+	}
+  },
+  "defeat": {
+	"name": "To defeat",
+	"ilocano_word": "Agpukaw",
+	"action_type": "combat_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -8 }
+	  },
+	  "target": {
+		"add": { "health": -15 }
+	  }
+	}
+  },
+  "request": {
+	"name": "To request",
+	"ilocano_word": "Agdawat",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -2 }
+	  },
+	  "target": {
+		"add": { "stamina": 3 }
+	  }
+	}
+  },
+  "help": {
+	"name": "To help",
+	"ilocano_word": "Aginana",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -3 }
+	  },
+	  "target": {
+		"add": { "health": 8 }
+	  }
+	}
+  },
+  "run_away": {
+	"name": "To run away",
+	"ilocano_word": "Agsalimetmet",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -4 }
+	  },
+	  "target": {
+		"add": { "speed": 5 }
+	  }
+	}
+  },
+  "consult": {
+	"name": "To consult",
+	"ilocano_word": "Agkonsulta",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -1 }
+	  },
+	  "target": {
+		"add": { "defense": 2 }
+	  }
+	}
+  },
+  "discuss": {
+	"name": "To discuss",
+	"ilocano_word": "Agdisdiso",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -1 }
+	  },
+	  "target": {
+		"add": { "stamina": 2 }
+	  }
+	}
+  },
+  "wear": {
+	"name": "To wear",
+	"ilocano_word": "Agkawes",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -1 }
+	  },
+	  "target": {
+		"add": { "defense": 1 }
+	  }
+	}
+  },
+  "go": {
+	"name": "To go or head to",
+	"ilocano_word": "Agturong",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -2 }
+	  },
+	  "target": {
+		"add": { "speed": 3 }
+	  }
+	}
+  },
+  "compete": {
+	"name": "To compete or challenge",
+	"ilocano_word": "Agpadpada",
+	"action_type": "combat_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -5 }
+	  },
+	  "target": {
+		"add": { "strength": -3 }
+	  }
+	}
+  },
+  "recover": {
+	"name": "To recover, to regain",
+	"ilocano_word": "Agpukaw",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -2 }
+	  },
+	  "target": {
+		"add": { "health": 10 }
+	  }
+	}
+  },
+  "wake_up": {
+	"name": "To wake up",
+	"ilocano_word": "Agbannawag",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -1 }
+	  },
+	  "target": {
+		"add": { "stamina": 4 }
+	  }
+	}
+  },
+  "allow": {
+	"name": "To allow",
+	"ilocano_word": "Agpalubos",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -1 }
+	  },
+	  "target": {
+		"add": { "defense": 2 }
+	  }
+	}
+  },
+  "change": {
+	"name": "To change",
+	"ilocano_word": "Agbaliw",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -2 }
+	  },
+	  "target": {
+		"add": { "speed": 2 }
+	  }
+	}
+  },
+  "work": {
+	"name": "To make something work",
+	"ilocano_word": "Agpaandar",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -3 }
+	  },
+	  "target": {
+		"add": { "strength": 3 }
+	  }
+	}
+  },
+  "run": {
+	"name": "To run or sprint",
+	"ilocano_word": "Agtaray",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -4 }
+	  },
+	  "target": {
+		"add": { "speed": 6 }
+	  }
+	}
+  },
+  "follow": {
+	"name": "To follow",
+	"ilocano_word": "Agsursurot",
+	"action_type": "support_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -1 }
+	  },
+	  "target": {
+		"add": { "defense": 1 }
+	  }
+	}
+  }
+}

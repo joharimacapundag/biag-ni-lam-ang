@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3 uid="uid://b4htib1k0r3hs"]
+
+[ext_resource type="Script" uid="uid://cxprkjr4scuu5" path="res://scripts/resources/item_resource.gd" id="1_ct65s"]
+
+[resource]
+script = ExtResource("1_ct65s")
+id = "dagger"
+name = "Dagger"
+description = ""

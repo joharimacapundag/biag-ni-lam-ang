@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://bh7k2vd216xy3"]
+
+[ext_resource type="Script" uid="uid://c5xpbs2a3q6vd" path="res://ui/battle_mode/ui_battle_actions.gd" id="1_7os7m"]
+[ext_resource type="PackedScene" uid="uid://hkvw4oc0dp6u" path="res://ui/battle_mode/ui_battle_action.tscn" id="2_hrfq7"]
+
+[node name="UIBattleAction" type="MarginContainer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -232.5
+offset_top = -90.0
+offset_right = 232.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+script = ExtResource("1_7os7m")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="GridContainer" parent="VBoxContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+columns = 3
+
+[node name="CombatAction" parent="VBoxContainer/PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("2_hrfq7")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+category_name = "Combat Action"
+
+[node name="SupportAction" parent="VBoxContainer/PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("2_hrfq7")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+category_name = "Support Action"
+
+[node name="ItemAction" parent="VBoxContainer/PanelContainer/MarginContainer/HBoxContainer" instance=ExtResource("2_hrfq7")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+category_name = "Item Action"

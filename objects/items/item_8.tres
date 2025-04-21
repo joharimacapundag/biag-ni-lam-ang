@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3 uid="uid://18fj4wbf06w3"]
+
+[ext_resource type="Script" uid="uid://cxprkjr4scuu5" path="res://scripts/resources/item_resource.gd" id="1_ch4po"]
+
+[resource]
+script = ExtResource("1_ch4po")
+id = "needle"
+name = "Needle"
+description = ""

@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://73vsrrcgkx6q"]
+
+[ext_resource type="Script" uid="uid://di3tul3g8b2q0" path="res://objects/traveler.gd" id="1_ohhsu"]
+[ext_resource type="Script" uid="uid://ddmsusn3b5rko" path="res://scripts/resources/traveler_resource.gd" id="2_jhy0t"]
+[ext_resource type="Script" uid="uid://5wahg8855uwc" path="res://scripts/components/stats_component.gd" id="3_clmk6"]
+[ext_resource type="Script" uid="uid://dhgpgbnigqauj" path="res://scripts/components/action_component.gd" id="4_oxcwn"]
+
+[sub_resource type="Resource" id="Resource_lueb7"]
+script = ExtResource("2_jhy0t")
+id = "in_game"
+name = "IN GAME"
+description = ""
+actions = Array[String](["liquor", "salt", "loincloth", "whistle", "saw", "shoes", "coffee", "porridge", "sugarcane_wine", "bread", "bolo_knife", "spear", "shield", "earrings", "salt", "loincloth", "clothing", "knife", "slingshot", "whistle"])
+metadata/_custom_type_script = "uid://ddmsusn3b5rko"
+
+[node name="InGameTraveler" type="Node2D"]
+script = ExtResource("1_ohhsu")
+traveler_resource = SubResource("Resource_lueb7")
+
+[node name="StatsComponent" type="Node" parent="." node_paths=PackedStringArray("traveler")]
+script = ExtResource("3_clmk6")
+traveler = NodePath("..")
+metadata/_custom_type_script = "uid://5wahg8855uwc"
+
+[node name="ActionComponent" type="Node" parent="." node_paths=PackedStringArray("node", "stats_component")]
+script = ExtResource("4_oxcwn")
+node = NodePath("..")
+stats_component = NodePath("../StatsComponent")
+metadata/_custom_type_script = "uid://dhgpgbnigqauj"

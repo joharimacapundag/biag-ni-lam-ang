@@ -1,0 +1,51 @@
+{
+	"in_game": {
+		"max_health": 100,
+		"max_stamina": 100,
+		"max_strength": 10,
+		"max_defense": 30,
+		"max_hunger": 100,
+		"max_speed": 20,
+	},
+	"don_juan": {
+		"max_health": 100,
+		"max_stamina": 100,
+		"max_strength": 10,
+		"max_defense": 30,
+		"max_hunger": 100,
+		"max_speed": 20,
+	},
+	"lam-ang": {
+		"max_health": 100,
+		"max_stamina": 100,
+		"max_strength": 10,
+		"max_defense": 30,
+		"max_hunger": 100,
+		"max_speed": 20,
+	},
+	"rooster": {
+		"max_health": 50,
+		"max_stamina": 100,
+		"max_strength": 2,
+		"max_defense": 10,
+		"max_hunger": 60,
+		"max_speed": 20,
+	},
+	"doggie": {
+		"max_health": 80,
+		"max_stamina": 120,
+		"max_strength": 7,
+		"max_defense": 20,
+		"max_hunger": 40,
+		"max_speed": 30,
+	},
+	"igorot": {
+		"max_health": 60,
+		"max_stamina": 80,
+		"max_strength": 10,
+		"max_defense": 20,
+		"max_hunger": 30,
+		"max_speed": 40,
+	},
+	
+}

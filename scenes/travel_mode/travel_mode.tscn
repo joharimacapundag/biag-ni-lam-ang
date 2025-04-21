@@ -1,0 +1,122 @@
+[gd_scene load_steps=11 format=3 uid="uid://fjdph61htgra"]
+
+[ext_resource type="PackedScene" uid="uid://ba5bqxca71sot" path="res://scenes/backgrounds/background_1.tscn" id="1_1dggj"]
+[ext_resource type="Script" uid="uid://b781f6j3npt85" path="res://scenes/travel_mode/travel_mode.gd" id="1_ml84r"]
+[ext_resource type="AudioStream" uid="uid://06qeisavcsyg" path="res://assets/background_musics/KUTYAPI - ISMAEL AHMAD (Maguindanaon Musical Culture).mp3" id="2_s8bt0"]
+[ext_resource type="Script" uid="uid://c2acfev3wd23j" path="res://objects/spawner/entity_spawner.gd" id="3_32id7"]
+[ext_resource type="Script" uid="uid://do6b2w33xg6aw" path="res://scenes/travel_mode/camera_2d.gd" id="4_62ayu"]
+[ext_resource type="Script" uid="uid://cqgopfskpxwv8" path="res://scripts/components/mile_component.gd" id="5_bvaav"]
+[ext_resource type="Script" uid="uid://crnikrenciy4b" path="res://scripts/components/overtime_hunger_travel_component.gd" id="6_gtend"]
+[ext_resource type="Script" uid="uid://b5voxcla4dym0" path="res://scripts/components/mile_spawn_trigger_component.gd" id="6_ovamt"]
+[ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="7_njowd"]
+[ext_resource type="PackedScene" uid="uid://d4on0egdbfxo" path="res://ui/travel_mode/ui_travel_mode.tscn" id="8_dcakt"]
+
+[node name="TravelMode" type="Node2D" node_paths=PackedStringArray("mile_spawn_trigger_component", "node_to_hide")]
+script = ExtResource("1_ml84r")
+mile_spawn_trigger_component = NodePath("MileSpawnTriggerComponent")
+node_to_hide = NodePath(".")
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+unique_name_in_owner = true
+current = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("2_s8bt0")
+autoplay = true
+parameters/looping = true
+
+[node name="MileComponent" type="Node" parent="."]
+script = ExtResource("5_bvaav")
+metadata/_custom_type_script = "uid://cqgopfskpxwv8"
+
+[node name="MileSpawnTriggerComponent" type="Node" parent="."]
+script = ExtResource("6_ovamt")
+metadata/_custom_type_script = "uid://b5voxcla4dym0"
+
+[node name="DayAndNightComponent" type="Node" parent="." node_paths=PackedStringArray("node")]
+script = ExtResource("7_njowd")
+node = NodePath("../Backgrounds")
+metadata/_custom_type_script = "uid://c0d8bw5d80jkx"
+
+[node name="OvertimeHungerTravel" type="Node" parent="."]
+script = ExtResource("6_gtend")
+metadata/_custom_type_script = "uid://crnikrenciy4b"
+
+[node name="Backgrounds" type="Node2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="Background1" parent="Backgrounds" instance=ExtResource("1_1dggj")]
+
+[node name="EntitySpawner" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(375, 428)
+script = ExtResource("3_32id7")
+metadata/_custom_type_script = "uid://c2acfev3wd23j"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(576, 324)
+zoom = Vector2(2, 2)
+script = ExtResource("4_62ayu")
+speed = 100
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+
+[node name="UITravelMode" parent="CanvasLayer" instance=ExtResource("8_dcakt")]
+unique_name_in_owner = true
+
+[node name="AllyJoinUI" type="PanelContainer" parent="CanvasLayer"]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -92.5
+offset_top = -20.0
+offset_right = 92.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/AllyJoinUI"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="AllyJoinUILabel" type="Label" parent="CanvasLayer/AllyJoinUI/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "[Name] joined the party"
+
+[node name="ItemUsed" type="PanelContainer" parent="CanvasLayer"]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/ItemUsed"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="ItemUsedLabel" type="Label" parent="CanvasLayer/ItemUsed/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Item Used"

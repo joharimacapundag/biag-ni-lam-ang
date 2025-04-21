@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxl748f8adxqh"]
+
+[ext_resource type="PackedScene" uid="uid://cbybguc125en3" path="res://scenes/ui_village_stop.tscn" id="1_8d4k6"]
+[ext_resource type="Script" uid="uid://r5mfx0af5613" path="res://scenes/village_stops/village_stop.gd" id="1_a51ux"]
+[ext_resource type="Texture2D" uid="uid://cb6ltev2kv43p" path="res://assets/backgrounds/village/village_background.png" id="2_20835"]
+
+[node name="VillageStop" type="Node2D"]
+script = ExtResource("1_a51ux")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+unique_name_in_owner = true
+offset = Vector2(576, 324)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 324.5)
+scale = Vector2(0.590769, 0.500769)
+texture = ExtResource("2_20835")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.5
+offset_top = -20.0
+offset_right = 72.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.941176, 0.419608, 1)
+theme_override_font_sizes/font_size = 32
+text = "END OF THE DEMO"
+
+[node name="UiVillageStop" parent="CanvasLayer" instance=ExtResource("1_8d4k6")]

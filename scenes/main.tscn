@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsnmb0yy711yq"]
+
+[ext_resource type="Script" uid="uid://i5wn7tnnsdi3" path="res://scenes/main.gd" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://ca1uj5thsbn7" path="res://ui/main_menu/ui_main_menu.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://ddwphmddubry7" path="res://ui/user_mode/ui_user_mode.tscn" id="3_sugp2"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_0wfyh")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UIMainMenu" parent="CanvasLayer" instance=ExtResource("1_o5qli")]
+unique_name_in_owner = true
+
+[node name="UIUserMode" parent="CanvasLayer" instance=ExtResource("3_sugp2")]
+unique_name_in_owner = true
+visible = false
+
+[connection signal="continue_button_pressed" from="CanvasLayer/UIMainMenu" to="." method="_on_ui_main_menu_continue_button_pressed"]
+[connection signal="load_button_pressed" from="CanvasLayer/UIMainMenu" to="." method="_on_ui_main_menu_load_button_pressed"]
+[connection signal="quit_button_pressed" from="CanvasLayer/UIMainMenu" to="." method="_on_ui_main_menu_quit_button_pressed"]
+[connection signal="start_button_pressed" from="CanvasLayer/UIMainMenu" to="." method="_on_ui_main_menu_start_button_pressed"]

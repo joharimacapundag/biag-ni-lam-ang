@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv4g3ekevo46h"]
+
+[ext_resource type="Script" uid="uid://dumaythtvk4gn" path="res://ui/battle_mode_multiplier/mutliplier_action_button.gd" id="1_0yg3u"]
+
+[node name="ActionButton" type="Button"]
+custom_minimum_size = Vector2(140, 0)
+size_flags_horizontal = 3
+clip_text = true
+script = ExtResource("1_0yg3u")

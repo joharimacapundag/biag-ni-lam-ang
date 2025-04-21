@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://df8hmx6ptpglc"]
+
+[ext_resource type="PackedScene" uid="uid://da244603g1nxw" path="res://ui/battle_mode/ui_battle_traveler_status.tscn" id="1_5qp0b"]
+[ext_resource type="Script" uid="uid://duer5mqnj18ky" path="res://ui/battle_mode/ui_battle_mode.gd" id="1_6jsm6"]
+[ext_resource type="PackedScene" uid="uid://cbcpl8k4altyf" path="res://ui/battle_mode/ui_enemy_status_container.tscn" id="1_7axba"]
+[ext_resource type="PackedScene" uid="uid://bh7k2vd216xy3" path="res://ui/battle_mode/ui_battle_actions.tscn" id="1_b0gy6"]
+[ext_resource type="PackedScene" uid="uid://c5b5tdek7t6h5" path="res://ui/battle_mode/ui_targets.tscn" id="3_2ratr"]
+
+[node name="UiBattleMode" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6jsm6")
+
+[node name="EnemyStatusContainer" parent="." instance=ExtResource("1_7axba")]
+unique_name_in_owner = true
+layout_mode = 1
+offset_bottom = 70.0
+
+[node name="TravelerStatusContainer" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -232.5
+offset_top = -106.0
+offset_right = 232.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="UITargets" parent="TravelerStatusContainer" instance=ExtResource("3_2ratr")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="UIBattleTravelerStatus" parent="TravelerStatusContainer" instance=ExtResource("1_5qp0b")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="UIBattleActions" parent="TravelerStatusContainer" instance=ExtResource("1_b0gy6")]
+unique_name_in_owner = true
+layout_mode = 2

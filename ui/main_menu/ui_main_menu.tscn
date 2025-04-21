@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://ca1uj5thsbn7"]
+
+[ext_resource type="Texture2D" uid="uid://b56dcns5p5mr3" path="res://assets/backgrounds/summer7/Summer7.png" id="1_f63xd"]
+[ext_resource type="Script" uid="uid://dux2vry7p2nur" path="res://ui/main_menu/ui_main_menu.gd" id="1_koveq"]
+
+[node name="UIMainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_koveq")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_f63xd")
+expand_mode = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="LoadBtn" type="Button" parent="HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+text = "LOAD GAME"
+
+[node name="StartBtn" type="Button" parent="HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+text = "START"
+
+[node name="ContinueBtn" type="Button" parent="HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+text = "CONTINUE"
+
+[node name="QuitBtn" type="Button" parent="HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+text = "QUIT GAME"

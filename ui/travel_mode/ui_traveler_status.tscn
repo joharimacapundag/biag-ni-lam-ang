@@ -1,0 +1,90 @@
+[gd_scene load_steps=7 format=3 uid="uid://cbbpqxpkfqq30"]
+
+[ext_resource type="Script" uid="uid://bvpgvme2mtdga" path="res://ui/travel_mode/ui_traveler_status.gd" id="1_5k7kg"]
+[ext_resource type="Texture2D" uid="uid://ctqft72wvff11" path="res://icon.svg" id="1_ywha1"]
+[ext_resource type="StyleBox" uid="uid://phfeli3p5wjq" path="res://ui/background_button.tres" id="3_bhp42"]
+[ext_resource type="StyleBox" uid="uid://brwxs60bb206y" path="res://ui/travel_mode/health_color.tres" id="3_dn8i8"]
+[ext_resource type="StyleBox" uid="uid://cpgy5tov7vr0c" path="res://ui/travel_mode/stamina_color.tres" id="4_bhp42"]
+[ext_resource type="StyleBox" uid="uid://71pqkyokwd15" path="res://ui/travel_mode/strength_color.tres" id="5_8i60o"]
+
+[node name="PanelContainer" type="PanelContainer"]
+custom_minimum_size = Vector2(300, 0)
+script = ExtResource("1_5k7kg")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="NameLbl" type="Label" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "NAME"
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Profile" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture = ExtResource("1_ywha1")
+expand_mode = 1
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HealthLbl" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Health"
+uppercase = true
+
+[node name="HealthBar" type="ProgressBar" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+theme_override_styles/background = ExtResource("3_bhp42")
+theme_override_styles/fill = ExtResource("3_dn8i8")
+value = 10.0
+show_percentage = false
+
+[node name="StaminaLbl" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Stamina"
+uppercase = true
+
+[node name="StaminaBar" type="ProgressBar" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+theme_override_styles/background = ExtResource("3_bhp42")
+theme_override_styles/fill = ExtResource("4_bhp42")
+value = 10.0
+show_percentage = false
+
+[node name="StrengthLbl" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Strength"
+uppercase = true
+
+[node name="StrengthBar" type="ProgressBar" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+theme_override_styles/background = ExtResource("3_bhp42")
+theme_override_styles/fill = ExtResource("5_8i60o")
+value = 10.0
+show_percentage = false

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TravelerResource" load_steps=2 format=3 uid="uid://d1jau4lyxsiui"]
+
+[ext_resource type="Script" path="res://scripts/resources/traveler_resource.gd" id="1_adnv6"]
+
+[resource]
+script = ExtResource("1_adnv6")
+id = "doggie"
+name = "Doggie"
+description = ""
+actions = Array[String](["fight", "cry"])

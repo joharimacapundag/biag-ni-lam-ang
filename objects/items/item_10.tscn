@@ -1,15 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://essqoqb07yl2"]
+[gd_scene load_steps=7 format=3 uid="uid://essqoqb07yl2"]
 
 [ext_resource type="Script" uid="uid://be3hg88wjl5bd" path="res://objects/items/item.gd" id="1_k2a0u"]
-[ext_resource type="Resource" uid="uid://dulcsv64yu4l6" path="res://objects/items/liquor.tres" id="2_nbcrq"]
+[ext_resource type="Resource" uid="uid://dd08of03d5wgg" path="res://objects/items/item_10.tres" id="2_k2a0u"]
 [ext_resource type="Script" uid="uid://dx2ifla8vp7k7" path="res://objects/items/collect_component.gd" id="3_3wmbj"]
 [ext_resource type="Texture2D" uid="uid://f5baggvoc607" path="res://assets/sprites/items/potion_black_big.png" id="4_2cvlq"]
+[ext_resource type="Script" uid="uid://c33vihy42e8ll" path="res://objects/items/liquor_dialogue.gd" id="4_nbcrq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_npygi"]
 
 [node name="Liquor" type="Node2D" node_paths=PackedStringArray("sprite_2d", "canvas_layer", "picked_up_label")]
 script = ExtResource("1_k2a0u")
-item_resource = ExtResource("2_nbcrq")
+item_resource = ExtResource("2_k2a0u")
 sprite_2d = NodePath("Sprite2D")
 canvas_layer = NodePath("CanvasLayer")
 picked_up_label = NodePath("CanvasLayer/PanelContainer/MarginContainer/PickedUp")
@@ -19,7 +20,10 @@ script = ExtResource("3_3wmbj")
 area_2d = NodePath("../Area2D")
 item = NodePath("..")
 
-[node name="Node" type="Node" parent="."]
+[node name="TriggerDialogue" type="Node" parent="." node_paths=PackedStringArray("item")]
+script = ExtResource("4_nbcrq")
+item = NodePath("..")
+metadata/_custom_type_script = "uid://c33vihy42e8ll"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)

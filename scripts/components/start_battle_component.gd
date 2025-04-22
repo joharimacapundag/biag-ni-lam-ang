@@ -12,11 +12,17 @@ func _ready() -> void:
 
 func _on_area_entered(area_2d: Area2D)-> void:
 	if area_2d.get_parent().is_in_group("player"):
-		await get_tree().create_timer(2).timeout
+		GameTime.pause()
+		Dialogic.start("level_1_easy")
+		await Dialogic.timeline_ended
 		GameEvents.battle_entered.emit()
 		GameSceneManager.push_scene("uid://dhbse3oxk3sqy")
 		GameEvents.battle_enemy_entered.emit(enemy.level)
-		queue_free()
+		await GameEvents.battle_ended
+		animated_sprite_2d.play("die")
+		await animated_sprite_2d.animation_finished
+		enemy.queue_free()
+		
 		
 func _on_battle_ended(winner)->void:
 	if winner == "player":

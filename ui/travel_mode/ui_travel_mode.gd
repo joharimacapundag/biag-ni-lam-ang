@@ -23,6 +23,6 @@ func _on_menu_button_pressed()->void:
 	GameTime.pause()
 	
 func _on_game_time_starting(hours: float)->void:
-	%DayLbl.text = str("Day: ", GameStatus.current_day)
+	%DayLbl.text = str("Day: ", GameStatus.current_days)
 	%HungerLbl.text = str("Hunger: ", GameStatus.current_hunger)
 	%GoldLbl.text = str("Gold: ", GameStatus.current_gold)

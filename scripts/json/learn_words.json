@@ -1,174 +1,182 @@
 {
   "bolo knife": {
-	"ilocano_word": "Buneng",
-	"description": "Bolo Knife, known in Ilocano as 'Buneng', is a weapon that provides +8 strength when used. It is designed for combat and reflects traditional craftsmanship with potent utility."
+	"ilocano_word": "buneng",
+	"description": "'Buneng' is the Ilocano term for a bolo knife, a versatile cutting tool traditionally used in farming and daily tasks."
   },
   "spear": {
-	"ilocano_word": "Gayang",
-	"description": "Spear, or 'Gayang' in Ilocano, is a weapon that grants +7 strength. It is valued for its balance between reach and power in battle."
+	"ilocano_word": "gayang",
+	"description": "'Gayang' means spear in Ilocano, referring to a long, pointed weapon used historically for hunting and defense."
   },
   "shield": {
-	"ilocano_word": "Sarapa",
-	"description": "Shield, called 'Sarapa' in Ilocano, is an armor piece that adds +12 defense. It offers robust protection and is essential for withstanding enemy attacks."
+	"ilocano_word": "sarapa",
+	"description": "'Sarapa' is the Ilocano word for shield, denoting a protective barrier carried into battle to block attacks."
   },
   "liquor": {
 	"ilocano_word": "arak",
-	"description": "Liquor, known as 'arak' in Ilocano, is a consumable item that restores +10 health upon use. It serves as a vital source of rejuvenation in critical moments."
+	"description": "'Arak' refers to liquor in Ilocano, an alcoholic drink often distilled from rice or sugarcane and enjoyed during celebrations."
   },
   "earrings": {
 	"ilocano_word": "aritos",
-	"description": "Earrings, or 'aritos' in Ilocano, are accessories that boost stamina by +3. They enhance endurance and add a touch of traditional style."
+	"description": "'Aritos' means earrings in Ilocano, small ornaments worn on the earlobes as decorative jewelry."
   },
   "salt": {
 	"ilocano_word": "asin",
-	"description": "Salt, translated as 'asin' in Ilocano, is an ingredient that reduces hunger by 5. It is crucial for flavoring and preserving food."
+	"description": "'Asin' is the Ilocano term for salt, a mineral used to season and preserve food."
   },
   "loincloth": {
 	"ilocano_word": "baag",
-	"description": "Loincloth, known in Ilocano as 'baag', is a clothing item that provides +2 defense. It offers basic protection and comfort in everyday wear."
+	"description": "'Baag' means loincloth in Ilocano, a simple garment wrapped around the waist for modesty and comfort."
   },
   "clothing": {
 	"ilocano_word": "bado",
-	"description": "Clothing, called 'bado' in Ilocano, is worn apparel that gives +3 defense. It combines practicality with traditional design."
+	"description": "'Bado' is the generic Ilocano word for clothing, referring to garments worn to cover the body."
+  },
+  "coffee": {
+	"ilocano_word": "kape",
+	"description": "'Kape' is the Ilocano term for coffee, the brewed beverage made from roasted coffee beans."
   },
   "gold": {
 	"ilocano_word": "balitok",
-	"description": "Gold, known in Ilocano as 'balitok', is a form of currency without additional stat bonuses. It is used primarily for trade and economic transactions."
+	"description": "'Balitok' means gold in Ilocano, the precious yellow metal prized for jewelry and decoration."
   },
   "flag": {
 	"ilocano_word": "bandera",
-	"description": "Flag, or 'bandera' in Ilocano, is a miscellaneous item often used for identification. It symbolizes identity, pride, or affiliation."
+	"description": "'Bandera' is the Ilocano word for flag, a piece of cloth bearing symbols or colors that represent a group or nation."
+  },
+  "banana": {
+	"ilocano_word": "saba",
+	"description": "'Saba' can also refer to banana in some contexts, the tropical fruit with soft flesh and a peelable skin."
   },
   "sack": {
 	"ilocano_word": "bay-ong",
-	"description": "Sack, known as 'bay-ong' in Ilocano, is a container used for storing and carrying items. Its design is practical for adventurers and traders alike."
+	"description": "'Bay-ong' means sack in Ilocano, a woven bag used to carry goods and supplies."
   },
   "needle": {
 	"ilocano_word": "dagom",
-	"description": "Needle, translated as 'dagom' in Ilocano, is a tool typically used in sewing or crafting. It is essential for repairs and creative projects."
+	"description": "'Dagom' is the Ilocano term for needle, a small, pointed tool used in sewing and stitching."
   },
   "bamboo": {
 	"ilocano_word": "kawayan",
-	"description": "Bamboo, known in Ilocano as 'kawayan', is a versatile material used in construction and crafting. It is celebrated for its strength and sustainability."
+	"description": "'Kawayan' means bamboo in Ilocano, a fast-growing grass with hard, hollow stems used in construction and crafts."
   },
   "hook": {
 	"ilocano_word": "kawit",
-	"description": "Hook, or 'kawit' in Ilocano, is a tool used for catching or lifting items. It is a helpful implement in various tasks and adventures."
+	"description": "'Kawit' is the Ilocano word for hook, a curved tool used for catching or hanging objects."
   },
   "knife": {
 	"ilocano_word": "kutsilio",
-	"description": "Knife, translated as 'kutsilio' in Ilocano, is a weapon that provides +5 strength. It is valued for its dual role in combat and everyday utility."
+	"description": "'Kutsilio' means knife in Ilocano, a cutting tool with a sharp blade used in cooking and everyday tasks."
   },
   "slingshot": {
 	"ilocano_word": "palsiit",
-	"description": "Slingshot, known in Ilocano as 'palsiit', is a ranged weapon that adds +4 strength. It offers a unique balance of precision and power."
+	"description": "'Palsiit' is the Ilocano term for slingshot, a small hand-powered device used to launch projectiles."
   },
   "whistle": {
 	"ilocano_word": "pito",
-	"description": "Whistle, or 'pito' in Ilocano, is an accessory that increases speed by +1. Often used for signaling, it also boosts morale and agility."
+	"description": "'Pito' means whistle in Ilocano, a device that produces a high-pitched sound when blown."
   },
   "saw": {
 	"ilocano_word": "ragadi",
-	"description": "Saw, known in Ilocano as 'ragadi', is a tool that boosts strength by +3 when used. It is indispensable in crafting and construction tasks."
+	"description": "'Ragadi' is the Ilocano word for saw, a toothed tool used to cut through wood and other materials."
   },
   "shoes": {
 	"ilocano_word": "sapatos",
-	"description": "Shoes, translated as 'sapatos' in Ilocano, are footwear that provide +2 speed. They protect the feet while enhancing agility during movement."
+	"description": "'Sapatos' means shoes in Ilocano, footwear designed to protect and support the feet."
   },
   "slippers": {
 	"ilocano_word": "tsinelas",
-	"description": "Slippers, or 'tsinelas' in Ilocano, are light footwear that grant +1 speed. They are ideal for casual wear and quick movements."
+	"description": "'Tsinelas' is the Ilocano term for slippers, light open footwear typically worn indoors or in casual settings."
   },
   "ring": {
 	"ilocano_word": "singsing",
-	"description": "Ring, known in Ilocano as 'singsing', is an accessory that adds +2 stamina. It symbolizes both style and resilience."
+	"description": "'Singsing' means ring in Ilocano, a circular band worn on the finger as decoration or symbol."
   },
   "armor": {
 	"ilocano_word": "armadillo",
-	"description": "Armor, translated as 'armadillo' in Ilocano, is protective gear that grants +20 defense. It offers superior protection in combat situations."
+	"description": "'Armadillo' is used in Ilocano to mean armor, protective gear worn to shield the body."
   },
   "basket": {
 	"ilocano_word": "kaladi",
-	"description": "Basket, or 'kaladi' in Ilocano, is a container used to carry or store items. Its practical design makes it essential for everyday use."
+	"description": "'Kaladi' means basket in Ilocano, a container woven from plant fibers used for carrying items."
   },
   "axe": {
 	"ilocano_word": "bauang",
-	"description": "Axe, known in Ilocano as 'bauang', is a heavy weapon that provides +10 strength. It is ideal for powerful strikes and chopping tasks."
+	"description": "'Bauang' is the Ilocano term for axe, a tool with a heavy bladed head used for chopping wood."
   },
   "bow": {
 	"ilocano_word": "bannuar",
-	"description": "Bow, translated as 'bannuar' in Ilocano, is a ranged weapon that grants +6 strength. It combines precision with effectiveness in long-range combat."
+	"description": "'Bannuar' means bow in Ilocano, a curved weapon used to launch arrows."
   },
   "land": {
 	"ilocano_word": "daga",
-	"description": "Land, or 'daga' in Ilocano, is a miscellaneous asset with no stat modifiers. It represents property or territory in a broader sense."
+	"description": "'Daga' is the Ilocano word for land, referring to the earth or ground."
   },
   "sword": {
 	"ilocano_word": "tabuk",
-	"description": "Sword, known in Ilocano as 'tabuk', is a weapon that delivers +12 strength. It is renowned for its balance between offense and traditional design."
+	"description": "'Tabuk' means sword in Ilocano, a long bladed weapon used in combat."
   },
   "companion": {
 	"ilocano_word": "kadduwa",
-	"description": "Companion, translated as 'kadduwa' in Ilocano, is a miscellaneous item symbolizing support and friendship. It represents loyalty during adventures."
+	"description": "'Kadduwa' is the Ilocano term for companion, someone who accompanies and supports you."
   },
   "rice": {
 	"ilocano_word": "bagas",
-	"description": "Rice, known in Ilocano as 'bagas', is an ingredient that reduces hunger by 30. As a staple food, it plays a vital role in nourishment and sustenance."
+	"description": "'Bagas' means rice in Ilocano, the staple grain consumed as a primary food in many meals."
   },
   "mat": {
 	"ilocano_word": "banig",
-	"description": "Mat, or 'banig' in Ilocano, is a miscellaneous item often used for sitting or sleeping. It blends comfort with traditional design elements."
+	"description": "'Banig' is the Ilocano word for mat, a woven sleeping or sitting surface made from plant fibers."
   },
   "house": {
 	"ilocano_word": "abong",
-	"description": "House, translated as 'abong' in Ilocano, is a structure that represents a dwelling. It offers shelter, stability, and a sense of home."
+	"description": "'Abong' means house in Ilocano, a building that serves as a home."
   },
   "drum": {
 	"ilocano_word": "gonggong",
-	"description": "Drum, known in Ilocano as 'gonggong', is an instrument that increases stamina by +2. It is central to cultural celebrations and traditional music."
+	"description": "'Gonggong' is the Ilocano term for drum, a percussion instrument that produces sound when struck."
   },
   "story": {
 	"ilocano_word": "salaysay",
-	"description": "Story, or 'salaysay' in Ilocano, is a lore item that conveys narrative and history. It preserves traditions, legends, and cultural identity."
+	"description": "'Salaysay' means story in Ilocano, a narrative or account of events."
   },
   "town": {
 	"ilocano_word": "bingbongan",
-	"description": "Town, translated as 'bingbongan' in Ilocano, is a structure that represents a populated area. It serves as a hub for community life and commerce."
+	"description": "'Bingbongan' is the Ilocano word for town, a populated area where people live and work."
   },
   "river": {
 	"ilocano_word": "karayan",
-	"description": "River, known in Ilocano as 'karayan', is a natural feature with significant ecological importance. It symbolizes the flow of life and nature’s abundance."
+	"description": "'Karayan' means river in Ilocano, a natural flowing watercourse."
   },
   "dagger": {
 	"ilocano_word": "panagdi",
-	"description": "Dagger, or 'panagdi' in Ilocano, is a weapon that provides +8 strength. It is prized for its speed and precision in close combat situations."
+	"description": "'Panagdi' is the Ilocano term for dagger, a small, pointed blade used in close combat."
   },
   "rope": {
 	"ilocano_word": "tali",
-	"description": "Rope, translated as 'tali' in Ilocano, is a tool used for binding or climbing. Its practical applications make it indispensable in many scenarios."
+	"description": "'Tali' means rope in Ilocano, a strong, flexible cord used for binding or climbing."
   },
   "don’t": {
 	"ilocano_word": "saan",
-	"description": "The word 'don’t' translates to 'saan' in Ilocano, serving as a negation that means 'do not'. It is used to form negative statements."
+	"description": "'Saan' is the Ilocano word for 'don't', used to negate a verb or instruction."
   },
   "you": {
 	"ilocano_word": "mo",
-	"description": "The word 'you' translates to 'mo' in Ilocano. It functions as the second-person pronoun used to address someone directly."
+	"description": "'Mo' means 'you' in Ilocano, the second-person pronoun used to address someone."
   },
   "hit": {
 	"ilocano_word": "diswan",
-	"description": "The word 'hit' translates to 'diswan' in Ilocano. It describes the action of striking or delivering a blow."
+	"description": "'Diswan' is the Ilocano term for 'hit', meaning to strike or deliver a blow."
   },
   "rooster": {
 	"ilocano_word": "manok",
-	"description": "The word 'rooster' translates to 'manok' in Ilocano, referring to a male chicken. It often symbolizes vitality and leadership."
+	"description": "'Manok' means rooster in Ilocano, referring to the male chicken known for its crowing."
   },
   "because": {
 	"ilocano_word": "ta",
-	"description": "The word 'because' translates to 'ta' in Ilocano. It functions as a conjunction that connects cause and effect in a sentence."
+	"description": "'Ta' is the Ilocano word for 'because', used to express a cause or reason."
   },
   "wise": {
 	"ilocano_word": "nasirib",
-	"description": "The word 'wise' translates to 'nasirib' in Ilocano. It is used as an adjective to describe someone who is intelligent or sagacious."
+	"description": "'Nasirib' means wise in Ilocano, describing someone with intelligence and good judgment."
   }
 }

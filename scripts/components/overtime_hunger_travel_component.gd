@@ -1,7 +1,7 @@
 extends Node
 class_name OvertimeHungerTravel
 @export_range(0, 24) var overtime_game_time_hours: int = 2
-@export_range(0, 100) var interval_damage = 1
+@export_range(0, 100) var interval_damage = 10
 @export var max_hunger: int = 100
 
 var current_key: String
@@ -20,5 +20,5 @@ func apply(value: int, hours: float)->void:
 	var damage_interval_hours = overtime_game_time_hours
 	
 	if elapsed_game_time_hours >= damage_interval_hours:
-		GameStatus.current_hunger = clamp(value, 0, max_hunger)
+		GameStatus.current_hunger += clamp(value, 0, max_hunger)
 		last_damage_game_time_hours = game_time_hours

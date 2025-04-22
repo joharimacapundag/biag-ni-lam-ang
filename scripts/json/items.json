@@ -36,6 +36,26 @@
 	},
 	"description": "Porridge (Ilocano: Lugaw) restores +15 health when consumed."
   },
+"banana": {
+  "name": "Banana",
+  "ilocano_word": "Saba",
+  "action_type": "item_action",
+  "type": "consumable",
+  "stack_size": 1,
+  "max_stack_size": 10,
+  "image": "uid://cqwxcdw0mubuv",
+  "size": "Vector2i(1, 1)",
+  "modifiers": {
+	"target": {
+	  "add": {
+		"health": 6,
+		"stamina": 2
+	  }
+	}
+  },
+  "description": "Banana (Ilocano: Saging) is a tropical fruit that restores +6 health and +2 stamina when consumed."
+},
+
   "sugarcane_wine": {
 	"name": "Sugarcane Wine",
 	"ilocano_word": "Basi",
@@ -96,7 +116,7 @@
 	"type": "weapon",
 	"stack_size": 1,
 	"max_stack_size": 1,
-	"image": "res://assets/sprites/items/spear.png",
+	"image": "uid://cahye20l11tt6",
 	"size": "Vector2i(2, 1)",
 	"modifiers": {
 	  "source": {

@@ -19,7 +19,6 @@ var current_inventory: Inventory
 
 var current_items: Array
 var current_gold: int = 0
-var current_day: int = 0
 var current_learned_words: Array
 var current_hunger: int = 0
 var current_days: int = 0

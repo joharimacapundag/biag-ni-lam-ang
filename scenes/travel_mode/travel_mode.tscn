@@ -41,6 +41,8 @@ metadata/_custom_type_script = "uid://c0d8bw5d80jkx"
 
 [node name="OvertimeHungerTravel" type="Node" parent="."]
 script = ExtResource("6_gtend")
+overtime_game_time_hours = 5
+interval_damage = 5
 metadata/_custom_type_script = "uid://crnikrenciy4b"
 
 [node name="Backgrounds" type="Node2D" parent="."]

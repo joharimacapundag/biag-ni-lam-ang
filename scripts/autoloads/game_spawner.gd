@@ -5,17 +5,13 @@ signal spawned(node)
 var events: Dictionary = {
 	"act_1": [
 	{
-		"type": "interval",
-		"min_miles": 2,
-		"max_miles": 2,
-		"chance": 1,
+		"type": "fixed",
+		"trigger_mile": 2,
 		"scene_path": "uid://bfvqww24w78jl"
 	},
 	{
-		"type": "interval",
-		"min_miles": 6,
-		"max_miles": 6,
-		"chance": 1,
+		"type": "fixed",
+		"trigger_mile": 6,
 		"scene_path": "uid://clb2kabkykf3x"
 	}, 
 	{
@@ -49,26 +45,35 @@ var events: Dictionary = {
 		"scene_path": "uid://bhkjvh4soj304"
 	},
 	{
-		"type": "interval",
+		"type": "fixed",
 		"min_miles": 16,
-		"max_miles": 16,
-		"chance": 1, 
 		"scene_path": "uid://clya8hk4ggrqr"
 	},
 	{
 		"type": "fixed",
 		"trigger_mile": 17,
-		"scene_path": "uid://bhkjvh4soj304"
+		"scene_path": "uid://b4fldh0e2ayl7"
+	},
+
+	{
+		"type": "fixed",
+		"trigger_mile": 22,
+		"scene_path": "uid://b2tycfqm731ir"
 	},
 	{
 		"type": "fixed",
-		"trigger_mile": 19,
-		"scene_path": "uid://c613qms56cath"
+		"trigger_mile": 24,
+		"scene_path": "uid://bj10pnxdjqjo2"
+	},
+	{
+		"type": "fixed",
+		"trigger_mile": 28,
+		"scene_path": "uid://essqoqb07yl2"
 	},
 	{
 		"type": "interval",
-		"min_miles": 25,
-		"max_miles": 25,
+		"min_miles": 30,
+		"max_miles": 30,
 		"chance": 1, 
 		"scene_path": "uid://b1fr2o3dyjpgs"
 	},

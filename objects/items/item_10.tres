@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_uycgk")
-id = "banana"
-name = "Banana"
+id = "spear"
+name = "Spear"
 description = ""

@@ -41,6 +41,7 @@ func _process(delta: float) -> void:
 		game_time_starting.emit(total_game_time_hours)
 		
 	if current_game_time_hours	>= GAME_TIME_HOURS:
+		GameStatus.current_days += 1
 		reset()
 		
 	#display_game_time()

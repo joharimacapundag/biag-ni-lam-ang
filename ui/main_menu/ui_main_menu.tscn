@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ca1uj5thsbn7"]
 
-[ext_resource type="Texture2D" uid="uid://b56dcns5p5mr3" path="res://assets/backgrounds/summer7/Summer7.png" id="1_f63xd"]
 [ext_resource type="Script" uid="uid://dux2vry7p2nur" path="res://ui/main_menu/ui_main_menu.gd" id="1_koveq"]
+[ext_resource type="Texture2D" uid="uid://u2dma716w7lm" path="res://assets/backgrounds/Bg.png" id="2_koveq"]
 
 [node name="UIMainMenu" type="Control"]
 layout_mode = 3
@@ -19,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_f63xd")
+texture = ExtResource("2_koveq")
 expand_mode = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
@@ -42,6 +42,7 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 text = "LOAD GAME"
+icon_alignment = 1
 
 [node name="StartBtn" type="Button" parent="HBoxContainer"]
 unique_name_in_owner = true

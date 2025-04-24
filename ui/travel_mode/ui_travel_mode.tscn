@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://d4on0egdbfxo"]
+[gd_scene load_steps=6 format=3 uid="uid://d4on0egdbfxo"]
 
 [ext_resource type="Script" uid="uid://cnjaru81sf53k" path="res://ui/travel_mode/ui_travel_mode.gd" id="1_8x1lx"]
 [ext_resource type="PackedScene" uid="uid://wohcgj2aq60p" path="res://ui/in_game_menu/ui_in_game_menu.tscn" id="2_8x1lx"]
 [ext_resource type="Texture2D" uid="uid://cvdyn8hofjnib" path="res://assets/sprites/items/coin_gold_1.png" id="2_im4nt"]
 [ext_resource type="Texture2D" uid="uid://bnbcqmf6jlrwh" path="res://assets/sprites/items/beef.png" id="2_qbqua"]
+[ext_resource type="Texture2D" uid="uid://b8kj7pxv1o8ri" path="res://assets/Buttons/Menu.png" id="4_b2k6j"]
 
 [node name="UITravelMode" type="Control"]
 layout_mode = 3
@@ -119,15 +120,12 @@ uppercase = true
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 3
+anchors_preset = 1
 anchor_left = 1.0
-anchor_top = 1.0
 anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -57.0
-offset_top = -40.0
+offset_left = -124.0
+offset_bottom = 124.0
 grow_horizontal = 0
-grow_vertical = 0
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
@@ -137,7 +135,7 @@ theme_override_constants/margin_bottom = 8
 unique_name_in_owner = true
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
-text = "MENU"
+icon = ExtResource("4_b2k6j")
 
 [node name="UIInGameMenu" parent="." instance=ExtResource("2_8x1lx")]
 unique_name_in_owner = true

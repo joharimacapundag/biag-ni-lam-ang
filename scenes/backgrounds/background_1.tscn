@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://caj171hyxs3da" path="res://assets/backgrounds/summer 1/1.png" id="1_7abpb"]
 [ext_resource type="Texture2D" uid="uid://cpw48mihctwa" path="res://assets/backgrounds/summer 1/2.png" id="2_hijjt"]
 [ext_resource type="Texture2D" uid="uid://dfhfs6docufke" path="res://assets/backgrounds/summer 1/3.png" id="3_8iqyt"]
-[ext_resource type="Texture2D" uid="uid://c5w3kvhnr34v7" path="res://assets/backgrounds/summer 1/4.png" id="4_lgnde"]
+[ext_resource type="Texture2D" uid="uid://c33a87op2dv2v" path="res://assets/Buttons/huts.png" id="4_sykq1"]
 
 [node name="Background1" type="Node2D"]
 
@@ -33,4 +33,6 @@ repeat_size = Vector2(576, 0)
 repeat_times = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D4"]
-texture = ExtResource("4_lgnde")
+position = Vector2(71, 41)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_sykq1")

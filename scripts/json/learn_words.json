@@ -178,5 +178,10 @@
   "wise": {
 	"ilocano_word": "nasirib",
 	"description": "'Nasirib' means wise in Ilocano, describing someone with intelligence and good judgment."
+	
+	 },
+  "help": {
+	"ilocano_word": "isalakan",
+	"description": "'Isalakan' means help in English, make it easier for (someone) to do something by offering one's services or resources."
   }
 }

@@ -65,7 +65,7 @@ metadata/_custom_type_script = "uid://c2acfev3wd23j"
 
 [node name="Player3" type="Marker2D" parent="Players"]
 unique_name_in_owner = true
-position = Vector2(410, 254)
+position = Vector2(435, 370)
 script = ExtResource("3_m6swq")
 metadata/_custom_type_script = "uid://c2acfev3wd23j"
 

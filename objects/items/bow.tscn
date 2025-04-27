@@ -1,33 +1,34 @@
-[gd_scene load_steps=7 format=3 uid="uid://clb2kabkykf3x"]
+[gd_scene load_steps=7 format=3 uid="uid://bgb2hkrrd6he7"]
 
-[ext_resource type="Script" uid="uid://be3hg88wjl5bd" path="res://objects/items/item.gd" id="1_wlbv8"]
-[ext_resource type="Resource" uid="uid://dutnwv7d6jq7q" path="res://objects/items/item_7.tres" id="2_wlbv8"]
-[ext_resource type="Script" uid="uid://dx2ifla8vp7k7" path="res://objects/items/collect_component.gd" id="3_4h2sg"]
-[ext_resource type="Script" uid="uid://c33vihy42e8ll" path="res://objects/items/liquor_dialogue.gd" id="4_066rf"]
-[ext_resource type="Texture2D" uid="uid://f5baggvoc607" path="res://assets/sprites/items/potion_black_big.png" id="4_x76ol"]
+[ext_resource type="Script" uid="uid://be3hg88wjl5bd" path="res://objects/items/item.gd" id="1_0gllo"]
+[ext_resource type="Resource" uid="uid://bfrj5v8hcdll1" path="res://objects/items/item_2.tres" id="2_s54sb"]
+[ext_resource type="Script" uid="uid://dx2ifla8vp7k7" path="res://objects/items/collect_component.gd" id="3_k028n"]
+[ext_resource type="Script" uid="uid://c33vihy42e8ll" path="res://objects/items/liquor_dialogue.gd" id="4_po23r"]
+[ext_resource type="Texture2D" uid="uid://hysw4o0yjndp" path="res://assets/item assets/pana.png" id="5_2krvc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_npygi"]
 
-[node name="Coffee" type="Node2D" node_paths=PackedStringArray("sprite_2d", "canvas_layer", "picked_up_label")]
-script = ExtResource("1_wlbv8")
-item_resource = ExtResource("2_wlbv8")
+[node name="Liquor" type="Node2D" node_paths=PackedStringArray("sprite_2d", "canvas_layer", "picked_up_label")]
+script = ExtResource("1_0gllo")
+item_resource = ExtResource("2_s54sb")
 sprite_2d = NodePath("Sprite2D")
 canvas_layer = NodePath("CanvasLayer")
 picked_up_label = NodePath("CanvasLayer/PanelContainer/MarginContainer/PickedUp")
 
 [node name="CollectComponent" type="Node" parent="." node_paths=PackedStringArray("area_2d", "item")]
-script = ExtResource("3_4h2sg")
+script = ExtResource("3_k028n")
 area_2d = NodePath("../Area2D")
 item = NodePath("..")
 
 [node name="TriggerDialogue" type="Node" parent="." node_paths=PackedStringArray("item")]
-script = ExtResource("4_066rf")
+script = ExtResource("4_po23r")
 item = NodePath("..")
 metadata/_custom_type_script = "uid://c33vihy42e8ll"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("4_x76ol")
+position = Vector2(-1, 0)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_2krvc")
 
 [node name="Area2D" type="Area2D" parent="."]
 

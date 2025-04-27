@@ -220,6 +220,16 @@
 	"description": "'Haan' means don't in English, used to negate a verb or instruction."
 	
 	 },
+  "heal": {
+	"ilocano_word": "agasan",
+	"description": "'Agasan' means heal in English, the process of becoming healthy or whole again, especially after an injury or illness."
+	
+	 },
+  "medicine": {
+	"ilocano_word": "agas",
+	"description": "'Agas' means medecine in English, chemicals or compounds used to cure, halt, or prevent disease; ease symptoms."
+	
+	 },
   "home": {
 	"ilocano_word": "pagtaengan",
 	"description": "'Pagtaengan' means home in English, the place where one lives permanently, especially as a member of a family or household."

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vypv0gcvd63g"
-path="res://.godot/imported/liquor.png-f37f5c7664814de987ece0cb7a391dac.ctex"
+uid="uid://crd6aksmhmavw"
+path="res://.godot/imported/axe.png-3755d7cfe13c56932793142b6c7bab66.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/items/liquor.png"
-dest_files=["res://.godot/imported/liquor.png-f37f5c7664814de987ece0cb7a391dac.ctex"]
+source_file="res://assets/item assets/axe.png"
+dest_files=["res://.godot/imported/axe.png-3755d7cfe13c56932793142b6c7bab66.ctex"]
 
 [params]
 

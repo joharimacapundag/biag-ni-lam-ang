@@ -188,10 +188,11 @@ script = ExtResource("1_gvqt4")
 traveler_resource = ExtResource("2_6dd3u")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-modulate = Color(0.992102, 0.584625, 0.515094, 1)
 texture_filter = 1
+position = Vector2(18, 0)
+scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_yqbfo")
-animation = &"attack"
+animation = &"die"
 autoplay = "idle"
 flip_h = true
 

@@ -1,12 +1,14 @@
 [wait time="1.0"]
 Morning light filters through tall trees. Lam-Ang ambles along a quiet path when he suddenly hears a distressed cry.
 lam-ang: What!?
-He listens as the cry repeats—a mix of urgency and fear. Following the sound, he discovers a small rooster perched on a low branch, its feathers slightly ruffled.
+He listens as the cry repeats—a mix of urgency and fear. Following the sound, he discovers a small rooster perched on a low branch, its feathers slightly ruffled. There were hunters trying to hit [color=red](diswan) [/color] the rooster.
+do GameStatus.add_learned_word("hit")
 rooster: Help me! Help me! [color=red](Isalakan dak! Isalakan dak!) [/color]A hunter… he’s after me!
+do GameStatus.add_learned_word("help")
 Lam-Ang frowns, trying to recall the few Ilocano words his mother taught him.
 lam-ang: [i]‘Isalakan’ means ‘help,’ doesn’t it? But... a hunter? What does that mean?[/i]
-do GameStatus.add_learned_word("help")
-Before Lam-Ang can ask further, a gruff voice interrupts from behind a clump of bushes. A HUNTER steps forward, eyes fixed on the rooster.
+Before Lam-Ang can ask further, a gruff voice interrupts from behind a clump of bushes. A HUNTER steps forward, eyes fixed on the rooster [color=red](kawitan) [/color].
+do GameStatus.add_learned_word("rooster")
 hunter: Hey! Easy there, little bird. I’m not out here for mischief I’m hunting for food. I need a rooster to feed my family.
 The rooster flutters higher, its eyes wide with terror. Lam-Ang steps between the hunter and the bird.
 lam-ang: Wait a moment—this little one is clearly frightened. I don’t think he’s meant for your dinner tonight.”
@@ -15,6 +17,5 @@ hunter: Listen, kid, I understand your concern. But I’m only doing what I must
 lam-ang: I respect that you need to hunt for food, but isn’t there another way? Look at his eyes—he’s terrified. I can help him, and maybe we can find a better solution.
 The rooster, still trembling, chirps softly as if pleading for mercy.
 lam-ang: [i]How I convince this guy?[/i]
-rooster: Tulungan... please, help me...
+rooster: Help me... please, help me...
 lam-ang: [i]Okay, maybe Ilocano words might convince him[/i]
-do 

@@ -180,6 +180,51 @@
 	"description": "'Nasirib' means wise in Ilocano, describing someone with intelligence and good judgment."
 	
 	 },
+  "family": {
+	"ilocano_word": "pamilya",
+	"description": "'Pamliya' means wise in English, all the descendants of a common ancestor.."
+	
+	 },
+  "war": {
+	"ilocano_word": "gubat",
+	"description": "'Gubat' means war in Ilocano, a state of armed conflict between different nations or states or different groups within a nation or state."
+	
+	 },
+  "anger": {
+	"ilocano_word": "rurod",
+	"description": "'Rurod' means anger in English,a strong feeling of annoyance, displeasure, or hostility."
+	
+	 },
+  "village": {
+	"ilocano_word": "baryo",
+	"description": "'Baryo' means village in English, a self-contained district or community within a town or city."
+	
+	 },
+  "spear": {
+	"ilocano_word": "gayang",
+	"description": "'Gayang' means spear in English,a weapon with a long shaft and a pointed tip, typically of metal, used for thrusting or throwing."
+	
+	 },
+  "evil": {
+	"ilocano_word": "dakes",
+	"description": "'Dakes' means evil in English, profoundly immoral and wicked."
+	
+	 },
+  "sorrow": {
+	"ilocano_word": "ladingit",
+	"description": "'Ladingit' means sorrow in English, a feeling of deep distress caused by loss, disappointment, or other misfortune suffered by oneself or others."
+	
+	 },
+  "don't": {
+	"ilocano_word": "haan",
+	"description": "'Haan' means don't in English, used to negate a verb or instruction."
+	
+	 },
+  "home": {
+	"ilocano_word": "pagtaengan",
+	"description": "'Pagtaengan' means home in English, the place where one lives permanently, especially as a member of a family or household."
+	
+	 },
   "help": {
 	"ilocano_word": "isalakan",
 	"description": "'Isalakan' means help in English, make it easier for (someone) to do something by offering one's services or resources."

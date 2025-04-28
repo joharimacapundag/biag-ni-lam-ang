@@ -17,7 +17,7 @@
 &"portraits": {
 "rooster": {
 "export_overrides": {
-"image": "\"res://assets/sprites/travelers/lam-ang/rooster profile.jpeg\""
+"image": "\"res://assets/item assets/Roosty.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

@@ -28,7 +28,7 @@
 &"portraits": {
 "lam_ang": {
 "export_overrides": {
-"image": "\"res://assets/sprites/travelers/lam-ang/lam ang profile.jpeg\""
+"image": "\"res://assets/item assets/Lam-ang.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

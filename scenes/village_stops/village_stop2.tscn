@@ -1,20 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://bxl748f8adxqh"]
+[gd_scene load_steps=4 format=3 uid="uid://bbel73yw1u4hr"]
 
-[ext_resource type="PackedScene" uid="uid://cbybguc125en3" path="res://scenes/ui_village_stop.tscn" id="1_8d4k6"]
-[ext_resource type="Script" uid="uid://r5mfx0af5613" path="res://scenes/village_stops/village_stop.gd" id="1_a51ux"]
-[ext_resource type="Texture2D" uid="uid://dc3pgk72re5m2" path="res://assets/item assets/village stop.png" id="2_20835"]
+[ext_resource type="Script" uid="uid://r5mfx0af5613" path="res://scenes/village_stops/village_stop.gd" id="1_m23sp"]
+[ext_resource type="Texture2D" uid="uid://cb6ltev2kv43p" path="res://assets/backgrounds/village/village_background.png" id="2_qmt7w"]
+[ext_resource type="PackedScene" uid="uid://cbybguc125en3" path="res://scenes/ui_village_stop.tscn" id="3_f46pm"]
 
 [node name="VillageStop" type="Node2D"]
-script = ExtResource("1_a51ux")
+script = ExtResource("1_m23sp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 unique_name_in_owner = true
 offset = Vector2(576, 324)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(576, 230)
-scale = Vector2(1.1, 0.933)
-texture = ExtResource("2_20835")
+position = Vector2(576, 324.5)
+scale = Vector2(0.590769, 0.500769)
+texture = ExtResource("2_qmt7w")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -46,4 +46,4 @@ theme_override_colors/font_color = Color(1, 0.941176, 0.419608, 1)
 theme_override_font_sizes/font_size = 32
 text = "END OF THE DEMO"
 
-[node name="UiVillageStop" parent="CanvasLayer" instance=ExtResource("1_8d4k6")]
+[node name="UiVillageStop" parent="CanvasLayer" instance=ExtResource("3_f46pm")]

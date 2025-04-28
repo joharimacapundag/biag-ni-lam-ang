@@ -1,12 +1,13 @@
 [gd_scene load_steps=7 format=3 uid="uid://bgb2hkrrd6he7"]
 
 [ext_resource type="Script" uid="uid://be3hg88wjl5bd" path="res://objects/items/item.gd" id="1_0gllo"]
-[ext_resource type="Resource" uid="uid://bfrj5v8hcdll1" path="res://objects/items/item_2.tres" id="2_s54sb"]
+[ext_resource type="Resource" uid="uid://bfrj5v8hcdll1" path="res://objects/items/bow.tres" id="2_s54sb"]
 [ext_resource type="Script" uid="uid://dx2ifla8vp7k7" path="res://objects/items/collect_component.gd" id="3_k028n"]
 [ext_resource type="Script" uid="uid://c33vihy42e8ll" path="res://objects/items/liquor_dialogue.gd" id="4_po23r"]
-[ext_resource type="Texture2D" uid="uid://hysw4o0yjndp" path="res://assets/item assets/pana.png" id="5_2krvc"]
+[ext_resource type="Texture2D" uid="uid://hysw4o0yjndp" path="res://assets/item assets/bow.png" id="5_2krvc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_npygi"]
+radius = 20.6155
 
 [node name="Liquor" type="Node2D" node_paths=PackedStringArray("sprite_2d", "canvas_layer", "picked_up_label")]
 script = ExtResource("1_0gllo")

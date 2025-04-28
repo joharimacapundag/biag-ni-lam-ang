@@ -9,13 +9,13 @@ lam-ang: I dream of Father, every night...
 lam-ang: His voice, calling from beyond the mountains. I must go, Mother. I must find Don Juan — wherever he may be.
 
 [i]Namongan sets aside her basket, her hands trembling slightly.[/i]
-namongan: Ay, anakko. The world beyond Nalbuan is filled with evil[color=red](dakes.)[/color]
+namongan: Ay, anakko. The world beyond Nalbuan is filled with [color=yellow]evil[/color] [color=red] (dakes.)[/color]
 do GameStatus.add_learned_word("evil")
 lam-ang: I am no longer a boy, mother I have the strength and courage needed.
-namongan: Strength is not enough, Lam-Ang. You must also be wise [color=red](nasirib.)[/color] Wise in heart and mind.
+namongan: Strength is not enough, Lam-Ang. You must also be [color=yellow]wise[/color] [color=red] (nasirib.)[/color] Wise in heart and mind.
 do GameStatus.add_learned_word("wise")
 lam-ang: I will be. You have taught me well.
-lam-ang: But if I stay here doing nothing, I fear my sorrow [color=red](ladingit)[/color] will only grow.
+lam-ang: But if I stay here doing nothing, I fear my sorrow [color=red] (ladingit)[/color] will only grow.
 do GameStatus.add_learned_word("sorrow")
 
 [i]Namongan sighs, torn between fear and pride.[/i]
@@ -26,7 +26,7 @@ lam-ang: I will carry your blessing in my soul, Mother.
 namongan: Seek your father, anakko. But remember, no matter how far you travel, you will always have a home [color=red](pagtaengan)[/color] to return to.
 do GameStatus.add_learned_word("home")
 lam-ang: Thank you, ina. I promise... I will return.
-namongan: Be careful always my son, don't [color=red](haan)[/color] be so rash.
+namongan: Be careful always my son, don't [color=red] (haan)[/color] be so rash.
 do GameStatus.add_learned_word("don't")
 lam-ang: With Father by my side, or with the truth carried in my hands.
 

@@ -1,7 +1,7 @@
 [wait time="1.0"]
 [background arg="res://assets/backgrounds/Lam-ang and Ines.png" fade="0.0"]
 The wind howled across the mountains as Lam-Ang stood before the Igorots' towering gate. His heart beat steady, filled with the memory of his father, Don Juan.
-lam-ang: This is it. No more waiting. For Father... for my family [color=red](pamilya.)[/color]
+lam-ang: This is it. No more waiting. For Father... for my [color=yellow] family[/color]  [color=red](pamilya.)[/color]
 do GameStatus.add_learned_word("family")
 
 He pushed open the heavy gate with a loud creak. Inside, dozens of Igorot warriors turned to face him, weapons drawn, their eyes burning with anger[color=red](rurod)[/color].

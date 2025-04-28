@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bhkjvh4soj304"]
 
 [ext_resource type="Script" uid="uid://be3hg88wjl5bd" path="res://objects/items/item.gd" id="1_5nglk"]
-[ext_resource type="Resource" uid="uid://uu1osav4cfef" path="res://objects/items/item_3.tres" id="2_pc0t8"]
+[ext_resource type="Resource" uid="uid://uu1osav4cfef" path="res://objects/items/axe.tres" id="2_pc0t8"]
 [ext_resource type="Script" uid="uid://dx2ifla8vp7k7" path="res://objects/items/collect_component.gd" id="3_bkrw2"]
 [ext_resource type="Script" uid="uid://c33vihy42e8ll" path="res://objects/items/liquor_dialogue.gd" id="4_cbrcl"]
 [ext_resource type="Texture2D" uid="uid://crd6aksmhmavw" path="res://assets/item assets/axe.png" id="5_spdbj"]
@@ -26,7 +26,7 @@ item = NodePath("..")
 metadata/_custom_type_script = "uid://c33vihy42e8ll"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.09, 0.09)
 texture = ExtResource("5_spdbj")
 
 [node name="Area2D" type="Area2D" parent="."]

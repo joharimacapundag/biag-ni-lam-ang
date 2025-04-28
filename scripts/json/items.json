@@ -127,19 +127,19 @@
   },
 "axe": {
 	"name": "Axe",
-	"ilocano_word": "Bauang",
+	"ilocano_word": "Wasay",
 	"action_type": "item_action",
 	"type": "weapon",
 	"stack_size": 1,
 	"max_stack_size": 1,
-	"image": "res://assets/sprites/items/axe.png",
-	"size": "Vector2i(2, 1)",
+	"image": "res://assets/item assets/axe.png",
+	"size": "Vector2i(1, 1)",
 	"modifiers": {
 	  "source": {
 		"add": { "strength": 10 }
 	  }
 	},
-	"description": "Axe (Ilocano: Bauang) grants +10 strength."
+	"description": "Axe (Ilocano: Wasay) grants +10 strength."
   },
   "shield": {
 	"name": "Shield",
@@ -388,8 +388,8 @@
 	"type": "weapon",
 	"stack_size": 1,
 	"max_stack_size": 1,
-	"image": "res://assets/sprites/items/bow_oak.png",
-	"size": "Vector2i(2, 1)",
+	"image": "res://assets/item assets/bow.png",
+	"size": "Vector2i(1, 1)",
 	"modifiers": {
 	  "source": {
 		"add": { "strength": 6 }

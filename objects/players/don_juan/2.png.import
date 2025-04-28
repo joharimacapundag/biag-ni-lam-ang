@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hysw4o0yjndp"
-path="res://.godot/imported/pana.png-593342e4791253d203f6a2c94f6dfe20.ctex"
+uid="uid://ci5a7dkscg60"
+path="res://.godot/imported/2.png-5079944c96fa04292170cda0b9a9776f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/item assets/pana.png"
-dest_files=["res://.godot/imported/pana.png-593342e4791253d203f6a2c94f6dfe20.ctex"]
+source_file="res://objects/players/don_juan/2.png"
+dest_files=["res://.godot/imported/2.png-5079944c96fa04292170cda0b9a9776f.ctex"]
 
 [params]
 

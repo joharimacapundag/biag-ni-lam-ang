@@ -80,7 +80,7 @@ save/encryption_on_exports_only=true
 text/autopauses={}
 layout/style_list=["res://dialogic/styles/bubble_style.tres"]
 layout/default_style="res://dialogic/styles/bubble_style.tres"
-glossary/default_case_sensitive=true
+variables={}
 
 [display]
 

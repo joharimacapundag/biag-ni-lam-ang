@@ -1,7 +1,7 @@
 extends Node2D
 
 func _ready() -> void:
-	Dialogic.start("act_1_scene_1_a")
+	Dialogic.start("act_2_ines")
 	await Dialogic.timeline_ended
 	GameEvents.travel_started.emit()
 	await get_tree().create_timer(7).timeout

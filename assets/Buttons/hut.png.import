@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vypv0gcvd63g"
-path="res://.godot/imported/liquor.png-f37f5c7664814de987ece0cb7a391dac.ctex"
+uid="uid://gfv7eepvya44"
+path="res://.godot/imported/hut.png-91279f38d57648271f4f9be88301a577.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/items/liquor.png"
-dest_files=["res://.godot/imported/liquor.png-f37f5c7664814de987ece0cb7a391dac.ctex"]
+source_file="res://assets/Buttons/hut.png"
+dest_files=["res://.godot/imported/hut.png-91279f38d57648271f4f9be88301a577.ctex"]
 
 [params]
 

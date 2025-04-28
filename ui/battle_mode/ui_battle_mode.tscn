@@ -18,7 +18,18 @@ script = ExtResource("1_6jsm6")
 [node name="EnemyStatusContainer" parent="." instance=ExtResource("1_7axba")]
 unique_name_in_owner = true
 layout_mode = 1
-offset_bottom = 70.0
+offset_left = 755.0
+offset_top = -5.0
+offset_right = 755.0
+offset_bottom = 65.0
+
+[node name="UIBattleTravelerStatus" parent="." instance=ExtResource("1_5qp0b")]
+unique_name_in_owner = true
+layout_mode = 2
+offset_left = 4.0
+offset_top = 7.0
+offset_right = 469.0
+offset_bottom = 88.0
 
 [node name="TravelerStatusContainer" type="VBoxContainer" parent="."]
 unique_name_in_owner = true
@@ -35,10 +46,6 @@ grow_horizontal = 2
 grow_vertical = 0
 
 [node name="UITargets" parent="TravelerStatusContainer" instance=ExtResource("3_2ratr")]
-unique_name_in_owner = true
-layout_mode = 2
-
-[node name="UIBattleTravelerStatus" parent="TravelerStatusContainer" instance=ExtResource("1_5qp0b")]
 unique_name_in_owner = true
 layout_mode = 2
 

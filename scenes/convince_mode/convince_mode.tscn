@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://bf5yxe5y1efbm" path="res://scenes/convince_mode/convince_mode.gd" id="1_8yhu6"]
 [ext_resource type="PackedScene" uid="uid://r31213gu5yts" path="res://ui/convince_mode/ui_convince_mode.tscn" id="1_770m8"]
-[ext_resource type="Texture2D" uid="uid://cr8dsr8p4vls0" path="res://assets/battlegrounds/battle_grass.png" id="2_mx7jn"]
 [ext_resource type="Script" uid="uid://q52waic7afb7" path="res://scenes/convince_mode/convince_end_component.gd" id="2_r2ely"]
+[ext_resource type="Texture2D" uid="uid://dys1la1ue44e7" path="res://assets/Buttons/convince goood (1).png" id="3_r2ely"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_8yhu6"]
 
@@ -16,8 +16,9 @@ time_duration = 120
 script = ExtResource("2_r2ely")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(576, 324)
-texture = ExtResource("2_mx7jn")
+position = Vector2(586, 310)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("3_r2ely")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

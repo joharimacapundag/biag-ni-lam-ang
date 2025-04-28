@@ -1,24 +1,26 @@
 [gd_scene load_steps=5 format=3 uid="uid://b1fr2o3dyjpgs"]
 
 [ext_resource type="Script" uid="uid://pylytxj6ko73" path="res://scenes/village_stops/village_2.gd" id="1_1ho4g"]
-[ext_resource type="Texture2D" uid="uid://dxogi4grp7ed3" path="res://assets/backgrounds/village/house1.png" id="1_gutli"]
+[ext_resource type="Texture2D" uid="uid://rc6bf2nhhgef" path="res://assets/Buttons/Huty.png" id="2_1ho4g"]
 [ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="2_6ouo0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gutli"]
-size = Vector2(725, 344)
+size = Vector2(276.677, 272)
 
 [node name="Village2" type="Node2D"]
 script = ExtResource("1_1ho4g")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-3, -166)
-texture = ExtResource("1_gutli")
+position = Vector2(-5, -134)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_1ho4g")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(2.5, -134)
+position = Vector2(-3, -134)
+scale = Vector2(1.04093, 1.00893)
 shape = SubResource("RectangleShape2D_gutli")
 
 [node name="DayAndNightComponent" type="Node" parent="." node_paths=PackedStringArray("node")]

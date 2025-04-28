@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://r31213gu5yts"]
+[gd_scene load_steps=3 format=3 uid="uid://r31213gu5yts"]
 
 [ext_resource type="Script" uid="uid://djdi5hov83qq1" path="res://ui/convince_mode/ui_convince_mode.gd" id="1_fcyix"]
+[ext_resource type="StyleBox" uid="uid://clt0efbq468v0" path="res://Timer.tres" id="2_elp16"]
 
 [node name="UiConvinceMode" type="Control"]
 layout_mode = 3
@@ -35,6 +36,7 @@ uppercase = true
 [node name="TimeProgressBar" type="ProgressBar" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_styles/background = ExtResource("2_elp16")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2

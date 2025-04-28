@@ -1,49 +1,33 @@
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/nipa_hut_background.jpg" fade="0.0"]
-Morning light filters into Namongan’s Cottage. Lam-Ang paces anxiously near the doorway as his mother carries out her morning chores.
+[background arg="res://assets/backgrounds/Lam-ang and Ines.png" fade="0.0"]
 
-lam-ang: Mother, you always say Father is alive, but my heart tells me otherwise. I must find the truth and seek Don Juan.
+[i]The early morning sun filters softly through the nipa roof.
+Namongan sits by the doorway, weaving a basket, while Lam-Ang stands by the window, restless.[/i]
+lam-ang: Mother, I can no longer silence the questions in heart.
+namongan: My son, why such heavy thoughts so early?
+lam-ang: I dream of Father, every night...
+lam-ang: His voice, calling from beyond the mountains. I must go, Mother. I must find Don Juan — wherever he may be.
 
-namongan: Lam-Ang, listen carefully. Remember this\: [color=red]"saan"[/color].
-
-lam-ang (curious): What does [color=red]"saan"[/color] mean, Mother?
-do GameStatus.add_learned_word("don’t")
-
-namongan: It means “don’t.” Always be cautious and think before you act.
-
-lam-ang: I understand. And what about [color=red]"mo"[/color]? You often use it when you speak to me.
-
-namongan: [color=red]"mo"[/color] means “you.” It reminds me to speak directly to you, my son.
-do GameStatus.add_learned_word("you")
-
-lam-ang: But if someone dares to stand in our way, should I [color=red]"diswan"[/color] them?
-
-namongan: No, [color=red]"diswan"[/color] means “hit.” Use strength only when truly necessary, never recklessly.
-do GameStatus.add_learned_word("hit")
-
-lam-ang: And that bird, the [color=red]"manok"[/color]? Why mention it?
-
-namongan: [color=red]"manok"[/color] means “rooster.” It is a simple reminder that even the smallest among us has its role. Notice how the [color=red]"manok"[/color] greets the dawn with purpose.
-do GameStatus.add_learned_word("rooster")
-
-lam-ang: I see. Now, what about [color=red]"ta"[/color]? I’ve heard you use it in your explanations.
-
-namongan: [color=red]"ta"[/color] means “because.” It helps us give reasons for our actions. Everything happens [color=red]"ta"[/color] there is a purpose.
-do GameStatus.add_learned_word("because")
-
-lam-ang: And [color=red]"nasirib"[/color] what does that mean, Mother?
-
-namongan: [color=red]"nasirib"[/color] means “wise.” Always be [color=red]"nasirib"[/color] as you seek answers. Wisdom will guide you better than anger or haste.
+[i]Namongan sets aside her basket, her hands trembling slightly.[/i]
+namongan: Ay, anakko. The world beyond Nalbuan is filled with evil[color=red](dakes.)[/color]
+do GameStatus.add_learned_word("evil")
+lam-ang: I am no longer a boy, mother I have the strength and courage needed.
+namongan: Strength is not enough, Lam-Ang. You must also be wise [color=red](nasirib.)[/color] Wise in heart and mind.
 do GameStatus.add_learned_word("wise")
+lam-ang: I will be. You have taught me well.
+lam-ang: But if I stay here doing nothing, I fear my sorrow [color=red](ladingit)[/color] will only grow.
+do GameStatus.add_learned_word("sorrow")
 
-lam-ang: Mother, I can no longer abide these tales. You keep insisting that Father is alive and well, yet my heart feels betrayed by these stories. Are you hiding something from me?
+[i]Namongan sighs, torn between fear and pride.[/i]
+namongan: If you must go, take with you my blessing — our hopes and prayers.
+lam-ang: I will carry your blessing in my soul, Mother.
 
-namongan: My son, I speak only what my heart believes. I cling to hope for your sake, but I understand your suspicions.
+[i]She wraps a simple amulet around his wrist, a token of protection.[/i]
+namongan: Seek your father, anakko. But remember, no matter how far you travel, you will always have a home [color=red](pagtaengan)[/color] to return to.
+do GameStatus.add_learned_word("home")
+lam-ang: Thank you, ina. I promise... I will return.
+namongan: Be careful always my son, don't [color=red](haan)[/color] be so rash.
+do GameStatus.add_learned_word("don't")
+lam-ang: With Father by my side, or with the truth carried in my hands.
 
-lam-ang: I must know the truth, even if it shatters my world. I will journey to find Don Juan, to discover whether Father truly walks among the living or if these words were but a fragile lie.
-
-namongan: Please, be [color=red]"nasirib"[/color] in your quest. The path ahead is fraught with peril, and the truth may be as bitter as it is hidden. Promise me you will be cautious.
-
-lam-ang: I promise, Mother. With the wisdom you have given me and the words that guide my heart, I will find Don Juan and unearth the fate of my father no matter how painful the truth may be.
-
-[i]Lam-Ang turns and walks away, his steps firm as he embarks on his quest. The morning light mingles with the weight of his determination and the echo of his mother's words.[/i]
+[i]He embraces her tightly, then steps into the morning light — his heart full of courage, sorrow, and hope for the unknown journey ahead.[/i]

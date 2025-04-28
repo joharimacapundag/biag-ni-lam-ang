@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://ba5bqxca71sot"]
+[gd_scene load_steps=7 format=3 uid="uid://ba5bqxca71sot"]
 
 [ext_resource type="Texture2D" uid="uid://caj171hyxs3da" path="res://assets/backgrounds/summer 1/1.png" id="1_7abpb"]
 [ext_resource type="Texture2D" uid="uid://cpw48mihctwa" path="res://assets/backgrounds/summer 1/2.png" id="2_hijjt"]
 [ext_resource type="Texture2D" uid="uid://dfhfs6docufke" path="res://assets/backgrounds/summer 1/3.png" id="3_8iqyt"]
-[ext_resource type="Texture2D" uid="uid://c5w3kvhnr34v7" path="res://assets/backgrounds/summer 1/4.png" id="4_lgnde"]
+[ext_resource type="Texture2D" uid="uid://bg1bgoa53k843" path="res://assets/Buttons/tree-removebg-preview.png" id="4_lhnec"]
+[ext_resource type="Texture2D" uid="uid://c33a87op2dv2v" path="res://assets/Buttons/huts.png" id="4_sykq1"]
+[ext_resource type="Texture2D" uid="uid://btbfgblih6arf" path="res://assets/Buttons/rocks.png" id="5_crw7j"]
 
 [node name="Background1" type="Node2D"]
 
@@ -28,9 +30,36 @@ repeat_times = 2
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D3"]
 texture = ExtResource("3_8iqyt")
 
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3/Sprite2D"]
+position = Vector2(100, -41)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_lhnec")
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3/Sprite2D/Sprite2D"]
+position = Vector2(377.5, 112.5)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_lhnec")
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3/Sprite2D/Sprite2D/Sprite2D"]
+position = Vector2(406.25, 37.5)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("4_lhnec")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D3"]
+position = Vector2(390, 27)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_crw7j")
+
 [node name="Parallax2D4" type="Parallax2D" parent="."]
 repeat_size = Vector2(576, 0)
 repeat_times = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D4"]
-texture = ExtResource("4_lgnde")
+position = Vector2(25, 41)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_sykq1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4/Sprite2D"]
+position = Vector2(496.667, -10)
+scale = Vector2(1.10612, 1.05066)
+texture = ExtResource("4_sykq1")

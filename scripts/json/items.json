@@ -6,7 +6,7 @@
 	"type": "consumable",
 	"stack_size": 1,
 	"max_stack_size": 10,
-	"image": "uid://b565lukh2rw37",
+	"image": "uid://3p068jtsf83x",
 	"size": "Vector2i(1, 1)",
 	"modifiers": {
 	  "target": {
@@ -158,20 +158,20 @@
 	"description": "Shield (Ilocano: Salungso) adds +12 defense."
   },
   "liquor": {
-	"name": "Liquor",
-	"ilocano_word": "Arak",
+	"name": "Medicinal Herb",
+	"ilocano_word": "Agas nga ruot/mula",
 	"action_type": "item_action",
 	"type": "consumable",
 	"stack_size": 1,
 	"max_stack_size": 10,
-	"image": "uid://vypv0gcvd63g",
+	"image": "uid://cplf280rjbove",
 	"size": "Vector2i(1, 1)",
 	"modifiers": {
 	  "target": {
 		"add": { "health": 10 }
 	  }
 	},
-	"description": "Liquor (Ilocano: Arak) restores +10 health."
+	"description": "Medicinal Herb (Ilocano: Agas nga ruot/mula) restores +10 health."
   },
   "earrings": {
 	"name": "Earrings",
@@ -228,7 +228,7 @@
 	"type": "clothing",
 	"stack_size": 1,
 	"max_stack_size": 1,
-	"image": "res://assets/sprites/items/clothing.png",
+	"image": "uid://dhqcif6sk37su",
 	"size": "Vector2i(1, 1)",
 	"modifiers": {
 	  "source": {
@@ -244,7 +244,7 @@
 	"type": "weapon",
 	"stack_size": 1,
 	"max_stack_size": 1,
-	"image": "res://assets/sprites/items/knife_iron.png",
+	"image": "uid://b4eak6kw72mqf",
 	"size": "Vector2i(2, 1)",
 	"modifiers": {
 	  "source": {

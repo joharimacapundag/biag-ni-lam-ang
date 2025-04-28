@@ -1,7 +1,7 @@
 {
   "challenge": {
-	"name": "To challenge",
-	"ilocano_word": "Agsangbay",
+	"name": "To chop",
+	"ilocano_word": "Tagbaten",
 	"action_type": "combat_action",
 	"modifiers": {
 	  "source": {
@@ -27,7 +27,7 @@
   },
   "go_away": {
 	"name": "To leave, to go away",
-	"ilocano_word": "Agpanaw",
+	"ilocano_word": "Pumanaw",
 	"action_type": "support_action",
 	"modifiers": {
 	  "source": {
@@ -39,8 +39,8 @@
 	}
   },
   "live": {
-	"name": "To live",
-	"ilocano_word": "Agbiag",
+	"name": "To Heal",
+	"ilocano_word": "Agasan",
 	"action_type": "support_action",
 	"modifiers": {
 	  "source": {
@@ -52,8 +52,8 @@
 	}
   },
   "fight": {
-	"name": "To fight",
-	"ilocano_word": "Agtutudo",
+	"name": "To hit with a sword",
+	"ilocano_word": "Espadaen",
 	"action_type": "combat_action",
 	"modifiers": {
 	  "source": {
@@ -131,7 +131,7 @@
   },
   "scream": {
 	"name": "To shout or to scream",
-	"ilocano_word": "Aglaklaka",
+	"ilocano_word": "Aglaaw",
 	"action_type": "combat_action",
 	"modifiers": {
 	  "source": {
@@ -182,8 +182,8 @@
 	}
   },
   "defeat": {
-	"name": "To defeat",
-	"ilocano_word": "Agpukaw",
+	"name": "Defeated",
+	"ilocano_word": "Naabak",
 	"action_type": "combat_action",
 	"modifiers": {
 	  "source": {
@@ -209,7 +209,7 @@
   },
   "help": {
 	"name": "To help",
-	"ilocano_word": "Aginana",
+	"ilocano_word": "Tumulong",
 	"action_type": "support_action",
 	"modifiers": {
 	  "source": {
@@ -222,7 +222,7 @@
   },
   "run_away": {
 	"name": "To run away",
-	"ilocano_word": "Agsalimetmet",
+	"ilocano_word": "Agtaray",
 	"action_type": "support_action",
 	"modifiers": {
 	  "source": {

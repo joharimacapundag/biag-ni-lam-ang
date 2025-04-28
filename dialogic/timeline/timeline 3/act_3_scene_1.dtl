@@ -1,0 +1,7 @@
+[i]Journeying deeper into the mountains, Lam-Ang and his companions — the faithful rooster and the brave dog — hear the roar of the great river.[/i]
+
+[i]There, from the waters of Amburayan, rises Berkakan — the enormous fish that had long haunted tales of old.[/i]
+[color=red]"Ay, adtoy isuna!"[/color] (Look, there it is!)
+do GameStatus.add_learned_word("look")
+A beast from the depths!
+For my father... for my people... this ends now.

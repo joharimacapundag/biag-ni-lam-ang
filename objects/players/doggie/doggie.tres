@@ -1,10 +1,14 @@
-[gd_resource type="Resource" script_class="TravelerResource" load_steps=2 format=3 uid="uid://d1jau4lyxsiui"]
+[gd_resource type="Resource" script_class="TravelerResource" load_steps=3 format=3 uid="uid://bmgs24g1io0b0"]
 
-[ext_resource type="Script" path="res://scripts/resources/traveler_resource.gd" id="1_adnv6"]
+[ext_resource type="Texture2D" uid="uid://d0jph7bkb53v7" path="res://assets/sprites/travelers/lam-ang/doggie profile.jpeg" id="1_6rnqn"]
+[ext_resource type="Script" uid="uid://ddmsusn3b5rko" path="res://scripts/resources/traveler_resource.gd" id="1_adnv6"]
 
 [resource]
 script = ExtResource("1_adnv6")
 id = "doggie"
 name = "Doggie"
-description = ""
+profile = ExtResource("1_6rnqn")
+description = "Doggie is a loyal, sharp-eyed stray with a mysterious past and a heart full of gratitude. Rescued from captivity, he joins Lam-Ang’s journey not just as a companion, but as a steadfast guardian. Though small in stature, Doggie's instincts, courage, and unwavering loyalty make him an invaluable ally on the long and dangerous road ahead.
+
+"
 actions = Array[String](["fight", "cry"])

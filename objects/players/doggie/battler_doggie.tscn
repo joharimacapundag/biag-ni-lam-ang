@@ -1,6 +1,6 @@
-[gd_scene load_steps=41 format=3 uid="uid://2bigrjgf5crm"]
+[gd_scene load_steps=40 format=3 uid="uid://2bigrjgf5crm"]
 
-[ext_resource type="Script" uid="uid://ddmsusn3b5rko" path="res://scripts/resources/traveler_resource.gd" id="1_eepj2"]
+[ext_resource type="Resource" uid="uid://bmgs24g1io0b0" path="res://objects/players/doggie/doggie.tres" id="1_7vb4t"]
 [ext_resource type="Texture2D" uid="uid://cpd2pvdo6hfa8" path="res://objects/players/doggie/Attack_2.png" id="2_7vb4t"]
 [ext_resource type="Texture2D" uid="uid://cbhuah5ffejf0" path="res://objects/players/doggie/Dead.png" id="3_313l8"]
 [ext_resource type="Texture2D" uid="uid://cmg3hj7qxmnpm" path="res://objects/players/doggie/Idle.png" id="4_f00in"]
@@ -72,13 +72,6 @@ func die() -> void:
 	died.emit()
 	#process_mode = ProcessMode.PROCESS_MODE_DISABLED
 "
-
-[sub_resource type="Resource" id="Resource_q8xg4"]
-script = ExtResource("1_eepj2")
-id = "doggie"
-name = "Doggie"
-description = ""
-actions = Array[String](["fight", "cry"])
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l7dfk"]
 atlas = ExtResource("2_7vb4t")
@@ -269,7 +262,7 @@ height = 48.0
 
 [node name="Doggie" type="Node2D" groups=["player"]]
 script = SubResource("GDScript_5kmyg")
-traveler_resource = SubResource("Resource_q8xg4")
+traveler_resource = ExtResource("1_7vb4t")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -308,10 +301,11 @@ script = ExtResource("12_duxg1")
 traveler = NodePath("..")
 stats_component = NodePath("../StatsComponent")
 
-[node name="AttackComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d")]
+[node name="AttackComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d", "action_component")]
 script = ExtResource("13_2d8dk")
 traveler = NodePath("..")
 animated_sprite_2d = NodePath("../AnimatedSprite2D")
+action_component = NodePath("../ActionComponent")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_mask = 6

@@ -24,4 +24,3 @@ lam-ang: Come, friends. There is still a long journey ahead... and new battles t
 
 [i]The dog barked once, sharply, and trotted after him. Together, the unlikely trio disappeared into the trees, leaving the battlefield — and the pain of revenge — behind them.[/i]
 
-do GameEvents.join_ally("doggie")

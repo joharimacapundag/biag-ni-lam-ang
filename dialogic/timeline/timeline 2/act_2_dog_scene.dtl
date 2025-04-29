@@ -1,3 +1,4 @@
+[background arg="res://assets/item assets/dogy.png" fade="0.0"]
 [i]The battlefield had fallen silent. Lam-Ang wiped his bloodied hands against his torn cloak, his heart pounding in his ears.[/i]
 lam-ang: It is done. Father's honor is avenged. But why does my  [color=yellow]heart[/color] [color=red](puso)[/color] still ache?
 do GameStatus.add_learned_word("heart")

@@ -10,12 +10,12 @@
 script = ExtResource("1_bhi4m")
 
 [node name="Act1A" parent="." instance=ExtResource("1_unyhs")]
-modulate = Color(0.112542, 0.130397, 0.320313, 1)
+modulate = Color(0.218554, 0.349782, 0.748898, 1)
 position = Vector2(576, 324)
 
 [node name="DonJuan" parent="." instance=ExtResource("2_750pq")]
 unique_name_in_owner = true
-modulate = Color(0.113725, 0.129412, 0.321569, 1)
+modulate = Color(0.219608, 0.34902, 0.74902, 1)
 position = Vector2(361, 424)
 
 [node name="Camera2D" type="Camera2D" parent="."]

@@ -1,14 +1,13 @@
 [i]The battlefield had fallen silent. Lam-Ang wiped his bloodied hands against his torn cloak, his heart pounding in his ears.[/i]
-lam-ang: It is done. Father's honor is avenged. But why does my heart [color=red](puso)[/color] still ache?
+lam-ang: It is done. Father's honor is avenged. But why does my  [color=yellow]heart[/color] [color=red](puso)[/color] still ache?
 do GameStatus.add_learned_word("heart")
 
 [i]A soft whimper broke through the silence. Lam-Ang turned sharply toward the sound.[/i]
 lam-ang: Who's there?
 
-[i]Among the wreckage, tied tightly to a broken post, was a small, trembling dog [color=red](aso.)[/color]
+[i]Among the wreckage, tied tightly to a broken post, was a small, trembling dog.
 Its eyes, wide with fear, met his own.[/i]
-do GameStatus.add_learned_word("dog")
-lam-ang: Poor [color=red]"gagayem,"[/color] they left you here to suffer.
+lam-ang: Poor [color=yellow]friend[/color] [color=red](gayyem),[/color] they left you here to suffer.
 do GameStatus.add_learned_word("friend")
 
 lam-ang: [i]He knelt and inspected the thick knots binding the dog.[/i]
@@ -16,12 +15,10 @@ lam-ang: Stay still. I won't hurt you.
 
 [i]With a swift motion of his dagger, he sliced the rope.
 The dog stumbled forward, licking his hand in gratitude.[/i]
-lam-ang: You have a warrior's heart [color=red](pusok,)[/color] little one.
-do GameStatus.add_learned_word("heart")
+lam-ang: You have a warrior's heart  little one.
 
 [i]The rooster, perched nearby, clucked in approval.[/i]
-lam-ang: Two companions now — a rooster [color=red](kawitan)[/color] and dog [color=red](aso.)[/color] Fate must truly be guiding me.
-do GameStatus.add_learned_word("rooster")
-lam-ang: Come, friends[color=red](gagayem.)[/color] There is still a long journey ahead... and new battles to face.
+lam-ang: Two companions now — a rooster and dog. Fate must truly be guiding me.
+lam-ang: Come, friends. There is still a long journey ahead... and new battles to face.
 
 [i]The dog barked once, sharply, and trotted after him. Together, the unlikely trio disappeared into the trees, leaving the battlefield — and the pain of revenge — behind them.[/i]

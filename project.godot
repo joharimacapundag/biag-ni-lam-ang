@@ -45,7 +45,7 @@ directories/dtl_directory={
 "act_1_scene_2_a": "res://dialogic/timeline/act_1_scene_2_a.dtl",
 "act_2_dog_scene": "res://dialogic/timeline/timeline 2/act_2_dog_scene.dtl",
 "act_2_ines": "res://dialogic/timeline/timeline 2/act_2_ines.dtl",
-"act_2_scene_1_a_bossigorot": "res://dialogic/timeline/timeline 2/act_2_scene_1_a_bossigorot.dtl",
+"act_2_scene_1_a": "res://dialogic/timeline/timeline 2/act_2_scene_1_a_bossigorot.dtl",
 "act_3_scene_1": "res://dialogic/timeline/timeline 3/act_3_scene_1.dtl",
 "act_3_scene_2_inside_berrakan": "res://dialogic/timeline/timeline 3/act_3_scene_2_inside_berrakan.dtl",
 "axe_dialogue": "res://dialogic/timeline/axe_dialogue.dtl",

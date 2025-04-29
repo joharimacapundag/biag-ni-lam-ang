@@ -1,24 +1,16 @@
-[i]Inside the belly of the beast, Lam-Ang finds darkness and despair.
-Yet even here, he does not surrender.
-He draws his dagger, determined to fight even to his last breath.[/i]
+[background arg="res://assets/item assets/inside berakkan.png" fade="0.0"]
+narrator: [i]Inside the belly of the beast, Lam-Ang finds darkness and despair.
+narrator: Yet even here, he does not surrender.
+narrator: He draws his dagger, determined to fight even to his last breath.[/i]
+lam-ang: I will not give up!
 
-Lam-Ang (resolute):
-I will not give up!
+narrator: [i]He stabs the heart of the monster from within.
+narrator: Berkakan thrashes and roars, and at last — with a thunderous collapse — dies upon the river.[/i]
 
-[i]He stabs the heart of the monster from within.
-Berkakan thrashes and roars, and at last — with a thunderous collapse — dies upon the river.[/i]
-
-[i]On the riverbanks, the rooster and dog cry out for their master.
-The villagers arrive, mourning the brave young man who gave his life for them.[/i]
-
-Villager (weeping):
-Lam-Ang... you are gone, but your [color=red]"biag"[/color] (life) lives on in our hearts.
+narrator: [i]On the riverbanks, the rooster and dog cry out for their master.
+narrator: The villagers arrive, mourning the brave young man who gave his life for them.[/i]
+narrator: Lam-Ang... you are gone, but your [color=yellow]life[/color] [color=red](biag)[/color] on in our hearts.
 do GameStatus.add_learned_word("life")
 
-[i]Ines Kannoyan, learning of his fate, weeps by the river for many days.
-But Lam-Ang’s spirit lives on —
-in every rooster’s crow,
-in every river’s song,
-in every heart that dreams of courage and sacrifice.[/i]
-
-
+narrator: [i]Ines Kannoyan, learning of his fate, weeps by the river for many days.
+narrator: But Lam-Ang’s spirit lives on — in every rooster’s crow, in every river’s song,in every heart that dreams of courage and sacrifice.[/i]

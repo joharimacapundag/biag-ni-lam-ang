@@ -1,6 +1,7 @@
 [wait time="1.0"]
 narrator: Morning light filters through tall trees. Lam-Ang ambles along a quiet path when he suddenly hears a distressed cry.
 lam-ang: What!?
+<<<<<<< Updated upstream
 narrator: He listens as the cry repeats—a mix of urgency and fear. Following the sound, he discovers a small rooster perched on a low branch, its feathers slightly ruffled. There were hunters trying to  [color=yellow]hit[/color] [color=red](diswan) [/color] the rooster.
 do GameStatus.add_learned_word("hit")
 rooster: [color=yellow]Help me! Help me![/color] [color=red](Isalakan dak! Isalakan dak!) [/color]A hunter… he’s after me!
@@ -9,6 +10,13 @@ narrator: Lam-Ang frowns, trying to recall the few Ilocano words his mother taug
 lam-ang: [i]‘Isalakan’ means ‘help,’ doesn’t it?[/i]
 narrator: Before Lam-Ang can ask further, a gruff voice interrupts from behind a clump of bushes. A HUNTER steps forward, eyes fixed on the  [color=yellow]rooster[/color] [color=red](kawitan) [/color].
 do GameStatus.add_learned_word("rooster")
+=======
+He listens as the cry repeats—a mix of urgency and fear. Following the sound, he discovers a small rooster perched on a low branch, its feathers slightly ruffled.
+rooster: Tulungan! Tulungan!  dak! A hunter… he’s after me!
+Lam-Ang frowns, trying to recall the few Ilocano words his mother taught him.
+lam-ang: [i]‘Tulungan’ means ‘help,’ doesn’t it? But... a hunter? What does that mean?[/i]
+Before Lam-Ang can ask further, a gruff voice interrupts from behind a clump of bushes. A HUNTER steps forward, eyes fixed on the rooster.
+>>>>>>> Stashed changes
 hunter: Hey! Easy there, little bird. I’m not out here for mischief I’m hunting for food. I need a rooster to feed my family.
 narrator: The rooster flutters higher, its eyes wide with terror. Lam-Ang steps between the hunter and the bird.
 lam-ang: Wait a moment—this little one is clearly frightened. I don’t think he’s meant for your dinner tonight.”

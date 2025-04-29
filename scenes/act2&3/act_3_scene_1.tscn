@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://jbxdbbvx51tl"]
+[gd_scene load_steps=7 format=3 uid="uid://jbxdbbvx51tl"]
 
 [ext_resource type="Script" uid="uid://cjb1xi6fpot50" path="res://scenes/act_1_scene_1.gd" id="1_bvs3r"]
 [ext_resource type="AudioStream" uid="uid://c71117743k8rx" path="res://assets/background_musics/2025-01-21_-_News_Chill_-_www.FesliyanStudios.com.mp3" id="2_wyd03"]
+[ext_resource type="Texture2D" uid="uid://c0dl44xv4p66q" path="res://assets/battlegrounds/ines bg/1.png" id="3_t7x0x"]
+[ext_resource type="Texture2D" uid="uid://83nov41ppqyc" path="res://assets/backgrounds/summer5/1.png" id="4_5anhr"]
+[ext_resource type="Texture2D" uid="uid://dirv5vlbc644w" path="res://assets/backgrounds/summer5/2.png" id="5_mfwwo"]
+[ext_resource type="Texture2D" uid="uid://cwcew8lpr4sng" path="res://assets/battlegrounds/act 2.2/3.png" id="6_3jqfa"]
 
 [node name="Act1Scene1" type="Node2D"]
 script = ExtResource("1_bvs3r")
@@ -10,3 +14,31 @@ script = ExtResource("1_bvs3r")
 unique_name_in_owner = true
 stream = ExtResource("2_wyd03")
 autoplay = true
+
+[node name="Parallax2D2" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
+position = Vector2(577, 142)
+scale = Vector2(1.98611, 3.0679)
+texture = ExtResource("3_t7x0x")
+
+[node name="Parallax2D3" type="Parallax2D" parent="Parallax2D2"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2/Parallax2D3"]
+position = Vector2(581, 141)
+scale = Vector2(2, 1.05556)
+texture = ExtResource("4_5anhr")
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(578.75, 163)
+scale = Vector2(2.00434, 1.37654)
+texture = ExtResource("5_mfwwo")
+
+[node name="Parallax2D3" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3"]
+position = Vector2(573.5, 495)
+scale = Vector2(1.99132, 1)
+texture = ExtResource("6_3jqfa")

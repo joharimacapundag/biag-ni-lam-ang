@@ -1,0 +1,16 @@
+{
+	"act_1":{
+		
+	},
+	"act_2":{
+		"talk_pressed":{
+			"ines_kannoyan": {
+				"scene_path": "uid://bwsjqgoxsewvt"
+			}
+		},
+		"shop_pressed":{}
+	},
+	"act_3":{
+		
+	}
+}

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cb6ltev2kv43p" path="res://assets/backgrounds/village/village_background.png" id="2_qmt7w"]
 [ext_resource type="PackedScene" uid="uid://cbybguc125en3" path="res://scenes/ui_village_stop.tscn" id="3_f46pm"]
 
-[node name="VillageStop" type="Node2D"]
+[node name="\\" type="Node2D"]
 script = ExtResource("1_m23sp")
 
 [node name="Camera2D" type="Camera2D" parent="."]

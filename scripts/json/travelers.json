@@ -47,5 +47,20 @@
 		"max_hunger": 30,
 		"max_speed": 40,
 	},
-	
+	"igorot_save_dog": {
+		"max_health": 60,
+		"max_stamina": 80,
+		"max_strength": 10,
+		"max_defense": 20,
+		"max_hunger": 30,
+		"max_speed": 40,
+	},
+	"berkakan": {
+		"max_health": 100,
+		"max_stamina": 80,
+		"max_strength": 10,
+		"max_defense": 20,
+		"max_hunger": 30,
+		"max_speed": 40,
+	},
 }

@@ -13,7 +13,7 @@ func _ready() -> void:
 func _on_area_entered(area_2d: Area2D)-> void:
 	if area_2d.get_parent().is_in_group("player"):
 		GameTime.pause()
-		Dialogic.start("level_1_easy")
+		Dialogic.start(enemy.dialogue_path)
 		await Dialogic.timeline_ended
 		GameEvents.battle_entered.emit()
 		GameSceneManager.push_scene("uid://dhbse3oxk3sqy")
@@ -26,7 +26,12 @@ func _on_area_entered(area_2d: Area2D)-> void:
 		
 func _on_battle_ended(winner)->void:
 	if winner == "player":
-		animated_sprite_2d.play("die")
 		if enemy:
+			if !enemy.after_end_dialogue_path.is_empty():
+				GameTime.pause()
+				Dialogic.start(enemy.after_end_dialogue_path)
+				await Dialogic.timeline_ended
+				
+			GameTime.unpause()	
 			enemy.queue_free()
-		
+			

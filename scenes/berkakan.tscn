@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://s8sksmptdljh"]
+
+[ext_resource type="Texture2D" uid="uid://ct0ate184dmom" path="res://berkakan_by_ognimdo2002_de8fh40-removebg-preview.png" id="1_lixvf"]
+[ext_resource type="Script" uid="uid://b25pepbmo61ub" path="res://scenes/berkakan.gd" id="1_q11bh"]
+[ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="3_sktt7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qysqx"]
+size = Vector2(510.121, 272)
+
+[node name="Berkakan" type="Node2D"]
+script = ExtResource("1_q11bh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lixvf")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-6.49999, -134)
+scale = Vector2(1.04093, 1.00893)
+shape = SubResource("RectangleShape2D_qysqx")
+
+[node name="DayAndNightComponent" type="Node" parent="." node_paths=PackedStringArray("node")]
+script = ExtResource("3_sktt7")
+node = NodePath("..")
+metadata/_custom_type_script = "uid://c0d8bw5d80jkx"
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

@@ -276,10 +276,8 @@ texture_filter = 1
 position = Vector2(-25, -26)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_2d1my")
-animation = &"run"
+animation = &"attack"
 autoplay = "idle"
-frame = 8
-frame_progress = 1.0
 
 [node name="StatsComponent" type="Node" parent="." node_paths=PackedStringArray("traveler")]
 script = ExtResource("6_r5iwt")

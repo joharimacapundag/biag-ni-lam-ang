@@ -87,7 +87,7 @@ func _on_ally_joined(id)->void:
 			%AllyJoinUI.show()
 	await get_tree().create_timer(3).timeout
 	%AllyJoinUI.hide()
-	GameTime.unpause()
+	
 	
 func _on_entity_spawned(entity)->void:
 	if entity is Traveler:

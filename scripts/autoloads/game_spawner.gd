@@ -6,7 +6,7 @@ var events: Dictionary = {
 	"act_1": [
 	{
 		"type": "fixed",
-		"trigger_mile": 2,
+		"trigger_mile": 4,
 		"scene_path": "uid://bfvqww24w78jl"
 	},
 	{
@@ -79,7 +79,7 @@ var events: Dictionary = {
 	},
 	],
 	"act_2": [
-		{
+	{
 		"type": "fixed",
 		"trigger_mile": 32,
 		"scene_path": "uid://bfvqww24w78jl"
@@ -92,8 +92,14 @@ var events: Dictionary = {
 	{
 		"type": "fixed",
 		"trigger_mile": 38,
-		"scene_path": "uid://bgb2hkrrd6he7"
+		"scene_path": "uid://deah3nkom2v8t"
 	},
+	{
+		"type": "fixed",
+		"trigger_mile": 42,
+		"scene_path": "uid://essqoqb07yl2"
+	},
+	
 	{
 		"type": "interval",
 		"min_miles": 40,
@@ -101,16 +107,29 @@ var events: Dictionary = {
 		"chance": 0.75,
 		"scene_path": "uid://bsrsqjsesh6nh"
 	},
-	
 	{
 		"type": "fixed",
 		"trigger_mile": 42,
-		"scene_path": "uid://b2mftyjk2o8ry"
+		"scene_path": "uid://i6817uwqlknq"
+	},
+	{
+		"type": "fixed",
+		"trigger_mile": 46,
+		"scene_path": "uid://bj10pnxdjqjo2"
+	},
+	{
+		"type": "fixed",
+		"trigger_mile": 48,
+		"scene_path": "uid://b2tycfqm731ir"
 	},
 	
 	],
 	"act_3": [
-			
+		{
+			"type": "fixed",
+			"trigger_mile": 55,
+			"scene_path": "uid://s8sksmptdljh"
+		}	
 	]
 }
 

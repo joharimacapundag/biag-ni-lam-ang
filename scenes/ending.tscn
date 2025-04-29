@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://sarfqjo37arr"]
+
+[ext_resource type="Script" uid="uid://d2ienroffhie1" path="res://scenes/end_of_act_2.gd" id="1_mqjok"]
+
+[sub_resource type="Gradient" id="Gradient_wklx2"]
+colors = PackedColorArray(0, 0, 0, 1, 0.230315, 0.230315, 0.230315, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_n8if8"]
+gradient = SubResource("Gradient_wklx2")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wklx2"]
+bg_color = Color(0.470273, 0.0878275, 0.270014, 1)
+skew = Vector2(0.5, 0)
+expand_margin_left = 8.0
+expand_margin_top = 8.0
+expand_margin_right = 8.0
+expand_margin_bottom = 8.0
+
+[node name="EndOfAct1" type="Node2D"]
+script = ExtResource("1_mqjok")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_n8if8")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 72
+theme_override_styles/normal = SubResource("StyleBoxFlat_wklx2")
+text = "THE END"

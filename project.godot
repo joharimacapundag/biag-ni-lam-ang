@@ -63,6 +63,7 @@ directories/dtl_directory={
 "shield_dialogue": "res://dialogic/timeline/shield_dialogue.dtl",
 "spear_dialogue": "res://dialogic/timeline/spear_dialogue.dtl",
 "sword_dialogue": "res://dialogic/timeline/sword_dialogue.dtl",
+"timeline/tutorial": "res://dialogic/timeline/tutorial.dtl",
 "tutorial": "res://dialogic/tutorial and intro/tutorial.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"

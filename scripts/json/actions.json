@@ -1,7 +1,7 @@
 {
-  "challenge": {
-	"name": "To chop",
-	"ilocano_word": "Tagbaten",
+  "sorrow": {
+	"name": "Sorrow",
+	"ilocano_word": "Ladingit",
 	"action_type": "combat_action",
 	"modifiers": {
 	  "source": {
@@ -51,9 +51,9 @@
 	  }
 	}
   },
-  "fight": {
-	"name": "To hit with a sword",
-	"ilocano_word": "Espadaen",
+  "Home": {
+	"name": "Home",
+	"ilocano_word": "Pagtaengans",
 	"action_type": "combat_action",
 	"modifiers": {
 	  "source": {

@@ -53,7 +53,8 @@ directories/dtl_directory={
 "bow_dialogue": "res://dialogic/timeline/bow_dialogue.dtl",
 "coffee_dialogue": "res://dialogic/timeline/coffee_dialogue.dtl",
 "dagger_dialogue": "res://dialogic/timeline/dagger_dialogue.dtl",
-"introduction": "res://dialogic/timeline/introduction.dtl",
+"herb_dialogue": "res://dialogic/timeline/herb_dialogue.dtl",
+"introduction": "res://dialogic/tutorial and intro/introduction.dtl",
 "lam ang knowing about where igorot lives from igorot": "res://lam ang knowing about where igorot lives from igorot.dtl",
 "level_1_easy": "res://dialogic/timeline/level_1_easy.dtl",
 "liquor_dialogue": "res://dialogic/timeline/liquor_dialogue.dtl",
@@ -61,7 +62,8 @@ directories/dtl_directory={
 "rooster_thanks": "res://dialogic/timeline/rooster_thanks.dtl",
 "shield_dialogue": "res://dialogic/timeline/shield_dialogue.dtl",
 "spear_dialogue": "res://dialogic/timeline/spear_dialogue.dtl",
-"sword_dialogue": "res://dialogic/timeline/sword_dialogue.dtl"
+"sword_dialogue": "res://dialogic/timeline/sword_dialogue.dtl",
+"tutorial": "res://dialogic/tutorial and intro/tutorial.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
@@ -86,6 +88,7 @@ text/autopauses={}
 layout/style_list=["res://dialogic/styles/bubble_style.tres"]
 layout/default_style="res://dialogic/styles/bubble_style.tres"
 variables={}
+glossary/default_case_sensitive=true
 
 [display]
 

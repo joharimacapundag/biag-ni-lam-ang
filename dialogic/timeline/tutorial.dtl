@@ -1,0 +1,35 @@
+[background arg="res://tutorial/1.PNG" fade="0.0"]
+Welcome to the travel mode of *Biag ni Lam-ang*! This is your main view during your journey.
+[wait_input]
+
+[background arg="res://tutorial/1.PNG" fade="0.0"]
+Here, you can see your character’s Health, Stamina, and Strength. These stats affect your survival and performance.
+[wait_input]
+
+[background arg="res://tutorial/1.PNG" fade="0.0"]
+This section shows the number of Days passed, your Hunger level from 0 to 100, and Coins for buying essential items.
+[wait_input]
+
+[background arg="res://tutorial/4.PNG" fade="0.0"]
+Keep an eye on the Miles! It shows how far you've traveled during your quest.
+[wait_input]
+
+[background arg="res://tutorial/5.PNG" fade="0.0"]
+All the parts of your travel screen work together to help you survive and reach your destination. Now, let's look at the tabs!
+[wait_input]
+
+[background arg="res://tutorial/ally_tab.PNG" fade="0.0"]
+This is the Ally Tab. It shows your traveler’s name, full-body image, and a brief description of their background and role.
+[wait_input]
+
+[background arg="res://tutorial/inventory_tab.PNG" fade="0.0"]
+Here is the Inventory Tab. Items you collect are stored here. Some may help you recover, others might be used during quests.
+[wait_input]
+
+[background arg="res://tutorial/learn_tab.PNG" fade="0.0"]
+This is the Learn Tab. As you progress, Ilocano words you encounter will be saved here so you can review and study them.
+[wait_input]
+
+That’s all for the basic tutorial. Now you’re ready to begin your journey in *Biag ni Lam-ang*! Good luck!
+[wait_input]
+

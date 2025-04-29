@@ -6,7 +6,7 @@ do GameStatus.add_learned_word("beautiful")
 
 [i]The dog perked its ears. The rooster flapped its wings once, sensing the change in their master's mood.[/i]
 Come,  my [color=yellow]companions[/color]  [color=red](kakadwa)[/color] We must see who owns that voice.
-do GameStatus.add_learned_word("companions")
+do GameStatus.add_learned_word("companion")
 
 [i]They crept closer through the trees. Across the river, Lam-Ang saw a group of young women gathered, washing clothes and laughing.
 At their center stood a maiden whose beauty struck Lam-Ang harder than any blade ever could.[/i]

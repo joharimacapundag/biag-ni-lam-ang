@@ -1,7 +1,7 @@
 [gd_scene load_steps=38 format=3 uid="uid://c8py4b4778tj8"]
 
 [ext_resource type="Script" uid="uid://di3tul3g8b2q0" path="res://objects/traveler.gd" id="1_gvqt4"]
-[ext_resource type="Resource" uid="uid://dp2bhu62vl8ow" path="res://objects/enemies/igorot/igorot_save_dog.tres" id="2_sge38"]
+[ext_resource type="Resource" uid="uid://owrchahq17ux" path="res://objects/enemies/igorot/igorot.tres" id="2_6dd3u"]
 [ext_resource type="Texture2D" uid="uid://jfplj0x70ngl" path="res://objects/enemies/igorot/Attack_2.png" id="3_sge38"]
 [ext_resource type="Texture2D" uid="uid://c6kf0owft1f31" path="res://objects/enemies/igorot/Dead.png" id="4_tgiwb"]
 [ext_resource type="Texture2D" uid="uid://bju7mqh4lfy3v" path="res://objects/enemies/igorot/Idle.png" id="5_ehhby"]
@@ -185,7 +185,7 @@ height = 56.0
 
 [node name="Igorot" type="Node2D" groups=["enemy"]]
 script = ExtResource("1_gvqt4")
-traveler_resource = ExtResource("2_sge38")
+traveler_resource = ExtResource("2_6dd3u")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

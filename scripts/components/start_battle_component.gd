@@ -31,6 +31,7 @@ func _on_battle_ended(winner)->void:
 				GameTime.pause()
 				Dialogic.start(enemy.after_end_dialogue_path)
 				await Dialogic.timeline_ended
-				GameTime.unpause()
+				
+			GameTime.unpause()	
 			enemy.queue_free()
-		
+			

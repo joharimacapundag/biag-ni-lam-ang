@@ -204,7 +204,7 @@ size = Vector2(136, 56)
 [node name="LevelEasy1" type="Node2D" groups=["enemy"]]
 script = ExtResource("1_77tg4")
 level = "level_easy_1"
-dialogue_path = "level_easy_1"
+dialogue_path = "level_1_easy"
 
 [node name="StartBattleComponent" type="Node" parent="." node_paths=PackedStringArray("area_2d", "enemy", "animated_sprite_2d")]
 script = ExtResource("5_5pkuv")

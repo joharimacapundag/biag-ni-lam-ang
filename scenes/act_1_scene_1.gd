@@ -6,5 +6,5 @@ func _ready() -> void:
 	GameEvents.travel_started.emit()
 	await get_tree().create_timer(7).timeout
 	%AudioStreamPlayer2D.stop()
-	get_tree().change_scene_to_file("uid://fjdph61htgra")
+	get_tree().change_scene_to_file("uid://bl84jbcu6j2ly")
 	

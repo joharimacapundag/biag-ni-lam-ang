@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://bwsjqgoxsewvt"]
+[gd_scene load_steps=8 format=3 uid="uid://bwsjqgoxsewvt"]
 
 [ext_resource type="Script" uid="uid://cjb1xi6fpot50" path="res://scenes/act_1_scene_1.gd" id="1_8x432"]
 [ext_resource type="AudioStream" uid="uid://c71117743k8rx" path="res://assets/background_musics/2025-01-21_-_News_Chill_-_www.FesliyanStudios.com.mp3" id="2_leg7g"]
+[ext_resource type="Texture2D" uid="uid://c0dl44xv4p66q" path="res://assets/battlegrounds/ines bg/1.png" id="3_2omi7"]
+[ext_resource type="Texture2D" uid="uid://cutppkg4svv4h" path="res://assets/battlegrounds/ines bg/3.png" id="4_xy7ds"]
+[ext_resource type="Texture2D" uid="uid://sb46hk4fpymq" path="res://assets/battlegrounds/ines bg/2.png" id="5_8a1jr"]
+[ext_resource type="Texture2D" uid="uid://dyglybi1okmea" path="res://assets/battlegrounds/ines bg/4.png" id="6_4yb7m"]
+[ext_resource type="Texture2D" uid="uid://21goduvwyqmi" path="res://assets/backgrounds/summer5/3.png" id="7_siyhd"]
 
 [node name="Act1Scene1" type="Node2D"]
 script = ExtResource("1_8x432")
@@ -10,3 +15,38 @@ script = ExtResource("1_8x432")
 unique_name_in_owner = true
 stream = ExtResource("2_leg7g")
 autoplay = true
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(575.5, 323.5)
+scale = Vector2(2.00174, 1.9784)
+texture = ExtResource("3_2omi7")
+
+[node name="Parallax2D4" type="Parallax2D" parent="Parallax2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D/Parallax2D4"]
+position = Vector2(571, 308.5)
+scale = Vector2(2.03819, 1.8858)
+texture = ExtResource("4_xy7ds")
+
+[node name="Parallax2D3" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3"]
+position = Vector2(587, 319.25)
+scale = Vector2(2.05556, 1.97994)
+texture = ExtResource("5_8a1jr")
+
+[node name="Parallax2D2" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
+position = Vector2(578.5, 321)
+scale = Vector2(2.01215, 1.95062)
+texture = ExtResource("6_4yb7m")
+
+[node name="Parallax2D4" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4"]
+position = Vector2(576.5, 484.5)
+scale = Vector2(2.00521, 0.972222)
+texture = ExtResource("7_siyhd")

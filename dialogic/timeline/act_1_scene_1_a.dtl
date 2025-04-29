@@ -1,14 +1,14 @@
 [wait time="1.0"]
 [background arg="res://assets/backgrounds/Lam-ang and Ines.png" fade="0.0"]
 
-[i]The early morning sun filters softly through the nipa roof.
-Namongan sits by the doorway, weaving a basket, while Lam-Ang stands by the window, restless.[/i]
+narrator: [i]The early morning sun filters softly through the nipa roof.
+narrator: Namongan sits by the doorway, weaving a basket, while Lam-Ang stands by the window, restless.[/i]
 lam-ang: Mother, I can no longer silence the questions in heart.
 namongan: My son, why such heavy thoughts so early?
 lam-ang: I dream of Father, every night...
 lam-ang: His voice, calling from beyond the mountains. I must go, Mother. I must find Don Juan — wherever he may be.
 
-[i]Namongan sets aside her basket, her hands trembling slightly.[/i]
+narrator: [i]Namongan sets aside her basket, her hands trembling slightly.[/i]
 namongan: My, Son. The world beyond Nalbuan is filled with [color=yellow]evil[/color] [color=red] (dakes.)[/color]
 do GameStatus.add_learned_word("evil")
 lam-ang: I am no longer a boy, mother I have the strength and courage needed.
@@ -18,11 +18,11 @@ lam-ang: I will be. You have taught me well.
 lam-ang: But if I stay here doing nothing, I fear my  [color=yellow]sorrow[/color] [color=red] (ladingit)[/color] will only grow.
 do GameStatus.add_learned_word("sorrow")
 
-[i]Namongan sighs, torn between fear and pride.[/i]
+narrator: [i]Namongan sighs, torn between fear and pride.[/i]
 namongan: If you must go, take with you my blessing — our hopes and prayers.
 lam-ang: I will carry your blessing in my soul, Mother.
 
-[i]She wraps a simple amulet around his wrist, a token of protection.[/i]
+narrator: [i]She wraps a simple amulet around his wrist, a token of protection.[/i]
 namongan: Seek your father, anakko. But remember, no matter how far you travel, you will always have a [color=yellow]home[/color] [color=red](pagtaengan)[/color] to return to.
 do GameStatus.add_learned_word("home")
 lam-ang: Thank you, ina. I promise... I will return.
@@ -30,4 +30,4 @@ namongan: Be careful always my son,  [color=yellow]don't[/color]t [color=red] (h
 do GameStatus.add_learned_word("don't")
 lam-ang: With Father by my side, or with the truth carried in my hands.
 
-[i]He embraces her tightly, then steps into the morning light — his heart full of courage, sorrow, and hope for the unknown journey ahead.[/i]
+narrator: [i]He embraces her tightly, then steps into the morning light — his heart full of courage, sorrow, and hope for the unknown journey ahead.[/i]

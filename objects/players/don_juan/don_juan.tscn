@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://ctckd11a040ms"]
+[gd_scene load_steps=37 format=3 uid="uid://ctckd11a040ms"]
 
 [ext_resource type="Script" uid="uid://di3tul3g8b2q0" path="res://objects/traveler.gd" id="1_wo435"]
 [ext_resource type="Script" uid="uid://ddmsusn3b5rko" path="res://scripts/resources/traveler_resource.gd" id="2_qldb2"]
@@ -67,26 +67,6 @@ region = Rect2(231, 0, 77, 71)
 [sub_resource type="AtlasTexture" id="AtlasTexture_3xx0a"]
 atlas = ExtResource("5_3pe5l")
 region = Rect2(0, 0, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jb3w1"]
-atlas = ExtResource("5_3pe5l")
-region = Rect2(96, 0, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dm3aw"]
-atlas = ExtResource("5_3pe5l")
-region = Rect2(192, 0, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_54byg"]
-atlas = ExtResource("5_3pe5l")
-region = Rect2(288, 0, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dguyk"]
-atlas = ExtResource("5_3pe5l")
-region = Rect2(384, 0, 96, 96)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ffkcj"]
-atlas = ExtResource("5_3pe5l")
-region = Rect2(480, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wevgf"]
 atlas = ExtResource("6_3pe5l")
@@ -157,21 +137,6 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3xx0a")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jb3w1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dm3aw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_54byg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dguyk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ffkcj")
 }],
 "loop": true,
 "name": &"idle",
@@ -214,10 +179,8 @@ texture_filter = 1
 position = Vector2(-30, 13)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_sv3oh")
-animation = &"run"
+animation = &"idle"
 autoplay = "idle"
-frame = 5
-frame_progress = 1.0
 
 [node name="StatsComponent" type="Node" parent="." node_paths=PackedStringArray("traveler")]
 script = ExtResource("6_tet5f")

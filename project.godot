@@ -52,6 +52,7 @@ directories/dtl_directory={
 "bow_dialogue": "res://dialogic/timeline/bow_dialogue.dtl",
 "coffee_dialogue": "res://dialogic/timeline/coffee_dialogue.dtl",
 "dagger_dialogue": "res://dialogic/timeline/dagger_dialogue.dtl",
+"introduction": "res://dialogic/timeline/introduction.dtl",
 "level_1_easy": "res://dialogic/timeline/level_1_easy.dtl",
 "liquor_dialogue": "res://dialogic/timeline/liquor_dialogue.dtl",
 "prologue": "res://dialogic/timeline/prologue.dtl",

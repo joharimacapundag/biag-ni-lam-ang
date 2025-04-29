@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="DialogicTimeline" load_steps=2 format=3 uid="uid://bb0sqmehodakl"]
+
+[ext_resource type="Script" uid="uid://nb0u1a6wlmhl" path="res://addons/dialogic/Resources/timeline.gd" id="1_bd7mw"]
+
+[resource]
+script = ExtResource("1_bd7mw")
+metadata/_custom_type_script = "uid://nb0u1a6wlmhl"

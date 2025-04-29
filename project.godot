@@ -30,6 +30,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 directories/dch_directory={
 "doggie": "res://dialogic/characters/doggie.dch",
 "don_juan": "res://dialogic/characters/don_juan.dch",
+"elder_villager": "res://elder_villager.dch",
 "hunter": "res://dialogic/characters/hunter.dch",
 "igorot": "res://dialogic/characters/igorot.dch",
 "ines kannoyan": "res://dialogic/characters/ines kannoyan.dch",
@@ -52,6 +53,7 @@ directories/dtl_directory={
 "bow_dialogue": "res://dialogic/timeline/bow_dialogue.dtl",
 "coffee_dialogue": "res://dialogic/timeline/coffee_dialogue.dtl",
 "dagger_dialogue": "res://dialogic/timeline/dagger_dialogue.dtl",
+"lam ang knowing about where igorot lives from igorot": "res://lam ang knowing about where igorot lives from igorot.dtl",
 "level_1_easy": "res://dialogic/timeline/level_1_easy.dtl",
 "liquor_dialogue": "res://dialogic/timeline/liquor_dialogue.dtl",
 "prologue": "res://dialogic/timeline/prologue.dtl",

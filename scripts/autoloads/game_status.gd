@@ -8,7 +8,7 @@ var items_data = preload("res://scripts/json/items.json").data
 var actions_data = preload("res://scripts/json/actions.json").data
 var convinces_data = preload("res://scripts/json/convinces.json").data
 var learned_data = preload("res://scripts/json/learn_words.json").data
-
+var talks_data = preload("res://scripts/json/talks.json").data
 var travelers = {}
 
 var current_miles: int = 0

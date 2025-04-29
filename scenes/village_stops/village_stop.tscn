@@ -12,8 +12,8 @@ unique_name_in_owner = true
 offset = Vector2(576, 324)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(576, 230)
-scale = Vector2(1.1, 0.933)
+position = Vector2(576, 324)
+scale = Vector2(1.125, 0.632813)
 texture = ExtResource("2_20835")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

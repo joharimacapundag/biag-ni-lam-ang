@@ -1,99 +1,99 @@
-[gd_scene load_steps=38 format=3 uid="uid://c8py4b4778tj8"]
+[gd_scene load_steps=38 format=3 uid="uid://c4dqpb8jf1u4b"]
 
-[ext_resource type="Script" uid="uid://di3tul3g8b2q0" path="res://objects/traveler.gd" id="1_gvqt4"]
-[ext_resource type="Resource" uid="uid://dp2bhu62vl8ow" path="res://objects/enemies/igorot/igorot_save_dog.tres" id="2_sge38"]
-[ext_resource type="Texture2D" uid="uid://jfplj0x70ngl" path="res://objects/enemies/igorot/Attack_2.png" id="3_sge38"]
-[ext_resource type="Texture2D" uid="uid://c6kf0owft1f31" path="res://objects/enemies/igorot/Dead.png" id="4_tgiwb"]
-[ext_resource type="Texture2D" uid="uid://bju7mqh4lfy3v" path="res://objects/enemies/igorot/Idle.png" id="5_ehhby"]
-[ext_resource type="Script" uid="uid://5wahg8855uwc" path="res://scripts/components/stats_component.gd" id="5_hy36n"]
-[ext_resource type="Texture2D" uid="uid://bawiuu5q3l05p" path="res://objects/enemies/igorot/Run.png" id="6_ftyw5"]
-[ext_resource type="Script" uid="uid://dhgpgbnigqauj" path="res://scripts/components/action_component.gd" id="6_rjfxh"]
-[ext_resource type="Script" uid="uid://bt1jgs8ay53ji" path="res://scripts/components/take_damage_component.gd" id="9_vgr1v"]
-[ext_resource type="Script" uid="uid://dmmrpgpve7ae2" path="res://scripts/components/heal_component.gd" id="10_wyt2l"]
-[ext_resource type="Script" uid="uid://46mmkxtqysuy" path="res://scripts/components/die_component.gd" id="11_con04"]
-[ext_resource type="Script" uid="uid://de6h0g2roehmm" path="res://scripts/components/health_component.gd" id="13_4b2mi"]
-[ext_resource type="Script" uid="uid://csnhgvnb6fmxd" path="res://scripts/components/attack_component.gd" id="13_e6hx2"]
-[ext_resource type="Script" uid="uid://ckxrahpqglwja" path="res://objects/enemies/igorot/die_2_component.gd" id="15_sge38"]
-[ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="16_b5gqe"]
+[ext_resource type="Script" uid="uid://di3tul3g8b2q0" path="res://objects/traveler.gd" id="1_tsdkp"]
+[ext_resource type="Resource" uid="uid://dp2bhu62vl8ow" path="res://objects/enemies/igorot/igorot_save_dog.tres" id="2_tsdkp"]
+[ext_resource type="Texture2D" uid="uid://jfplj0x70ngl" path="res://objects/enemies/igorot/Attack_2.png" id="3_forx0"]
+[ext_resource type="Texture2D" uid="uid://c6kf0owft1f31" path="res://objects/enemies/igorot/Dead.png" id="4_akbdm"]
+[ext_resource type="Texture2D" uid="uid://bju7mqh4lfy3v" path="res://objects/enemies/igorot/Idle.png" id="5_mj8rm"]
+[ext_resource type="Texture2D" uid="uid://bawiuu5q3l05p" path="res://objects/enemies/igorot/Run.png" id="6_mk3td"]
+[ext_resource type="Script" uid="uid://5wahg8855uwc" path="res://scripts/components/stats_component.gd" id="7_pf0p5"]
+[ext_resource type="Script" uid="uid://dhgpgbnigqauj" path="res://scripts/components/action_component.gd" id="8_sdest"]
+[ext_resource type="Script" uid="uid://bt1jgs8ay53ji" path="res://scripts/components/take_damage_component.gd" id="9_4y5eu"]
+[ext_resource type="Script" uid="uid://dmmrpgpve7ae2" path="res://scripts/components/heal_component.gd" id="10_tdfk6"]
+[ext_resource type="Script" uid="uid://46mmkxtqysuy" path="res://scripts/components/die_component.gd" id="11_tvidx"]
+[ext_resource type="Script" uid="uid://de6h0g2roehmm" path="res://scripts/components/health_component.gd" id="12_8ctp7"]
+[ext_resource type="Script" uid="uid://csnhgvnb6fmxd" path="res://scripts/components/attack_component.gd" id="13_bywsx"]
+[ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="14_dmb2v"]
+[ext_resource type="Script" uid="uid://ckxrahpqglwja" path="res://objects/enemies/igorot/die_2_component.gd" id="15_j2aq5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jbt80"]
-atlas = ExtResource("3_sge38")
+atlas = ExtResource("3_forx0")
 region = Rect2(0, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kr5lq"]
-atlas = ExtResource("3_sge38")
+atlas = ExtResource("3_forx0")
 region = Rect2(96, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uaio8"]
-atlas = ExtResource("3_sge38")
+atlas = ExtResource("3_forx0")
 region = Rect2(192, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ti8le"]
-atlas = ExtResource("3_sge38")
+atlas = ExtResource("3_forx0")
 region = Rect2(288, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dnhaj"]
-atlas = ExtResource("4_tgiwb")
+atlas = ExtResource("4_akbdm")
 region = Rect2(0, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_81tai"]
-atlas = ExtResource("4_tgiwb")
+atlas = ExtResource("4_akbdm")
 region = Rect2(96, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7mjk6"]
-atlas = ExtResource("4_tgiwb")
+atlas = ExtResource("4_akbdm")
 region = Rect2(192, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lhjmy"]
-atlas = ExtResource("4_tgiwb")
+atlas = ExtResource("4_akbdm")
 region = Rect2(288, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lq6ao"]
-atlas = ExtResource("5_ehhby")
+atlas = ExtResource("5_mj8rm")
 region = Rect2(0, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s72v6"]
-atlas = ExtResource("5_ehhby")
+atlas = ExtResource("5_mj8rm")
 region = Rect2(96, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6kg1i"]
-atlas = ExtResource("5_ehhby")
+atlas = ExtResource("5_mj8rm")
 region = Rect2(192, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mj1tt"]
-atlas = ExtResource("5_ehhby")
+atlas = ExtResource("5_mj8rm")
 region = Rect2(288, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vtif6"]
-atlas = ExtResource("5_ehhby")
+atlas = ExtResource("5_mj8rm")
 region = Rect2(384, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t8gkm"]
-atlas = ExtResource("5_ehhby")
+atlas = ExtResource("5_mj8rm")
 region = Rect2(480, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7payn"]
-atlas = ExtResource("6_ftyw5")
+atlas = ExtResource("6_mk3td")
 region = Rect2(0, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bmqrf"]
-atlas = ExtResource("6_ftyw5")
+atlas = ExtResource("6_mk3td")
 region = Rect2(96, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_300gn"]
-atlas = ExtResource("6_ftyw5")
+atlas = ExtResource("6_mk3td")
 region = Rect2(192, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a33ch"]
-atlas = ExtResource("6_ftyw5")
+atlas = ExtResource("6_mk3td")
 region = Rect2(288, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q7l7e"]
-atlas = ExtResource("6_ftyw5")
+atlas = ExtResource("6_mk3td")
 region = Rect2(384, 0, 96, 96)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_731ko"]
-atlas = ExtResource("6_ftyw5")
+atlas = ExtResource("6_mk3td")
 region = Rect2(480, 0, 96, 96)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yqbfo"]
@@ -184,8 +184,8 @@ radius = 16.0
 height = 56.0
 
 [node name="Igorot" type="Node2D" groups=["enemy"]]
-script = ExtResource("1_gvqt4")
-traveler_resource = ExtResource("2_sge38")
+script = ExtResource("1_tsdkp")
+traveler_resource = ExtResource("2_tsdkp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -199,41 +199,41 @@ frame_progress = 1.0
 flip_h = true
 
 [node name="StatsComponent" type="Node" parent="." node_paths=PackedStringArray("traveler")]
-script = ExtResource("5_hy36n")
+script = ExtResource("7_pf0p5")
 traveler = NodePath("..")
 
 [node name="ActionComponent" type="Node" parent="." node_paths=PackedStringArray("node", "stats_component")]
-script = ExtResource("6_rjfxh")
+script = ExtResource("8_sdest")
 node = NodePath("..")
 stats_component = NodePath("../StatsComponent")
 
 [node name="TakeDamageComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprited_2d")]
-script = ExtResource("9_vgr1v")
+script = ExtResource("9_4y5eu")
 traveler = NodePath("..")
 animated_sprited_2d = NodePath("../AnimatedSprite2D")
 
 [node name="HealComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprited_2d")]
-script = ExtResource("10_wyt2l")
+script = ExtResource("10_tdfk6")
 traveler = NodePath("..")
 animated_sprited_2d = NodePath("../AnimatedSprite2D")
 
 [node name="DieComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d")]
-script = ExtResource("11_con04")
+script = ExtResource("11_tvidx")
 traveler = NodePath("..")
 animated_sprite_2d = NodePath("../AnimatedSprite2D")
 
 [node name="HealthComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "stats_component")]
-script = ExtResource("13_4b2mi")
+script = ExtResource("12_8ctp7")
 traveler = NodePath("..")
 stats_component = NodePath("../StatsComponent")
 
 [node name="AttackComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d")]
-script = ExtResource("13_e6hx2")
+script = ExtResource("13_bywsx")
 traveler = NodePath("..")
 animated_sprite_2d = NodePath("../AnimatedSprite2D")
 
 [node name="DayAndNightComponent" type="Node" parent="." node_paths=PackedStringArray("node")]
-script = ExtResource("16_b5gqe")
+script = ExtResource("14_dmb2v")
 node = NodePath("..")
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -244,5 +244,5 @@ position = Vector2(20, 10)
 shape = SubResource("CapsuleShape2D_sge38")
 
 [node name="Die2Component" type="Node" parent="." node_paths=PackedStringArray("traveler")]
-script = ExtResource("15_sge38")
+script = ExtResource("15_j2aq5")
 traveler = NodePath("..")

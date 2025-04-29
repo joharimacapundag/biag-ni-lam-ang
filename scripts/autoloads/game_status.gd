@@ -27,3 +27,11 @@ func add_learned_word(word: String)->void:
 	if !current_learned_words.has(word):
 		current_learned_words.append(word)
 		learned_word_added.emit(word)
+
+func rest()->void:
+	if travelers:
+		for traveler in travelers:
+			travelers_data[traveler]["health"] = travelers_data[traveler]["max_health"]
+			travelers_data[traveler]["stamina"] = travelers_data[traveler]["max_health"]
+			travelers_data[traveler]["strenght"] = travelers_data[traveler]["max_health"]
+			travelers_data[traveler]["health"] = travelers_data[traveler]["max_health"]

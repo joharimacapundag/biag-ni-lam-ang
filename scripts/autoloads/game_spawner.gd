@@ -92,7 +92,7 @@ var events: Dictionary = {
 	{
 		"type": "fixed",
 		"trigger_mile": 38,
-		"scene_path": "uid://bgb2hkrrd6he7"
+		"scene_path": "uid://deah3nkom2v8t"
 	},
 	{
 		"type": "interval",

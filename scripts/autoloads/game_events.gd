@@ -33,3 +33,6 @@ signal new_learn_word_added
 signal convince_entered
 signal convince_started
 signal convince_ended(success, branch)
+
+func join_ally(id)->void:
+	ally_joined.emit(id)

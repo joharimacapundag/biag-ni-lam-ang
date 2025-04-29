@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://fjdph61htgra"]
+[gd_scene load_steps=13 format=3 uid="uid://fjdph61htgra"]
 
 [ext_resource type="PackedScene" uid="uid://ba5bqxca71sot" path="res://scenes/backgrounds/background_1.tscn" id="1_1dggj"]
 [ext_resource type="Script" uid="uid://b781f6j3npt85" path="res://scenes/travel_mode/travel_mode.gd" id="1_ml84r"]
@@ -10,6 +10,8 @@
 [ext_resource type="Script" uid="uid://b5voxcla4dym0" path="res://scripts/components/mile_spawn_trigger_component.gd" id="6_ovamt"]
 [ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="7_njowd"]
 [ext_resource type="PackedScene" uid="uid://d4on0egdbfxo" path="res://ui/travel_mode/ui_travel_mode.tscn" id="8_dcakt"]
+[ext_resource type="PackedScene" uid="uid://cac4d43sqrosv" path="res://scenes/backgrounds/background_2.tscn" id="8_m1rsk"]
+[ext_resource type="PackedScene" uid="uid://dn8kv4o5inacj" path="res://scenes/backgrounds/background_3.tscn" id="9_yprka"]
 
 [node name="TravelMode" type="Node2D" node_paths=PackedStringArray("mile_spawn_trigger_component", "node_to_hide")]
 script = ExtResource("1_ml84r")
@@ -49,6 +51,15 @@ metadata/_custom_type_script = "uid://crnikrenciy4b"
 position = Vector2(576, 324)
 
 [node name="Background1" parent="Backgrounds" instance=ExtResource("1_1dggj")]
+unique_name_in_owner = true
+
+[node name="Background2" parent="Backgrounds" instance=ExtResource("8_m1rsk")]
+unique_name_in_owner = true
+visible = false
+
+[node name="Background3" parent="Backgrounds" instance=ExtResource("9_yprka")]
+unique_name_in_owner = true
+visible = false
 
 [node name="EntitySpawner" type="Marker2D" parent="."]
 unique_name_in_owner = true

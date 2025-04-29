@@ -47,7 +47,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 tab_alignment = 2
-current_tab = 1
+current_tab = 3
 
 [node name="Map" type="TabBar" parent="MarginContainer/VBoxContainer/TabContainer"]
 visible = false
@@ -56,6 +56,7 @@ max_tab_width = 200
 metadata/_tab_index = 0
 
 [node name="Inventory" type="TabBar" parent="MarginContainer/VBoxContainer/TabContainer"]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
@@ -76,7 +77,6 @@ layout_mode = 2
 alignment = 1
 
 [node name="CtrlInventoryGrid" type="Control" parent="MarginContainer/VBoxContainer/TabContainer/Inventory/MarginContainer/HBoxContainer" node_paths=PackedStringArray("inventory")]
-custom_minimum_size = Vector2(512, 512)
 layout_mode = 2
 size_flags_horizontal = 3
 script = ExtResource("1_a50u3")
@@ -311,7 +311,6 @@ fit_content = true
 layout_mode = 2
 
 [node name="Learn" type="TabBar" parent="MarginContainer/VBoxContainer/TabContainer"]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 3
 

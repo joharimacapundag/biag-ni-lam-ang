@@ -45,7 +45,7 @@ directories/dtl_directory={
 "act_1_scene_2_a": "res://dialogic/timeline/act_1_scene_2_a.dtl",
 "act_2_dog_scene": "res://dialogic/timeline/timeline 2/act_2_dog_scene.dtl",
 "act_2_ines": "res://dialogic/timeline/timeline 2/act_2_ines.dtl",
-"act_2_scene_1_a": "res://dialogic/timeline/timeline 2/act_2_scene_1_a_bossigorot.dtl",
+"act_2_scene_1_a_bossigorot": "res://dialogic/timeline/timeline 2/act_2_scene_1_a_bossigorot.dtl",
 "act_3_scene_1": "res://dialogic/timeline/timeline 3/act_3_scene_1.dtl",
 "act_3_scene_2_inside_berrakan": "res://dialogic/timeline/timeline 3/act_3_scene_2_inside_berrakan.dtl",
 "ally_doggie": "res://tutorial/ally_doggie.dtl",
@@ -55,7 +55,6 @@ directories/dtl_directory={
 "coffee_dialogue": "res://dialogic/timeline/coffee_dialogue.dtl",
 "dagger_dialogue": "res://dialogic/timeline/dagger_dialogue.dtl",
 "herb_dialogue": "res://dialogic/timeline/herb_dialogue.dtl",
-"introduction": "res://dialogic/tutorial and intro/introduction.dtl",
 "lam ang knowing about where igorot lives from igorot": "res://lam ang knowing about where igorot lives from igorot.dtl",
 "level_1_easy": "res://dialogic/timeline/level_1_easy.dtl",
 "liquor_dialogue": "res://dialogic/timeline/liquor_dialogue.dtl",
@@ -64,8 +63,9 @@ directories/dtl_directory={
 "shield_dialogue": "res://dialogic/timeline/shield_dialogue.dtl",
 "spear_dialogue": "res://dialogic/timeline/spear_dialogue.dtl",
 "sword_dialogue": "res://dialogic/timeline/sword_dialogue.dtl",
-"timeline/tutorial": "res://dialogic/timeline/tutorial.dtl",
-"tutorial": "res://dialogic/tutorial and intro/tutorial.dtl"
+"tutorial": "res://dialogic/timeline/tutorial.dtl",
+"tutorial and intro/introduction": "res://dialogic/tutorial and intro/introduction.dtl",
+"tutorial and intro/tutorial": "res://dialogic/tutorial and intro/tutorial.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
@@ -90,7 +90,6 @@ text/autopauses={}
 layout/style_list=["res://dialogic/styles/bubble_style.tres"]
 layout/default_style="res://dialogic/styles/bubble_style.tres"
 variables={}
-glossary/default_case_sensitive=true
 
 [display]
 

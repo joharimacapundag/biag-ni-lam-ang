@@ -1,0 +1,34 @@
+{
+  "act_1": [
+	"shield",
+	"slippers",
+	"axe",
+	"porridge",
+	"armor",
+	"spear",
+	"knife",
+	"salt",
+	"liquor"
+  ],
+  "act_2": [
+	"drum",
+	"slingshot",
+	"loincloth",
+	"coffee",
+	"saw",
+	"whistle",
+	"shoes",
+	"sugarcane_wine",
+	"earrings"
+  ],
+  "act_3": [
+	"ring",
+	"dagger",
+	"rope",
+	"bolo_knife",
+	"bread",
+	"clothing",
+	"banana",
+	"bow"
+  ]
+}

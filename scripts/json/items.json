@@ -16,7 +16,8 @@
 		}
 	  }
 	},
-	"description": "Coffee (Ilocano: Kape) restores +10 health and +5 stamina when consumed."
+	"description": "Coffee (Ilocano: Kape) restores +10 health and +5 stamina when consumed.",
+	"price": 10
   },
   "porridge": {
 	"name": "Porridge",
@@ -34,28 +35,29 @@
 		}
 	  }
 	},
-	"description": "Porridge (Ilocano: Lugaw) restores +15 health when consumed."
+	"description": "Porridge (Ilocano: Lugaw) restores +15 health when consumed.",
+	"price": 8
   },
-"banana": {
-  "name": "Banana",
-  "ilocano_word": "Saba",
-  "action_type": "item_action",
-  "type": "consumable",
-  "stack_size": 1,
-  "max_stack_size": 10,
-  "image": "uid://cqwxcdw0mubuv",
-  "size": "Vector2i(1, 1)",
-  "modifiers": {
-	"target": {
-	  "add": {
-		"health": 6,
-		"stamina": 2
+  "banana": {
+	"name": "Banana",
+	"ilocano_word": "Saba",
+	"action_type": "item_action",
+	"type": "consumable",
+	"stack_size": 1,
+	"max_stack_size": 10,
+	"image": "uid://cqwxcdw0mubuv",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {
+	  "target": {
+		"add": {
+		  "health": 6,
+		  "stamina": 2
+		}
 	  }
-	}
+	},
+	"description": "Banana (Ilocano: Saging) is a tropical fruit that restores +6 health and +2 stamina when consumed.",
+	"price": 3
   },
-  "description": "Banana (Ilocano: Saging) is a tropical fruit that restores +6 health and +2 stamina when consumed."
-},
-
   "sugarcane_wine": {
 	"name": "Sugarcane Wine",
 	"ilocano_word": "Basi",
@@ -73,7 +75,8 @@
 		}
 	  }
 	},
-	"description": "Sugarcane Wine (Ilocano: Basi) restores +12 health and +4 stamina when consumed."
+	"description": "Sugarcane Wine (Ilocano: Basi) restores +12 health and +4 stamina when consumed.",
+	"price": 15
   },
   "bread": {
 	"name": "Bread",
@@ -91,7 +94,8 @@
 		}
 	  }
 	},
-	"description": "Bread (Ilocano: Tinapay) reduces hunger by 25 when eaten."
+	"description": "Bread (Ilocano: Tinapay) reduces hunger by 25 when eaten.",
+	"price": 4
   },
   "bolo_knife": {
 	"name": "Bolo Knife",
@@ -107,7 +111,8 @@
 		"add": { "strength": 8 }
 	  }
 	},
-	"description": "Bolo Knife (Ilocano: Buneng) is a weapon that provides +8 strength when used."
+	"description": "Bolo Knife (Ilocano: Buneng) is a weapon that provides +8 strength when used.",
+	"price": 50
   },
   "spear": {
 	"name": "Spear",
@@ -123,9 +128,10 @@
 		"add": { "strength": 7 }
 	  }
 	},
-	"description": "Spear (Ilocano: Bangkaw) grants +7 strength."
+	"description": "Spear (Ilocano: Bangkaw) grants +7 strength.",
+	"price": 45
   },
-"axe": {
+  "axe": {
 	"name": "Axe",
 	"ilocano_word": "Wasay",
 	"action_type": "item_action",
@@ -139,7 +145,8 @@
 		"add": { "strength": 10 }
 	  }
 	},
-	"description": "Axe (Ilocano: Wasay) grants +10 strength."
+	"description": "Axe (Ilocano: Wasay) grants +10 strength.",
+	"price": 60
   },
   "shield": {
 	"name": "Shield",
@@ -155,7 +162,8 @@
 		"add": { "defense": 12 }
 	  }
 	},
-	"description": "Shield (Ilocano: Salungso) adds +12 defense."
+	"description": "Shield (Ilocano: Salungso) adds +12 defense.",
+	"price": 55
   },
   "liquor": {
 	"name": "Medicinal Herb",
@@ -171,7 +179,8 @@
 		"add": { "health": 10 }
 	  }
 	},
-	"description": "Medicinal Herb (Ilocano: Agas nga ruot/mula) restores +10 health."
+	"description": "Medicinal Herb (Ilocano: Agas nga ruot/mula) restores +10 health.",
+	"price": 12
   },
   "earrings": {
 	"name": "Earrings",
@@ -187,7 +196,8 @@
 		"add": { "stamina": 3 }
 	  }
 	},
-	"description": "Earrings (Ilocano: Aritos) boost +3 stamina."
+	"description": "Earrings (Ilocano: Aritos) boost +3 stamina.",
+	"price": 70
   },
   "salt": {
 	"name": "Salt",
@@ -203,7 +213,8 @@
 		"add": { "hunger": -5 }
 	  }
 	},
-	"description": "Salt (Ilocano: Asin) reduces hunger by 5."
+	"description": "Salt (Ilocano: Asin) reduces hunger by 5.",
+	"price": 2
   },
   "loincloth": {
 	"name": "Loincloth",
@@ -219,7 +230,8 @@
 		"add": { "defense": 2 }
 	  }
 	},
-	"description": "Loincloth (Ilocano: Baag) gives +2 defense."
+	"description": "Loincloth (Ilocano: Baag) gives +2 defense.",
+	"price": 25
   },
   "clothing": {
 	"name": "Clothing",
@@ -235,7 +247,8 @@
 		"add": { "defense": 3 }
 	  }
 	},
-	"description": "Clothing (Ilocano: Bado) gives +3 defense."
+	"description": "Clothing (Ilocano: Bado) gives +3 defense.",
+	"price": 30
   },
   "knife": {
 	"name": "Knife",
@@ -251,7 +264,8 @@
 		"add": { "strength": 5 }
 	  }
 	},
-	"description": "Knife (Ilocano: Kutsilio) provides +5 strength."
+	"description": "Knife (Ilocano: Kutsilio) provides +5 strength.",
+	"price": 40
   },
   "slingshot": {
 	"name": "Slingshot",
@@ -267,7 +281,8 @@
 		"add": { "strength": 4 }
 	  }
 	},
-	"description": "Slingshot (Ilocano: Palsiit) adds +4 strength."
+	"description": "Slingshot (Ilocano: Palsiit) adds +4 strength.",
+	"price": 20
   },
   "whistle": {
 	"name": "Whistle",
@@ -283,7 +298,8 @@
 		"add": { "speed": 1 }
 	  }
 	},
-	"description": "Whistle (Ilocano: Pito) increases +1 speed."
+	"description": "Whistle (Ilocano: Pito) increases +1 speed.",
+	"price": 15
   },
   "saw": {
 	"name": "Saw",
@@ -299,7 +315,8 @@
 		"add": { "strength": 3 }
 	  }
 	},
-	"description": "Saw (Ilocano: Ragadi) boosts +3 strength."
+	"description": "Saw (Ilocano: Ragadi) boosts +3 strength.",
+	"price": 35
   },
   "shoes": {
 	"name": "Shoes",
@@ -315,7 +332,8 @@
 		"add": { "speed": 2 }
 	  }
 	},
-	"description": "Shoes (Ilocano: Sapatos) give +2 speed."
+	"description": "Shoes (Ilocano: Sapatos) give +2 speed.",
+	"price": 40
   },
   "slippers": {
 	"name": "Slippers",
@@ -331,7 +349,8 @@
 		"add": { "speed": 1 }
 	  }
 	},
-	"description": "Slippers (Ilocano: Tsinelas) grant +1 speed."
+	"description": "Slippers (Ilocano: Tsinelas) grant +1 speed.",
+	"price": 20
   },
   "ring": {
 	"name": "Ring",
@@ -347,7 +366,8 @@
 		"add": { "stamina": 2 }
 	  }
 	},
-	"description": "Ring (Ilocano: Singsing) gives +2 stamina."
+	"description": "Ring (Ilocano: Singsing) gives +2 stamina.",
+	"price": 60
   },
   "armor": {
 	"name": "Armor",
@@ -363,7 +383,8 @@
 		"add": { "defense": 20 }
 	  }
 	},
-	"description": "Armor (Ilocano: Armadillo) grants +20 defense."
+	"description": "Armor (Ilocano: Armadillo) grants +20 defense.",
+	"price": 100
   },
   "drum": {
 	"name": "Drum",
@@ -379,7 +400,8 @@
 		"add": { "stamina": 2 }
 	  }
 	},
-	"description": "Drum (Ilocano: Tambor) increases +2 stamina."
+	"description": "Drum (Ilocano: Tambor) increases +2 stamina.",
+	"price": 25
   },
   "bow": {
 	"name": "Bow",
@@ -395,7 +417,8 @@
 		"add": { "strength": 6 }
 	  }
 	},
-	"description": "Bow (Ilocano: Bannuar) grants +6 strength."
+	"description": "Bow (Ilocano: Bannuar) grants +6 strength.",
+	"price": 45
   },
   "dagger": {
 	"name": "Dagger",
@@ -411,19 +434,20 @@
 		"add": { "strength": 8 }
 	  }
 	},
-	"description": "Dagger (Ilocano: Panagdi) provides +8 strength."
-  }, 
-	"rope": {
-	  "name": "Rope",
-	  "ilocano_word": "Tali",
-	  "action_type": "item_action",
-	  "type": "tool",
-	  "stack_size": 1,
-	  "max_stack_size": 5,
-	  "image": "res://assets/sprites/items/rope.png",
-	  "size": "Vector2i(1, 1)",
-	  "modifiers": {},
-	  "description": "Rope (Ilocano: Tali) is a tool used for binding or climbing, with no additional stat modifiers."
-	},
-
+	"description": "Dagger (Ilocano: Panagdi) provides +8 strength.",
+	"price": 50
+  },
+  "rope": {
+	"name": "Rope",
+	"ilocano_word": "Tali",
+	"action_type": "item_action",
+	"type": "tool",
+	"stack_size": 1,
+	"max_stack_size": 5,
+	"image": "res://assets/sprites/items/rope.png",
+	"size": "Vector2i(1, 1)",
+	"modifiers": {},
+	"description": "Rope (Ilocano: Tali) is a tool used for binding or climbing, with no additional stat modifiers.",
+	"price": 10
+  }
 }

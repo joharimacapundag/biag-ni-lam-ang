@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 class_name TravelMode
 
 @export var mile_spawn_trigger_component: MileSpawnTriggerComponent
@@ -46,7 +46,9 @@ func _on_travel_started()->void:
 
 func _on_travel_stopped()->void:
 	%AudioStreamPlayer2D.stop()
-	pass
+	GameSave.save_game()
+	
+	
 
 	
 func _on_battle_entered()->void:
@@ -113,3 +115,12 @@ func _on_mile_added(miles: int)->void:
 	
 func update_travelers()->void:
 	%UITravelMode.add_travelers(get_children().filter(func(elem)->bool: return elem.is_in_group("player")))
+func save():
+	var save_dict = {
+		"filename" : get_scene_file_path(),
+		"parent" : get_parent().get_path(),
+		"pos_x" : position.x, 
+		"pos_y" : position.y,
+	
+	}
+	return save_dict

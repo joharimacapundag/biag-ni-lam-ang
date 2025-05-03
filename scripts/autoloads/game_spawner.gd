@@ -4,6 +4,7 @@ signal spawned(node)
 
 var events: Dictionary = {
 	"act_1": [
+		
 	{
 		"type": "fixed",
 		"trigger_mile": 4,
@@ -132,17 +133,17 @@ var events: Dictionary = {
 	
 	],
 	"act_3": [
-		{
-		"type": "interval",
-		"min_miles": 58,
-		"max_miles": 46,
-		"chance": 1, 
-		"scene_path": "uid://clya8hk4ggrqr"
-	},
+			{
+			"type": "interval",
+			"min_miles": 58,
+			"max_miles": 46,
+			"chance": 1, 
+			"scene_path": "uid://clya8hk4ggrqr"
+		},
 		{
 			"type": "fixed",
-			"trigger_mile":62,
-			"scene_path": "uid://s8sksmptdljh"
+			"trigger_mile":1,
+			"scene_path": "uid://lrpu1ybm030y"
 		}	
 	]
 }

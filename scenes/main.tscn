@@ -8,6 +8,7 @@
 script = ExtResource("1_0wfyh")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
 
 [node name="UIMainMenu" parent="CanvasLayer" instance=ExtResource("1_o5qli")]
 unique_name_in_owner = true

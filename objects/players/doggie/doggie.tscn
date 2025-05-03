@@ -207,7 +207,7 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j8b15"]
 height = 48.0
 
-[node name="Doggie" type="Node2D" groups=["player"]]
+[node name="Doggie" type="Node2D" groups=["Persist", "player"]]
 script = ExtResource("1_5kmyg")
 traveler_resource = ExtResource("2_v67tk")
 

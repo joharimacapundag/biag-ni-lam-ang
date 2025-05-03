@@ -7,7 +7,7 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_npygi"]
 
-[node name="Liquor" type="Node2D" node_paths=PackedStringArray("sprite_2d", "canvas_layer", "picked_up_label")]
+[node name="Liquor" type="Node2D" node_paths=PackedStringArray("sprite_2d", "canvas_layer", "picked_up_label") groups=["Persist"]]
 script = ExtResource("1_tvywm")
 item_resource = ExtResource("2_afju0")
 sprite_2d = NodePath("Sprite2D")

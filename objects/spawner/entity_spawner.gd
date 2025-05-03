@@ -9,6 +9,7 @@ var entities: Dictionary = {
 	"b_lam-ang":{ "scene": preload("uid://bbsr170vxrutp") },
 	"b_rooster":{ "scene": preload("uid://rwgiea3y5ric") },
 	"b_doggie":{ "scene": preload("uid://2bigrjgf5crm") },
+	"berkakan": {"scene": preload("uid://j8h7p2ju275t")}
 }
 	
 func spawn(id: String)->void:

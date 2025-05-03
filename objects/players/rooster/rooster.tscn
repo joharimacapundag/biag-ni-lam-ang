@@ -152,7 +152,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Rooster" type="Node2D" groups=["player"]]
+[node name="Rooster" type="Node2D" groups=["Persist", "player"]]
 script = ExtResource("1_xsf34")
 traveler_resource = ExtResource("2_3e3it")
 

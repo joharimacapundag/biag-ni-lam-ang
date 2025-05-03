@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dhbse3oxk3sqy"]
+[gd_scene load_steps=13 format=3 uid="uid://dhbse3oxk3sqy"]
 
 [ext_resource type="Script" uid="uid://c0repceq5kbgc" path="res://scenes/battle_mode/battle_mode.gd" id="1_n0jr3"]
 [ext_resource type="Script" uid="uid://c2acfev3wd23j" path="res://objects/spawner/entity_spawner.gd" id="3_m6swq"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://d4ldnxegoiohh" path="res://scripts/components/battle_action_component.gd" id="6_rbf2l"]
 [ext_resource type="Script" uid="uid://bp5h6g0l45rj3" path="res://scripts/components/battle_end_component.gd" id="6_rs8fh"]
 [ext_resource type="Texture2D" uid="uid://bxgqtgf0ejuil" path="res://assets/Buttons/Turned based battlefield (1).png" id="7_ydh4t"]
+[ext_resource type="Texture2D" uid="uid://doq7flmddx47j" path="res://assets/battlegrounds/battle_water.png" id="8_hepw6"]
 [ext_resource type="PackedScene" uid="uid://b52hglkky0h71" path="res://ui/battle_mode_multiplier/ui_battle_multiplier.tscn" id="10_856se"]
 [ext_resource type="PackedScene" uid="uid://7ujfv5f762dk" path="res://ui/battle_mode_multiplier/battle_multiplier_feedback.tscn" id="11_ydh4t"]
 
@@ -39,9 +40,20 @@ metadata/_custom_type_script = "uid://dfnfxuqorc1d1"
 script = ExtResource("6_rs8fh")
 metadata/_custom_type_script = "uid://bp5h6g0l45rj3"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Backgrounds" type="Node2D" parent="."]
+
+[node name="Tree" type="Sprite2D" parent="Backgrounds"]
+unique_name_in_owner = true
 position = Vector2(576, 324)
 texture = ExtResource("7_ydh4t")
+
+[node name="Water" type="Sprite2D" parent="Backgrounds"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(360, 219.852)
+scale = Vector2(0.375, 0.318359)
+texture = ExtResource("8_hepw6")
+offset = Vector2(576, 324)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 unique_name_in_owner = true

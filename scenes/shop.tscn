@@ -66,7 +66,6 @@ size_flags_horizontal = 0
 
 [node name="CtrlInventoryGrid" type="Control" parent="PanelContainer2/MarginContainer/VBoxContainer/GridContainer" node_paths=PackedStringArray("inventory")]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(256, 256)
 layout_mode = 2
 size_flags_horizontal = 0
 script = ExtResource("2_8r1wq")
@@ -129,25 +128,12 @@ text = "HAGGLE"
 unique_name_in_owner = true
 script = ExtResource("4_ajxib")
 protoset = ExtResource("5_y6sft")
-_serialized_format = {
-"constraints": {
-"res://addons/gloot/core/constraints/grid_constraint.gd": {
-"data": {
-"item_positions": {},
-"size": "Vector2i(8, 8)"
-},
-"name": &"GridConstraint"
-}
-},
-"node_name": "Inventory",
-"protoset": "res://scripts/json/items.json"
-}
+_serialized_format = {}
 metadata/_custom_type_script = "uid://8x7swbhjs64j"
 
 [node name="GridConstraint" type="Node" parent="Inventory"]
 script = ExtResource("6_m4ofw")
 size = Vector2i(8, 8)
-metadata/_custom_type_script = "uid://di0ls2xd5mt7j"
 
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/GridContainer/BuyBtn" to="." method="_on_buy_btn_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/GridContainer/SellBtn" to="." method="_on_sell_btn_pressed"]

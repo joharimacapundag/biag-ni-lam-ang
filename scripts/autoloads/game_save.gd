@@ -6,6 +6,15 @@ signal game_loaded
 const SAVE_FILE_PATH: String = "user://savegame.save"
 
 func save_game():
+	var config = ConfigFile.new()
+	config.set_value("global", "act", GameStatus.current_act)
+	config.set_value("global", "days", GameStatus.current_days)
+	config.set_value("global", "hunger", GameStatus.current_hunger)
+	config.set_value("global", "gold", GameStatus.current_gold)
+	config.set_value("global", "miles", GameStatus.current_miles)
+	config.set_value("global", "travelers", GameStatus.travelers)
+	config.save("user://global.cfg")
+	
 	var save_file = FileAccess.open(SAVE_FILE_PATH, FileAccess.WRITE)
 	var save_nodes = get_tree().get_nodes_in_group("Persist")
 	for node in save_nodes:
@@ -25,9 +34,24 @@ func save_game():
 	game_saved.emit()
   
 func load_game():
+	
+	var config = ConfigFile.new()
+	var err = config.load("user://global.cfg")
+	
+	if err != OK:
+		return
+
 	if not FileAccess.file_exists(SAVE_FILE_PATH):
 		return 
-
+		
+	for global in config.get_sections():
+		GameStatus.current_act =  config.get_value(global, "act")
+		GameStatus.current_days = config.get_value(global, "days")
+		GameStatus.current_hunger = config.get_value(global, "hunger")
+		GameStatus.current_gold = config.get_value(global, "gold")
+		GameStatus.current_miles = config.get_value(global, "miles")
+		GameStatus.travelers = config.get_value(global, "travelers")
+		
 	var save_nodes = get_tree().get_nodes_in_group("Persist")
 	for i in save_nodes:
 		i.queue_free()

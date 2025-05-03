@@ -200,7 +200,7 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5p3v4"]
 height = 48.0
 
-[node name="Lam-ang" type="Node2D" groups=["player"]]
+[node name="Lam-ang" type="Node2D" groups=["Persist", "player"]]
 script = ExtResource("1_kbhwb")
 traveler_resource = ExtResource("2_r863e")
 

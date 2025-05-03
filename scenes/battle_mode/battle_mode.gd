@@ -35,6 +35,17 @@ func append_all_travelers()->void:
 	GameEvents.battle_travelers_ready.emit(travelers)		
 	
 func _on_battle_enemy_entered(enemy)->void:
+	if enemy == "level_berkakan":
+		%Tree.hide()
+		%Water.show()
+		for traveler in travelers:
+			if traveler.traveler_resource.id == "rooster" || traveler.traveler_resource.id == "doggie":
+				travelers.erase(traveler)
+				%Players.remove_child(traveler)
+	else:
+		%Tree.show()
+		%Water.hide()
+		
 	if GameStatus.enemies_data.has(enemy):
 		var enemies: Array = GameStatus.enemies_data[enemy]
 		var i = 1

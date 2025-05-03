@@ -46,6 +46,7 @@ directories/dtl_directory={
 "act_2_dog_scene": "res://dialogic/timeline/timeline 2/act_2_dog_scene.dtl",
 "act_2_ines": "res://dialogic/timeline/timeline 2/act_2_ines.dtl",
 "act_2_scene_1_a_bossigorot": "res://dialogic/timeline/timeline 2/act_2_scene_1_a_bossigorot.dtl",
+"act_3_aftermath": "res://dialogic/timeline/timeline 3/act_3_aftermath.dtl",
 "act_3_scene_1": "res://dialogic/timeline/timeline 3/act_3_scene_1.dtl",
 "act_3_scene_2_inside_berrakan": "res://dialogic/timeline/timeline 3/act_3_scene_2_inside_berrakan.dtl",
 "ally_doggie": "res://tutorial/ally_doggie.dtl",
@@ -104,6 +105,7 @@ enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/gloo
 player=""
 npc=""
 enemy=""
+Persist=""
 
 [input]
 

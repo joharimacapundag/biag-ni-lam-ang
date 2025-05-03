@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cac4d43sqrosv" path="res://scenes/backgrounds/background_2.tscn" id="8_m1rsk"]
 [ext_resource type="PackedScene" uid="uid://dn8kv4o5inacj" path="res://scenes/backgrounds/background_3.tscn" id="9_yprka"]
 
-[node name="TravelMode" type="Node2D" node_paths=PackedStringArray("mile_spawn_trigger_component", "node_to_hide")]
+[node name="TravelMode" type="Node2D" node_paths=PackedStringArray("mile_spawn_trigger_component", "node_to_hide") groups=["Persist"]]
 script = ExtResource("1_ml84r")
 mile_spawn_trigger_component = NodePath("MileSpawnTriggerComponent")
 node_to_hide = NodePath(".")

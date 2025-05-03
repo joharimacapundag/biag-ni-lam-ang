@@ -16,3 +16,11 @@ func _ready() -> void:
 		print(item_resource.name, " Spawned")
 		sprite_2d.texture  = load(item_dict["image"])
 	
+func save():
+	var save_dict = {
+		"filename" : get_scene_file_path(),
+		"parent" : get_parent().get_path(),
+		"pos_x" : position.x, 
+		"pos_y" : position.y,
+	}
+	return save_dict

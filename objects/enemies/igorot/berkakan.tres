@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TravelerResource" load_steps=2 format=3 uid="uid://c4nq10pcyla7r"]
+
+[ext_resource type="Script" uid="uid://ddmsusn3b5rko" path="res://scripts/resources/traveler_resource.gd" id="1_3ikw6"]
+
+[resource]
+script = ExtResource("1_3ikw6")
+id = "berkakan"
+name = "Berkakan"
+description = ""
+actions = Array[String](["fight"])
+metadata/_custom_type_script = "uid://ddmsusn3b5rko"

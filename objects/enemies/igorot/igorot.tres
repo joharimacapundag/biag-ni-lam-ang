@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="TravelerResource" load_steps=2 format=3 uid="uid://owrchahq17ux"]
 
-[ext_resource type="Script" path="res://scripts/resources/traveler_resource.gd" id="1_04bbi"]
+[ext_resource type="Script" uid="uid://ddmsusn3b5rko" path="res://scripts/resources/traveler_resource.gd" id="1_04bbi"]
 
 [resource]
 script = ExtResource("1_04bbi")

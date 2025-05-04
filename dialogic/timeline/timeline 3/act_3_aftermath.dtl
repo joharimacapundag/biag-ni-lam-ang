@@ -1,7 +1,7 @@
 narrator: The monster is dead.
 narrator: But Lam-Ang is gone with it.[/i]
 
-lam-ang: This is... the end... but I end it *my* way.
+lam-ang: This is... the end... but I end it my way.
 
 narrator: [i]Years pass.
 narrator: The land recovers, but no sign of Lam-Ang is ever found.
@@ -24,3 +24,5 @@ narrator: None of them speak again.[/i]
 narrator: [i]Ines returns to the river every year, whispering his name to the wind.
 narrator: The wind never answers.
 narrator: But still — she hopes.[/i]
+[wait time="2.0"]
+do GameSceneManager.push_scene("uid://bb8mph4gbw6t7")

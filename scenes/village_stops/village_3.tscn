@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3vpa80koycfw"]
+
+[ext_resource type="Script" uid="uid://cumerj0u7kmma" path="res://scenes/village_stops/village_3.gd" id="1_uvp0j"]
+[ext_resource type="Texture2D" uid="uid://rc6bf2nhhgef" path="res://assets/Buttons/Huty.png" id="2_8e3o3"]
+[ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="3_h4enn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gutli"]
+size = Vector2(276.677, 272)
+
+[node name="Village2" type="Node2D"]
+script = ExtResource("1_uvp0j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-5, -134)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_8e3o3")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-3, -134)
+scale = Vector2(1.04093, 1.00893)
+shape = SubResource("RectangleShape2D_gutli")
+
+[node name="DayAndNightComponent" type="Node" parent="." node_paths=PackedStringArray("node")]
+script = ExtResource("3_h4enn")
+node = NodePath("..")
+metadata/_custom_type_script = "uid://c0d8bw5d80jkx"
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

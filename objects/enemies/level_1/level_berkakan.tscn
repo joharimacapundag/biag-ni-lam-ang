@@ -13,11 +13,10 @@ level = "level_berkakan"
 dialogue_path = "act_3_scene_1"
 after_end_dialogue_path = "act_3_aftermath"
 
-[node name="StartBattleComponent" type="Node" parent="." node_paths=PackedStringArray("area_2d", "enemy", "animated_sprite_2d")]
+[node name="StartBattleComponent" type="Node" parent="." node_paths=PackedStringArray("area_2d", "enemy")]
 script = ExtResource("2_xjmuh")
 area_2d = NodePath("../Area2D")
 enemy = NodePath("..")
-animated_sprite_2d = NodePath("")
 metadata/_custom_type_script = "uid://bcmtunimda3c0"
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]

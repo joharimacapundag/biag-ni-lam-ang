@@ -51,9 +51,9 @@
 	  }
 	}
   },
-  "fight": {
-	"name": "To hit with a sword",
-	"ilocano_word": "Espadaen",
+  "medicine": {
+	"name": "Medicine",
+	"ilocano_word": "Agas",
 	"action_type": "combat_action",
 	"modifiers": {
 	  "source": {

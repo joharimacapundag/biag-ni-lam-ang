@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="TravelerResource" load_steps=3 format=3 uid="uid://ej82bxrog86c"]
 
 [ext_resource type="Script" uid="uid://ddmsusn3b5rko" path="res://scripts/resources/traveler_resource.gd" id="1_f0k5y"]
-[ext_resource type="Texture2D" uid="uid://bur4hwfcg5c5p" path="res://assets/sprites/travelers/lam-ang/rooster profile.jpeg" id="1_nld2x"]
+[ext_resource type="Texture2D" uid="uid://wtav1f2r40is" path="res://assets/item assets/Roosty.png" id="1_nld2x"]
 
 [resource]
 script = ExtResource("1_f0k5y")
@@ -10,4 +10,4 @@ name = "Rooster"
 profile = ExtResource("1_nld2x")
 description = "[b]Rooster[/b]
 With a striking blend of vibrant plumage and a commanding presence, this rooster is more than just a herald of the dawn. Known for his sharp wit and bold spirit, he stands as a symbol of hope and renewal. His resounding call not only awakens the day but inspires those around him with quiet determination and honor. Without giving away the epic journey that lies ahead, his character radiates strength, purpose, and an unyielding promise of new beginnings."
-actions = Array[String](["cry", "fight"])
+actions = Array[String](["cry", "medicine"])

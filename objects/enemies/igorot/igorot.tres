@@ -7,4 +7,4 @@ script = ExtResource("1_04bbi")
 id = "igorot"
 name = "Igorot"
 description = ""
-actions = Array[String](["fight"])
+actions = Array[String](["evil"])

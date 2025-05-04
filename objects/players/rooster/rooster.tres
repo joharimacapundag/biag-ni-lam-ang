@@ -10,4 +10,4 @@ name = "Rooster"
 profile = ExtResource("1_nld2x")
 description = "[b]Rooster[/b]
 With a striking blend of vibrant plumage and a commanding presence, this rooster is more than just a herald of the dawn. Known for his sharp wit and bold spirit, he stands as a symbol of hope and renewal. His resounding call not only awakens the day but inspires those around him with quiet determination and honor. Without giving away the epic journey that lies ahead, his character radiates strength, purpose, and an unyielding promise of new beginnings."
-actions = Array[String](["cry", "medicine"])
+actions = Array[String](["cry", "fight"])

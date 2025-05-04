@@ -4,7 +4,6 @@ signal spawned(node)
 
 var events: Dictionary = {
 	"act_1": [
-		
 	{
 		"type": "fixed",
 		"trigger_mile": 4,
@@ -142,7 +141,7 @@ var events: Dictionary = {
 		},
 		{
 			"type": "fixed",
-			"trigger_mile":1,
+			"trigger_mile":60,
 			"scene_path": "uid://lrpu1ybm030y"
 		}	
 	]

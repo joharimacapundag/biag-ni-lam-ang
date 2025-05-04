@@ -213,6 +213,8 @@ traveler_resource = ExtResource("2_v67tk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+position = Vector2(-14, -1)
+scale = Vector2(0.874345, 0.783251)
 sprite_frames = SubResource("SpriteFrames_2d1my")
 animation = &"attack"
 autoplay = "idle"

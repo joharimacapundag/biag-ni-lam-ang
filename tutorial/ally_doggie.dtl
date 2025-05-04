@@ -3,29 +3,24 @@ narrator: The forest is quiet now. The shattered cage lies behind them. Morning 
 
 lam-ang: Are you injured?
 
-doggie: [b]tail wags slowly[/b] Bruised... tired... but free. Because of you.
+do 
 
 lam-ang: No one deserves to be trapped like that.
-
-doggie: When the Igorot caught me, I thought I’d never see the outside again. But you came.
-
-doggie: You didn’t have to help… but you did. [color=yellow]Agyamanak unay[/color], Lam-Ang. [color=red](Thank you so much.)[/color]
 do GameStatus.add_learned_word("thank you")
 
 lam-ang: I'm glad I found you when I did.
 
-doggie: [b]ears perk up[/b] I don’t have much to offer… but I can track, I can guard, I can fight if needed.
+do 
 
 lam-ang: [i]A companion with senses keener than mine...[/i] That could be helpful.
 
-doggie: If you’ll have me… may I join you on your journey?
+do 
 
 lam-ang: Of course. Let’s face the road ahead—together.
 
-doggie: [b]small bark[/b] Then from this day on, I am your shadow and your teeth in the dark. I will walk beside you until the end.
+do 
 
 lam-ang: Then let’s go, friend. We have a long road ahead.
 
 narrator: Side by side, Lam-Ang and his new companion vanish into the morning light, two spirits bound by freedom and trust.
 [wait_input]
-

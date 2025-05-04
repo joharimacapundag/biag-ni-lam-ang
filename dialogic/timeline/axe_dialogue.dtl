@@ -4,8 +4,6 @@ narrator: [i]Lam-Ang spots an old axe leaning against a tree stump, its blade we
 lam-ang: This… this is more than just a tool. It’s an  [color=yellow]axe[/color] [color=red]"wasay"[/color].
 do GameStatus.add_learned_word("axe")
 
-lam-ang: I remember Mother whispering it when I helped gather firewood as a boy.
-
 narrator: [i]He grips the handle firmly, feeling its weight in his hand. The memories of home echo faintly with each grain of the wood.[/i]
 
 narrator: [i]Lam-Ang secures the axe to his belt and moves forward, the quiet strength of his roots steadying his step.[/i]

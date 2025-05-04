@@ -9,6 +9,9 @@
 
 [node name="PanelContainer" type="PanelContainer"]
 custom_minimum_size = Vector2(300, 0)
+offset_right = 300.0
+offset_bottom = 185.0
+scale = Vector2(0.527238, 0.51389)
 script = ExtResource("1_5k7kg")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]

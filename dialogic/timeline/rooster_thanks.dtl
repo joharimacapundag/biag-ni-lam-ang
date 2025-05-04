@@ -1,22 +1,18 @@
 [wait time="1.0"]
-Morning mist still clings to the leaves. The hunter steps forward, shouldering his spear. The rooster trembles at Lam-Ang’s side.
+narrator: Morning mist still clings to the leaves. The hunter steps forward, shouldering his spear. The rooster trembles at Lam-Ang’s side.
 
 hunter: Fine… you make a good point, boy. I’ve enough game in the valley. This one’s yours take him and be on your way.
 
-The hunter releases a heavy sigh, turns, and strides down the path, disappearing into the trees.
+narrator: The hunter releases a heavy sigh, turns, and strides down the path, disappearing into the trees.
 
 [wait time="0.5"]
 lam-ang: Are you all right now?
 
-The rooster fluffing its feathers hops closer, eyes bright with relief.
-
-rooster: [b]soft chirp[/b] Agyamanak unay, Lam-Ang! Thank you for saving me from that hunter.
+rooster: [b]soft chirp[/b] Thank you so much, Lam-Ang! Thank you for saving me from that hunter.
 
 lam-ang: You’re safe now. I couldn’t leave you for his dinner.
 
 rooster: I thought… I’d never see another sunrise. You risked yourself for me—
-
-lam-ang: It was nothing. Every creature deserves a chance.
 
 rooster: [b]puffs chest proudly[/b] I owe you my life. May I… join you on your journey? I can keep watch and warn you of danger.
 
@@ -29,4 +25,4 @@ lam-ang: Just stay close, little friend, and trust me if danger strikes again.
 rooster: I promise. From now on, I am your eyes and your song to brighten the road.
 
 [wait time="1.0"]
-Hand in wing, Lam-Ang and his new companion set off along the sunlit path, ready for whatever adventures lie ahead.
+narrator: Hand in wing, Lam-Ang and his new companion set off along the sunlit path, ready for whatever adventures lie ahead.

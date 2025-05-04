@@ -1,20 +1,19 @@
 [wait time="1.0"]
 [background arg="res://assets/item assets/lam ang and the boss.png" fade="0.0"]
 The wind howled across the mountains as Lam-Ang stood before the Igorots' towering gate. His heart beat steady, filled with the memory of his father, Don Juan.
-lam-ang: This is it. No more waiting. For Father... for my [color=yellow] family[/color]  [color=red](pamilya.)[/color]
-do GameStatus.add_learned_word("family")
+lam-ang: This is it. No more waiting. For Father... for my family.
 
-He pushed open the heavy gate with a loud creak. Inside, dozens of Igorot warriors turned to face him, weapons drawn, their eyes burning with anger[color=red](rurod)[/color].
+He pushed open the heavy gate with a loud creak. Inside, dozens of Igorot warriors turned to face him, weapons drawn, their eyes burning with [color=yellow]anger [/color] [color=red](rurod)[/color].
 do GameStatus.add_learned_word("anger")
 
 Their leader, a massive man with scars across his face, stepped forward.
-igorot: Who dares disturb us in our village [color=red](baryo)?[/color]
+igorot: Who dares disturb us in our [color=yellow]village[/color] [color=red] (baryo)?[/color]
 do GameStatus.add_learned_word("village")
-I am Lam-Ang, son of Don Juan! You killed my father [color=red](ama)[/color], and today you will answer!
+I am Lam-Ang, son of Don Juan! You killed my father, and today you will answer!
 
 The warriors jeered and closed in, their weapons glinting under the sun.
 igorot: A boy dares challenge us? STOP! (AGSARDENG KA!) Turn back while you still breathe!
-lam-ang: No. I will not retreat. War [color=red](Gubat)[/color] is upon you!
+lam-ang: No. I will not retreat. [color=yellow]War[/color] [color=red](Gubat)[/color] is upon you!
 do GameStatus.add_learned_word("war")
 
 He charged forward, his [color=red]"gayang"[/color] (spear) flashing in the light.

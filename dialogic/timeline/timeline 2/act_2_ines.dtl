@@ -1,7 +1,7 @@
 [background arg="res://assets/item assets/Lam-ang Love.png" fade="0.0"]
 [i]The sun dipped low as Lam-Ang, the dog, and the rooster followed the winding path beside the sparkling river.
 The sound of laughter and soft singing floated through the evening air.[/i]
-What is that sound? A voice... so  [color=yellow]beautiful[/color] [color=red](napintas.)[/color]
+What is that sound? A voice... so  [color=yellow]beautiful[/color] [color=red] (napintas.)[/color]
 do GameStatus.add_learned_word("beautiful")
 
 [i]The dog perked its ears. The rooster flapped its wings once, sensing the change in their master's mood.[/i]
@@ -10,7 +10,7 @@ do GameStatus.add_learned_word("companion")
 
 [i]They crept closer through the trees. Across the river, Lam-Ang saw a group of young women gathered, washing clothes and laughing.
 At their center stood a maiden whose beauty struck Lam-Ang harder than any blade ever could.[/i]
-She must be Ines Kannoyan... the  [color=yellow]maiden[/color][color=red]"balasang"[/color] they speak of.
+She must be Ines Kannoyan... the  [color=yellow]maiden[/color][color=red] (balasang)[/color] they speak of.
 do GameStatus.add_learned_word("maiden")
 
 [i]Lam-Ang’s heart raced. His mind scrambled for the Ilocano words his mother had taught him.[/i]
@@ -29,7 +29,7 @@ The girls laughed again, but Ines lingered, clearly intrigued.[/i]
 You speak well, stranger. Perhaps you will tell me more... if you can keep up.
 
 [i]She turned, laughing, and walked away with her friends — but not without looking back once at Lam-Ang.[/i]
-She is like the [color=yellow]stars[/color] [color=red]"bituen"[/color] — distant, but shining.
+She is like the [color=yellow]stars[/color] [color=red] (bituen)[/color] — distant, but shining.
 do GameStatus.add_learned_word("star")
 
 [i]Without hesitation, Lam-Ang and his loyal friends followed, stepping into the next great chapter of his adventure.[/i]

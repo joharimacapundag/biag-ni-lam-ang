@@ -1,11 +1,9 @@
 [wait time="1.0"]
-[i]Lam-Ang kneels beside a patch of wild herbs growing near the path.
-His hand, scraped from battle, throbs slightly.[/i]
-lam-ang: This herb will serve as my medicine[color=red](agas)[/color]... it’s just what I need.
+narrator: [i]Lam-Ang kneels beside a patch of wild herbs growing near the path. His hand, scraped from battle, throbs slightly.[i]
+lam-ang: This herb will serve as my [color=yellow]medicine[/color][color=red] (agas)[/color]... it’s just what I need.
 do GameStatus.add_learned_word("medicine")
 
 [i]He gently plucks a few leaves.[/i]
-lam-ang: The herb will help heal [color=red]"agasan"[/color] my wounds.
+lam-ang: The herb will help [color=yellow]heal[/color] [color=red](agasan)[/color] my wounds.
 do GameStatus.add_learned_word("heal")
-lam-ang: Even the smallest herb can give strength.
-[i]They continue their journey, the herb's scent lingering in the air.
+narrator: [i]They continue their journey, the herb's scent lingering in the air.

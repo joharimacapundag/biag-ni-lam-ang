@@ -378,7 +378,7 @@
   },
   "follow": {
 	"name": "To follow",
-	"ilocano_word": "Agsursurot",
+	"ilocano_word": "Sumurot",
 	"action_type": "support_action",
 	"modifiers": {
 	  "source": {

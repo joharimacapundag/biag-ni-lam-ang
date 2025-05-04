@@ -1,4 +1,5 @@
 extends Node2D
 
 func _ready() -> void:
-	pass
+	GameStatus.current_act = "act_3"
+	GameEvents.rested.emit()

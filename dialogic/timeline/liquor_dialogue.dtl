@@ -1,11 +1,11 @@
-lam-ang: She never said it out of anger… only concern. Even when Father returned from the fields with drink on his breath, she would sigh and say, “Not you too, anak. Be better.”
+[wait time="1.0"]
+[i]Lam-Ang kneels beside a patch of wild herbs growing near the path.
+His hand, scraped from battle, throbs slightly.[/i]
+lam-ang: This herb will serve as my medicine[color=red](agas)[/color]... it’s just what I need.
+do GameStatus.add_learned_word("medicine")
 
-[i]Lam-Ang lowers the liquor, his grip steady, yet uncertain. The scent, sharp and bitter, stings his memory more than his nose.[/i]
-
-lam-ang: I don’t need this not yet. But it’s part of him… of our story.
-
-[i]Instead of taking a sip, Lam-Ang carefully slides the liquor into his satchel. He doesn’t drink it, but he carries it—like a burden, like a reminder, like a choice not yet made.[/i]
-
-lam-ang: [color=red]"Arak"[/color]… liquor.
-lam-ang: Another word… another weight.
-
+[i]He gently plucks a few leaves.[/i]
+lam-ang: The herb will help heal [color=red]"agasan"[/color] my wounds.
+do GameStatus.add_learned_word("heal")
+lam-ang: Even the smallest herb can give strength.
+[i]They continue their journey, the herb's scent lingering in the air.

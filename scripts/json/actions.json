@@ -1,7 +1,7 @@
 {
-  "challenge": {
-	"name": "To chop",
-	"ilocano_word": "Tagbaten",
+  "evil": {
+	"name": "Evil",
+	"ilocano_word": "Dakes",
 	"action_type": "combat_action",
 	"modifiers": {
 	  "source": {

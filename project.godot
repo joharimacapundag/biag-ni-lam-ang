@@ -59,6 +59,7 @@ directories/dtl_directory={
 "coffee_dialogue": "res://dialogic/timeline/coffee_dialogue.dtl",
 "dagger_dialogue": "res://dialogic/timeline/dagger_dialogue.dtl",
 "herb_dialogue": "res://dialogic/timeline/herb_dialogue.dtl",
+"introduction": "res://dialogic/tutorial and intro/introduction.dtl",
 "lam ang knowing about where igorot lives from igorot": "res://lam ang knowing about where igorot lives from igorot.dtl",
 "level_1_easy": "res://dialogic/timeline/level_1_easy.dtl",
 "liquor_dialogue": "res://dialogic/timeline/liquor_dialogue.dtl",
@@ -68,7 +69,6 @@ directories/dtl_directory={
 "spear_dialogue": "res://dialogic/timeline/spear_dialogue.dtl",
 "sword_dialogue": "res://dialogic/timeline/sword_dialogue.dtl",
 "tutorial": "res://dialogic/timeline/tutorial.dtl",
-"tutorial and intro/introduction": "res://dialogic/tutorial and intro/introduction.dtl",
 "tutorial and intro/tutorial": "res://dialogic/tutorial and intro/tutorial.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"

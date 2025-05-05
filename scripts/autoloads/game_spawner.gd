@@ -132,11 +132,6 @@ var events: Dictionary = {
 	
 	],
 	"act_3": [
-			{
-			"type": "fixed",
-			"trigger_mile":66,
-			"scene_path": "uid://clya8hk4ggrqr"
-		},
 		{
 			"type": "fixed",
 			"trigger_mile":68,

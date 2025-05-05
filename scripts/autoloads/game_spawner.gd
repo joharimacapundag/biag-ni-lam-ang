@@ -168,7 +168,7 @@ func mile_spawn(mile: int, act: String, parent: Node2D, position: Vector2) -> vo
 	if !events.has(act):
 		push_error("No events defined for act: " + act)
 		return
-	
+	print(str("Miles: ", mile, " Act: ", act))
 	for event_data in events[act]:
 		if !event_data is Dictionary:
 			continue

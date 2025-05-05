@@ -1,3 +1,5 @@
+[background arg="res://assets/battlegrounds/solid black.jpg" fade="0.0"]
+do GameTime.pause()
 narrator: The monster is dead.
 narrator: But Lam-Ang is gone with it.[/i]
 

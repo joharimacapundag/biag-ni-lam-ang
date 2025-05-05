@@ -12,4 +12,4 @@ profile = ExtResource("2_q7hd0")
 full_body_image = ExtResource("1_akdti")
 description = "[b]Lam-ang[/b]
 Lam-ang is renowned for his extraordinary strength, keen intellect, and unwavering determination. From a very young age, his remarkable abilities set him apart as a figure of legend. With a natural charm and fearless spirit, he embodies the ideals of courage and honor, inspiring those around him without revealing the many adventures that lie ahead."
-actions = Array[String](["evil", "live", "medicine"])
+actions = Array[String](["evil", "live", "fight"])

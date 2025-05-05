@@ -133,15 +133,13 @@ var events: Dictionary = {
 	],
 	"act_3": [
 			{
-			"type": "interval",
-			"min_miles": 58,
-			"max_miles": 46,
-			"chance": 1, 
+			"type": "fixed",
+			"trigger_mile":66,
 			"scene_path": "uid://clya8hk4ggrqr"
 		},
 		{
 			"type": "fixed",
-			"trigger_mile":60,
+			"trigger_mile":68,
 			"scene_path": "uid://lrpu1ybm030y"
 		}	
 	]
@@ -170,7 +168,7 @@ func mile_spawn(mile: int, act: String, parent: Node2D, position: Vector2) -> vo
 	if !events.has(act):
 		push_error("No events defined for act: " + act)
 		return
-	
+	print(str("Miles: ", mile, " Act: ", act))
 	for event_data in events[act]:
 		if !event_data is Dictionary:
 			continue

@@ -206,11 +206,10 @@ script = ExtResource("1_77tg4")
 level = "level_easy_1"
 dialogue_path = "level_1_easy"
 
-[node name="StartBattleComponent" type="Node" parent="." node_paths=PackedStringArray("area_2d", "enemy", "animated_sprite_2d")]
+[node name="StartBattleComponent" type="Node" parent="." node_paths=PackedStringArray("area_2d", "enemy")]
 script = ExtResource("5_5pkuv")
 area_2d = NodePath("../Area2D")
 enemy = NodePath("..")
-animated_sprite_2d = NodePath("../AnimatedSprite2D")
 metadata/_custom_type_script = "uid://bcmtunimda3c0"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

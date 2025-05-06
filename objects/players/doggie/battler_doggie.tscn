@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://2bigrjgf5crm"]
+[gd_scene load_steps=39 format=3 uid="uid://2bigrjgf5crm"]
 
 [ext_resource type="Resource" uid="uid://bmgs24g1io0b0" path="res://objects/players/doggie/doggie.tres" id="1_7vb4t"]
 [ext_resource type="Texture2D" uid="uid://cpd2pvdo6hfa8" path="res://objects/players/doggie/Attack_2.png" id="2_7vb4t"]
@@ -257,9 +257,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j8b15"]
-height = 48.0
-
 [node name="Doggie" type="Node2D" groups=["player"]]
 script = SubResource("GDScript_5kmyg")
 traveler_resource = ExtResource("1_7vb4t")
@@ -269,7 +266,7 @@ texture_filter = 1
 position = Vector2(-25, -26)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_2d1my")
-animation = &"attack"
+animation = &"run"
 autoplay = "idle"
 
 [node name="StatsComponent" type="Node" parent="." node_paths=PackedStringArray("traveler")]
@@ -306,13 +303,6 @@ script = ExtResource("13_2d8dk")
 traveler = NodePath("..")
 animated_sprite_2d = NodePath("../AnimatedSprite2D")
 action_component = NodePath("../ActionComponent")
-
-[node name="Area2D" type="Area2D" parent="."]
-collision_mask = 6
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-18, 11)
-shape = SubResource("CapsuleShape2D_j8b15")
 
 [node name="DayAndNightComponent" type="Node" parent="." node_paths=PackedStringArray("node")]
 script = ExtResource("16_uwcsv")

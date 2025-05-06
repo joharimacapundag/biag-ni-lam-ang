@@ -207,11 +207,10 @@ level = "level_easy_2"
 dialogue_path = "act_2_scene_1_a_bossigorot"
 after_end_dialogue_path = "act_2_dog_scene"
 
-[node name="StartBattleComponent" type="Node" parent="." node_paths=PackedStringArray("area_2d", "enemy", "animated_sprite_2d")]
+[node name="StartBattleComponent" type="Node" parent="." node_paths=PackedStringArray("area_2d", "enemy")]
 script = ExtResource("2_7o6ab")
 area_2d = NodePath("../Area2D")
 enemy = NodePath("..")
-animated_sprite_2d = NodePath("../AnimatedSprite2D")
 metadata/_custom_type_script = "uid://bcmtunimda3c0"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

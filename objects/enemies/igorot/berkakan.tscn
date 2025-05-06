@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://j8h7p2ju275t"]
+[gd_scene load_steps=14 format=3 uid="uid://j8h7p2ju275t"]
 
 [ext_resource type="Script" uid="uid://di3tul3g8b2q0" path="res://objects/traveler.gd" id="1_q5pjr"]
 [ext_resource type="Resource" uid="uid://c4nq10pcyla7r" path="res://objects/enemies/igorot/berkakan.tres" id="2_q5pjr"]
@@ -11,7 +11,6 @@
 [ext_resource type="Script" uid="uid://de6h0g2roehmm" path="res://scripts/components/health_component.gd" id="12_y1bu1"]
 [ext_resource type="Script" uid="uid://csnhgvnb6fmxd" path="res://scripts/components/attack_component.gd" id="13_ljfsd"]
 [ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="14_633yu"]
-[ext_resource type="Script" uid="uid://ckxrahpqglwja" path="res://objects/enemies/igorot/die_2_component.gd" id="15_c6qiq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_38ckq"]
 atlas = ExtResource("3_y8gbg")
@@ -52,10 +51,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sge38"]
-radius = 16.0
-height = 56.0
-
 [node name="Berkakan" type="Node2D" groups=["enemy"]]
 script = ExtResource("1_q5pjr")
 traveler_resource = ExtResource("2_q5pjr")
@@ -65,7 +60,7 @@ texture_filter = 1
 position = Vector2(21, -21)
 scale = Vector2(0.10603, 0.10603)
 sprite_frames = SubResource("SpriteFrames_yqbfo")
-animation = &"run"
+animation = &"attack"
 autoplay = "idle"
 flip_h = true
 
@@ -98,22 +93,12 @@ script = ExtResource("12_y1bu1")
 traveler = NodePath("..")
 stats_component = NodePath("../StatsComponent")
 
-[node name="AttackComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d")]
+[node name="AttackComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d", "action_component")]
 script = ExtResource("13_ljfsd")
 traveler = NodePath("..")
 animated_sprite_2d = NodePath("../AnimatedSprite2D")
+action_component = NodePath("../ActionComponent")
 
 [node name="DayAndNightComponent" type="Node" parent="." node_paths=PackedStringArray("node")]
 script = ExtResource("14_633yu")
 node = NodePath("..")
-
-[node name="Area2D" type="Area2D" parent="."]
-collision_layer = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(20, 10)
-shape = SubResource("CapsuleShape2D_sge38")
-
-[node name="Die2Component" type="Node" parent="." node_paths=PackedStringArray("traveler")]
-script = ExtResource("15_c6qiq")
-traveler = NodePath("..")

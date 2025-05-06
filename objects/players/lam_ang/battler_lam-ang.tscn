@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://bbsr170vxrutp"]
+[gd_scene load_steps=38 format=3 uid="uid://bbsr170vxrutp"]
 
 [ext_resource type="Script" uid="uid://di3tul3g8b2q0" path="res://objects/traveler.gd" id="1_7b3qp"]
 [ext_resource type="Resource" uid="uid://bqo62c42ctain" path="res://objects/players/lam_ang/lam-ang.tres" id="2_vj5pa"]
@@ -10,7 +10,6 @@
 [ext_resource type="Script" uid="uid://de6h0g2roehmm" path="res://scripts/components/health_component.gd" id="9_64fyf"]
 [ext_resource type="Script" uid="uid://csnhgvnb6fmxd" path="res://scripts/components/attack_component.gd" id="10_68ukc"]
 [ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="12_u3f3f"]
-[ext_resource type="Script" uid="uid://dq8ifdm3w8ihd" path="res://scripts/components/overtime_damage_travel_component.gd" id="14_hc8u3"]
 [ext_resource type="Texture2D" uid="uid://b1p8nyf2mldch" path="res://assets/sprites/travelers/lam-ang/attack.png" id="15_60kc1"]
 [ext_resource type="Texture2D" uid="uid://mlxrdyconule" path="res://assets/sprites/travelers/lam-ang/death.png" id="16_7t68e"]
 [ext_resource type="Texture2D" uid="uid://04t6ljx45pfh" path="res://assets/sprites/travelers/lam-ang/idle.png" id="17_20eum"]
@@ -193,12 +192,16 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5p3v4"]
-height = 48.0
-
 [node name="Lam-ang" type="Node2D" groups=["player"]]
 script = ExtResource("1_7b3qp")
 traveler_resource = ExtResource("2_vj5pa")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_fyqs7")
+animation = &"attack"
+autoplay = "idle"
 
 [node name="StatsComponent" type="Node" parent="." node_paths=PackedStringArray("traveler")]
 script = ExtResource("3_nqy0e")
@@ -237,22 +240,3 @@ animated_sprite_2d = NodePath("../AnimatedSprite2D")
 [node name="DayAndNightComponent" type="Node" parent="." node_paths=PackedStringArray("node")]
 script = ExtResource("12_u3f3f")
 node = NodePath("..")
-
-[node name="OvertimeDamageTravelComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "stats_component")]
-script = ExtResource("14_hc8u3")
-traveler = NodePath("..")
-stats_component = NodePath("../StatsComponent")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-unique_name_in_owner = true
-texture_filter = 1
-sprite_frames = SubResource("SpriteFrames_fyqs7")
-animation = &"attack"
-autoplay = "idle"
-
-[node name="Area2D" type="Area2D" parent="."]
-collision_mask = 10
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-18, 11)
-shape = SubResource("CapsuleShape2D_5p3v4")

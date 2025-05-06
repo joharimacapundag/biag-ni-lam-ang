@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://rwgiea3y5ric"]
+[gd_scene load_steps=30 format=3 uid="uid://rwgiea3y5ric"]
 
 [ext_resource type="Script" uid="uid://di3tul3g8b2q0" path="res://objects/traveler.gd" id="1_iq32i"]
 [ext_resource type="Resource" uid="uid://ej82bxrog86c" path="res://objects/players/rooster/rooster.tres" id="2_yhg2s"]
@@ -12,7 +12,6 @@
 [ext_resource type="Script" uid="uid://de6h0g2roehmm" path="res://scripts/components/health_component.gd" id="13_bucvc"]
 [ext_resource type="Script" uid="uid://csnhgvnb6fmxd" path="res://scripts/components/attack_component.gd" id="14_oeubt"]
 [ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="16_nkt2e"]
-[ext_resource type="Script" uid="uid://dq8ifdm3w8ihd" path="res://scripts/components/overtime_damage_travel_component.gd" id="17_wdidx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ige5n"]
 atlas = ExtResource("3_6lwsd")
@@ -198,9 +197,3 @@ action_component = NodePath("../ActionComponent")
 [node name="DayAndNightComponent" type="Node" parent="." node_paths=PackedStringArray("node")]
 script = ExtResource("16_nkt2e")
 node = NodePath("..")
-
-[node name="OvertimeDamageTravelComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "stats_component")]
-script = ExtResource("17_wdidx")
-traveler = NodePath("..")
-stats_component = NodePath("../StatsComponent")
-metadata/_custom_type_script = "uid://dq8ifdm3w8ihd"

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="TravelerResource" load_steps=3 format=3 uid="uid://bmgs24g1io0b0"]
 
-[ext_resource type="Texture2D" uid="uid://bye42r2m738ld" path="res://assets/item assets/dogie.png" id="1_6rnqn"]
+[ext_resource type="Texture2D" uid="uid://cf0yux3366kl2" path="res://assets/backgrounds/doggie.png" id="1_6rnqn"]
 [ext_resource type="Script" uid="uid://ddmsusn3b5rko" path="res://scripts/resources/traveler_resource.gd" id="1_adnv6"]
 
 [resource]

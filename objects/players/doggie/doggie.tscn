@@ -208,6 +208,7 @@ animations = [{
 height = 48.0
 
 [node name="Doggie" type="Node2D" groups=["Persist", "player"]]
+z_index = 15
 script = ExtResource("1_5kmyg")
 traveler_resource = ExtResource("2_v67tk")
 

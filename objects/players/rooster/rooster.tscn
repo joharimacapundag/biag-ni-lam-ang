@@ -153,6 +153,7 @@ animations = [{
 }]
 
 [node name="Rooster" type="Node2D" groups=["Persist", "player"]]
+z_index = 5
 script = ExtResource("1_xsf34")
 traveler_resource = ExtResource("2_3e3it")
 

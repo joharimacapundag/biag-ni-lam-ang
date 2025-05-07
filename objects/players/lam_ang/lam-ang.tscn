@@ -201,6 +201,7 @@ animations = [{
 height = 48.0
 
 [node name="Lam-ang" type="Node2D" groups=["Persist", "player"]]
+z_index = 10
 script = ExtResource("1_kbhwb")
 traveler_resource = ExtResource("2_r863e")
 

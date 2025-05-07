@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://i6817uwqlknq"]
 
 [ext_resource type="Script" uid="uid://dh474p31u86sh" path="res://scenes/village_stops/ines_kannoyan.gd" id="1_8i1lu"]
-[ext_resource type="Texture2D" uid="uid://clod4h363eck4" path="res://8-bit-graphics-pixels-scene-with-nature.png" id="2_8i1lu"]
+[ext_resource type="Texture2D" uid="uid://ll13ywb12pxq" path="res://assets/backgrounds/pound.png" id="2_8i1lu"]
 [ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="3_suqrw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gutli"]

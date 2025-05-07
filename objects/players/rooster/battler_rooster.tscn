@@ -153,6 +153,7 @@ script = ExtResource("1_iq32i")
 traveler_resource = ExtResource("2_yhg2s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_wjta3")
 animation = &"attack"

@@ -38,10 +38,6 @@ func _on_battle_enemy_entered(enemy)->void:
 	if enemy == "level_berkakan":
 		%Tree.hide()
 		%Water.show()
-		for traveler in travelers:
-			if traveler.traveler_resource.id == "rooster" || traveler.traveler_resource.id == "doggie":
-				travelers.erase(traveler)
-				%Players.remove_child(traveler)
 	else:
 		%Tree.show()
 		%Water.hide()

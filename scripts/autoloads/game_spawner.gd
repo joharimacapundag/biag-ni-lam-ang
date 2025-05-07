@@ -4,7 +4,6 @@ signal spawned(node)
 
 var events: Dictionary = {
 	"act_1": [
-		
 	{
 		"type": "fixed",
 		"trigger_mile": 4,

@@ -232,10 +232,11 @@ script = ExtResource("9_64fyf")
 traveler = NodePath("..")
 stats_component = NodePath("../StatsComponent")
 
-[node name="AttackComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d")]
+[node name="AttackComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d", "action_component")]
 script = ExtResource("10_68ukc")
 traveler = NodePath("..")
 animated_sprite_2d = NodePath("../AnimatedSprite2D")
+action_component = NodePath("../ActionComponent")
 
 [node name="DayAndNightComponent" type="Node" parent="." node_paths=PackedStringArray("node")]
 script = ExtResource("12_u3f3f")

@@ -1,4 +1,5 @@
 [wait time="1.0"]
+do GameEvents.hide_ui()
 narrator: The forest is quiet now. The shattered cage lies behind them. Morning rays break through the canopy, warming the earth.
 
 lam-ang: Are you injured?
@@ -24,3 +25,4 @@ lam-ang: Then let’s go, friend. We have a long road ahead.
 
 narrator: Side by side, Lam-Ang and his new companion vanish into the morning light, two spirits bound by freedom and trust.
 [wait_input]
+do GameEvents.show_ui()

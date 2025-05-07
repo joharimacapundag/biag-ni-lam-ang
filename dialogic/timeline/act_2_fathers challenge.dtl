@@ -1,3 +1,4 @@
+do GameEvents.hide_ui()
 narrator: The moonlight shimmers on the restless sea, its surface whispering secrets of old.
 narrator: Ines Kannoyan stands between her parents on the cliff’s edge, anticipation and dread in her eyes.
 
@@ -23,3 +24,4 @@ lam-ang (meeting Ines’s gaze): For you, Ines, I’ll face whatever monsters lu
 
 narrator: The wind carries his vow across the waves.
 narrator: [i]And so, beneath the silver moon, Lam-Ang steps bravely toward the unknown depths.\[/i]
+do GameEvents.show_ui()

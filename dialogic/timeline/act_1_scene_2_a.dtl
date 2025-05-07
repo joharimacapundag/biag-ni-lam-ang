@@ -1,4 +1,5 @@
 [wait time="1.0"]
+do GameEvents.hide_ui()
 narrator: Morning light filters through tall trees. Lam-Ang ambles along a quiet path when he suddenly hears a distressed cry.
 lam-ang: What!?
 narrator: He listens as the cry repeats—a mix of urgency and fear. Following the sound, he discovers a small rooster perched on a low branch, its feathers slightly ruffled. There were hunters trying to  [color=yellow]hit[/color] [color=red](diswan) [/color] the rooster.
@@ -19,3 +20,4 @@ lam-ang: I respect that you need to hunt for food, but isn’t there another way
 lam-ang: [i]How I convince this guy?[/i]
 rooster: Help me... please, help me...
 lam-ang: [i]Okay, maybe Ilocano words might convince him[/i]
+do GameEvents.show_ui()

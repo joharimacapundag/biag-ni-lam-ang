@@ -2,6 +2,8 @@ extends Control
 func _ready() -> void:
 	%MenuButton.pressed.connect(_on_menu_button_pressed)
 	GameTime.game_time_starting.connect(_on_game_time_starting)
+	GameEvents.ui_hidden.connect(_on_ui_hidden)
+	GameEvents.ui_showed.connect(_on_ui_visible)
 
 func add_travelers(travelers: Array)->void:
 	for traveler in travelers:
@@ -26,3 +28,9 @@ func _on_game_time_starting(hours: float)->void:
 	%DayLbl.text = str("Day: ", GameStatus.current_days)
 	%HungerLbl.text = str("Hunger: ", GameStatus.current_hunger)
 	%GoldLbl.text = str("Gold: ", GameStatus.current_gold)
+
+func _on_ui_hidden()->void:
+	hide()
+	
+func _on_ui_visible()->void:
+	show()

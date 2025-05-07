@@ -1,5 +1,6 @@
 [background arg="res://assets/battlegrounds/solid black.jpg" fade="0.0"]
 do GameTime.pause()
+do GameEvents.hide_ui()
 narrator: The monster is dead.
 narrator: But Lam-Ang is gone with it.[/i]
 
@@ -28,3 +29,4 @@ narrator: The wind never answers.
 narrator: But still — she hopes.[/i]
 [wait time="2.0"]
 do GameSceneManager.push_scene("uid://bb8mph4gbw6t7")
+do GameEvents.show_ui()

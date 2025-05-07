@@ -1,4 +1,5 @@
 [background arg="res://assets/item assets/Lam-ang Love.png" fade="0.0"]
+do GameEvents.hide_ui()
 [i]The sun dipped low as Lam-Ang, the dog, and the rooster followed the winding path beside the sparkling river.
 The sound of laughter and soft singing floated through the evening air.[/i]
 What is that sound? A voice... so  [color=yellow]beautiful[/color] [color=red] (napintas.)[/color]
@@ -33,3 +34,4 @@ She is like the [color=yellow]stars[/color] [color=red] (bituen)[/color] — dis
 do GameStatus.add_learned_word("star")
 
 [i]Without hesitation, Lam-Ang and his loyal friends followed, stepping into the next great chapter of his adventure.[/i]
+do GameEvents.show_ui()

@@ -35,5 +35,14 @@ signal convince_started
 signal convince_ended(success, branch)
 signal rested
 
+signal ui_hidden
+signal ui_showed
+
+func hide_ui()->void:
+	ui_hidden.emit()
+	
+func show_ui()->void:
+	ui_showed.emit()
+	
 func join_ally(id)->void:
 	ally_joined.emit(id)

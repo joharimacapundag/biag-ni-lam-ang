@@ -1,5 +1,6 @@
 [background arg="res://assets/item assets/dogy.png" fade="0.0"]
 do GameEvents.hide_ui()
+do GameTime.pause()
 narrator: [i]The battlefield had fallen silent. Lam-Ang wiped his bloodied hands against his torn cloak, his heart pounding in his ears.[/i]
 lam-ang: It is done. Father's honor is avenged. But why does my  [color=yellow]heart[/color] [color=red](puso)[/color] still ache?
 do GameStatus.add_learned_word("heart")
@@ -23,3 +24,4 @@ lam-ang: Come, friends. There is still a long journey ahead... and new battles t
 
 narrator: [i]The dog barked once, sharply, and trotted after him. Together, the unlikely trio disappeared into the trees, leaving the battlefield — and the pain of revenge — behind them.[/i]
 do GameEvents.show_ui()
+do GameTime.unpause()

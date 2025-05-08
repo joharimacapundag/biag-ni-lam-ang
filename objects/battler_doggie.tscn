@@ -258,6 +258,7 @@ animations = [{
 }]
 
 [node name="Doggie" type="Node2D" groups=["player"]]
+scale = Vector2(0.8, 0.8)
 script = SubResource("GDScript_5kmyg")
 traveler_resource = ExtResource("1_7vb4t")
 

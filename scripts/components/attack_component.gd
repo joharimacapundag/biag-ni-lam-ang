@@ -12,8 +12,9 @@ var tween: Tween
 var original_position: Vector2
 
 func _ready():
-	tween = traveler.create_tween()
-	traveler.attacked.connect(_on_attacked)
+	if traveler:
+		tween = traveler.create_tween()
+		traveler.attacked.connect(_on_attacked)
 	#action_component.action_applied.connect(_on_action_applied)
 	animated_sprite_2d.animation_finished.connect(_on_animation_finished)
 	

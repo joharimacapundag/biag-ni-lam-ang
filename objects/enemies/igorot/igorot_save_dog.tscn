@@ -213,9 +213,9 @@ texture_filter = 1
 position = Vector2(18, 0)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_yqbfo")
-animation = &"attack"
+animation = &"run"
 autoplay = "idle"
-frame = 3
+frame = 7
 frame_progress = 1.0
 flip_h = true
 

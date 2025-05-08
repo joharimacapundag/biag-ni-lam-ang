@@ -194,6 +194,7 @@ animations = [{
 size = Vector2(191, 125)
 
 [node name="AllyDoggie" type="Node2D" node_paths=PackedStringArray("animated_sprited_2d", "area_2d") groups=["npc"]]
+scale = Vector2(0.8, 0.8)
 script = ExtResource("1_x6v36")
 ally = "doggie"
 animated_sprited_2d = NodePath("AnimatedSprite2D2")

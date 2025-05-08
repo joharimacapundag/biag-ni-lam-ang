@@ -1,5 +1,6 @@
 [wait time="1.0"]
 do GameEvents.hide_ui()
+do GameTime.pause()
 [background arg="res://assets/item assets/lam ang and the boss.png" fade="0.0"]
 The wind howled across the mountains as Lam-Ang stood before the Igorots' towering gate. His heart beat steady, filled with the memory of his father, Don Juan.
 lam-ang: This is it. No more waiting. For Father... for my family.
@@ -20,3 +21,4 @@ do GameStatus.add_learned_word("war")
 He charged forward, his [color=red]"gayang"[/color] (spear) flashing in the light.
 do GameStatus.add_learned_word("spear")
 do GameEvents.show_ui()
+do GameTime.unpause()

@@ -1,5 +1,6 @@
 [background arg="res://assets/item assets/berakkan.png" fade="0.0"]
 do GameEvents.hide_ui()
+do GameTime.pause()
 [i]Journeying deeper into the mountains, Lam-Ang and his companions — the faithful rooster and the brave dog — hear the roar of the great river.[/i]
 
 [i]There, from the waters of Amburayan, rises Berkakan — the enormous fish that had long haunted tales of old.[/i]
@@ -8,3 +9,4 @@ do GameStatus.add_learned_word("look")
 A beast from the depths!
 For my father... for my people... this ends now.
 do GameEvents.show_ui()
+do GameTime.unpause()

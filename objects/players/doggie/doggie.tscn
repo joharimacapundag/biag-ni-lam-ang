@@ -209,13 +209,14 @@ height = 48.0
 
 [node name="Doggie" type="Node2D" groups=["Persist", "player"]]
 z_index = 15
+scale = Vector2(0.8, 0.8)
 script = ExtResource("1_5kmyg")
 traveler_resource = ExtResource("2_v67tk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-17, -58)
-scale = Vector2(0.874345, 0.783251)
+position = Vector2(10, -15)
+scale = Vector2(0.6, 0.537)
 sprite_frames = SubResource("SpriteFrames_2d1my")
 animation = &"attack"
 autoplay = "idle"

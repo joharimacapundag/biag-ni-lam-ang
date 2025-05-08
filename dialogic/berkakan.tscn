@@ -1,0 +1,119 @@
+[gd_scene load_steps=16 format=3 uid="uid://c1mrd5qrn5wcc"]
+
+[ext_resource type="Script" uid="uid://di3tul3g8b2q0" path="res://objects/traveler.gd" id="1_qslh8"]
+[ext_resource type="Resource" uid="uid://c4nq10pcyla7r" path="res://objects/enemies/igorot/berkakan.tres" id="2_t1j7v"]
+[ext_resource type="Texture2D" uid="uid://civjfvrohp70h" path="res://assets/sprites/travelers/heart.png" id="3_uu5ij"]
+[ext_resource type="Script" uid="uid://5wahg8855uwc" path="res://scripts/components/stats_component.gd" id="4_cg4xd"]
+[ext_resource type="Script" uid="uid://dhgpgbnigqauj" path="res://scripts/components/action_component.gd" id="5_cys2e"]
+[ext_resource type="Script" uid="uid://bt1jgs8ay53ji" path="res://scripts/components/take_damage_component.gd" id="6_7uhbb"]
+[ext_resource type="Script" uid="uid://dmmrpgpve7ae2" path="res://scripts/components/heal_component.gd" id="7_8ql7b"]
+[ext_resource type="Script" uid="uid://46mmkxtqysuy" path="res://scripts/components/die_component.gd" id="8_8gobm"]
+[ext_resource type="Script" uid="uid://de6h0g2roehmm" path="res://scripts/components/health_component.gd" id="9_wxv7u"]
+[ext_resource type="Script" uid="uid://csnhgvnb6fmxd" path="res://scripts/components/attack_component.gd" id="10_gd0e6"]
+[ext_resource type="Script" uid="uid://c0d8bw5d80jkx" path="res://scripts/components/day_and_night_component.gd" id="11_vfy4g"]
+[ext_resource type="Script" uid="uid://ckxrahpqglwja" path="res://objects/enemies/igorot/die_2_component.gd" id="12_sjm7a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_38ckq"]
+atlas = ExtResource("3_uu5ij")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yqbfo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_38ckq")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_38ckq")
+}],
+"loop": false,
+"name": &"die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_38ckq")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_38ckq")
+}],
+"loop": false,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sge38"]
+radius = 16.0
+height = 56.0
+
+[node name="Berkakan" type="Node2D" groups=["enemy"]]
+script = ExtResource("1_qslh8")
+traveler_resource = ExtResource("2_t1j7v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(21, -21)
+scale = Vector2(0.10603, 0.10603)
+sprite_frames = SubResource("SpriteFrames_yqbfo")
+animation = &"run"
+autoplay = "idle"
+flip_h = true
+
+[node name="StatsComponent" type="Node" parent="." node_paths=PackedStringArray("traveler")]
+script = ExtResource("4_cg4xd")
+traveler = NodePath("..")
+
+[node name="ActionComponent" type="Node" parent="." node_paths=PackedStringArray("node", "stats_component")]
+script = ExtResource("5_cys2e")
+node = NodePath("..")
+stats_component = NodePath("../StatsComponent")
+
+[node name="TakeDamageComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprited_2d")]
+script = ExtResource("6_7uhbb")
+traveler = NodePath("..")
+animated_sprited_2d = NodePath("../AnimatedSprite2D")
+
+[node name="HealComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprited_2d")]
+script = ExtResource("7_8ql7b")
+traveler = NodePath("..")
+animated_sprited_2d = NodePath("../AnimatedSprite2D")
+
+[node name="DieComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d")]
+script = ExtResource("8_8gobm")
+traveler = NodePath("..")
+animated_sprite_2d = NodePath("../AnimatedSprite2D")
+
+[node name="HealthComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "stats_component")]
+script = ExtResource("9_wxv7u")
+traveler = NodePath("..")
+stats_component = NodePath("../StatsComponent")
+
+[node name="AttackComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d")]
+script = ExtResource("10_gd0e6")
+traveler = NodePath("..")
+animated_sprite_2d = NodePath("../AnimatedSprite2D")
+
+[node name="DayAndNightComponent" type="Node" parent="." node_paths=PackedStringArray("node")]
+script = ExtResource("11_vfy4g")
+node = NodePath("..")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(20, 10)
+shape = SubResource("CapsuleShape2D_sge38")
+
+[node name="Die2Component" type="Node" parent="." node_paths=PackedStringArray("traveler")]
+script = ExtResource("12_sjm7a")
+traveler = NodePath("..")

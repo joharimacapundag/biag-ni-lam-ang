@@ -66,6 +66,7 @@ size_flags_horizontal = 0
 
 [node name="CtrlInventoryGrid" type="Control" parent="PanelContainer2/MarginContainer/VBoxContainer/GridContainer" node_paths=PackedStringArray("inventory")]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(256, 256)
 layout_mode = 2
 size_flags_horizontal = 0
 script = ExtResource("2_8r1wq")

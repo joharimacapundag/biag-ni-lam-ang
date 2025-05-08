@@ -1,12 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://comg2om2c2be0"]
+[gd_scene load_steps=4 format=3 uid="uid://comg2om2c2be0"]
 
 [ext_resource type="Script" uid="uid://d2ienroffhie1" path="res://scenes/end_of_act_2.gd" id="1_l7tl8"]
-
-[sub_resource type="Gradient" id="Gradient_wklx2"]
-colors = PackedColorArray(0, 0, 0, 1, 0.230315, 0.230315, 0.230315, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_n8if8"]
-gradient = SubResource("Gradient_wklx2")
+[ext_resource type="Texture2D" uid="uid://vigcs1q5q1to" path="res://assets/item assets/Act 1.png" id="2_mh3rg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wklx2"]
 bg_color = Color(0.470273, 0.0878275, 0.270014, 1)
@@ -27,7 +22,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("GradientTexture2D_n8if8")
+texture = ExtResource("2_mh3rg")
+expand_mode = 1
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 anchors_preset = 8
@@ -43,4 +39,4 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 72
 theme_override_styles/normal = SubResource("StyleBoxFlat_wklx2")
-text = "END OF ACT 2"
+text = "END OF LEVEL 2"

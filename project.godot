@@ -28,6 +28,17 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"assets/elder_villager": "res://android/build/assets/elder_villager.dch",
+"assets/namongan": "res://android/build/assets/namongan.dch",
+"characters/doggie": "res://android/build/assets/dialogic/characters/doggie.dch",
+"characters/don_juan": "res://android/build/assets/dialogic/characters/don_juan.dch",
+"characters/hunter": "res://android/build/assets/dialogic/characters/hunter.dch",
+"characters/igorot": "res://android/build/assets/dialogic/characters/igorot.dch",
+"characters/ines kannoyan": "res://android/build/assets/dialogic/characters/ines kannoyan.dch",
+"characters/lam-ang": "res://android/build/assets/dialogic/characters/lam-ang.dch",
+"characters/narrator": "res://android/build/assets/dialogic/characters/narrator.dch",
+"characters/rooster": "res://android/build/assets/dialogic/characters/rooster.dch",
+"characters/villagers": "res://android/build/assets/dialogic/characters/villagers.dch",
 "doggie": "res://dialogic/characters/doggie.dch",
 "don_juan": "res://dialogic/characters/don_juan.dch",
 "elder_villager": "res://elder_villager.dch",
@@ -40,6 +51,8 @@ directories/dch_directory={
 "namongan": "res://namongan.dch",
 "narrator": "res://dialogic/characters/narrator.dch",
 "rooster": "res://dialogic/characters/rooster.dch",
+"timeline/iness father": "res://android/build/assets/dialogic/timeline/iness father.dch",
+"timeline/iness mother": "res://android/build/assets/dialogic/timeline/iness mother.dch",
 "villagers": "res://dialogic/characters/villagers.dch"
 }
 directories/dtl_directory={
@@ -53,11 +66,13 @@ directories/dtl_directory={
 "act_3_scene_1": "res://dialogic/timeline/timeline 3/act_3_scene_1.dtl",
 "act_3_scene_2_inside_berrakan": "res://dialogic/timeline/timeline 3/act_3_scene_2_inside_berrakan.dtl",
 "ally_doggie": "res://tutorial/ally_doggie.dtl",
+"assets/lam ang knowing about where igorot lives from igorot": "res://android/build/assets/lam ang knowing about where igorot lives from igorot.dtl",
 "axe_dialogue": "res://dialogic/timeline/axe_dialogue.dtl",
 "banana_dialogue": "res://dialogic/timeline/banana_dialogue.dtl",
 "bow_dialogue": "res://dialogic/timeline/bow_dialogue.dtl",
 "coffee_dialogue": "res://dialogic/timeline/coffee_dialogue.dtl",
 "dagger_dialogue": "res://dialogic/timeline/dagger_dialogue.dtl",
+"dialogic/tutorial and intro/tutorial": "res://android/build/assets/dialogic/tutorial and intro/tutorial.dtl",
 "herb_dialogue": "res://dialogic/timeline/herb_dialogue.dtl",
 "introduction": "res://dialogic/tutorial and intro/introduction.dtl",
 "lam ang knowing about where igorot lives from igorot": "res://lam ang knowing about where igorot lives from igorot.dtl",
@@ -68,8 +83,33 @@ directories/dtl_directory={
 "shield_dialogue": "res://dialogic/timeline/shield_dialogue.dtl",
 "spear_dialogue": "res://dialogic/timeline/spear_dialogue.dtl",
 "sword_dialogue": "res://dialogic/timeline/sword_dialogue.dtl",
+"timeline 2/act_2_dog_scene": "res://android/build/assets/dialogic/timeline/timeline 2/act_2_dog_scene.dtl",
+"timeline 2/act_2_ines": "res://android/build/assets/dialogic/timeline/timeline 2/act_2_ines.dtl",
+"timeline 2/act_2_scene_1_a_bossigorot": "res://android/build/assets/dialogic/timeline/timeline 2/act_2_scene_1_a_bossigorot.dtl",
+"timeline 3/act_3_aftermath": "res://android/build/assets/dialogic/timeline/timeline 3/act_3_aftermath.dtl",
+"timeline 3/act_3_scene_1": "res://android/build/assets/dialogic/timeline/timeline 3/act_3_scene_1.dtl",
+"timeline 3/act_3_scene_2_inside_berrakan": "res://android/build/assets/dialogic/timeline/timeline 3/act_3_scene_2_inside_berrakan.dtl",
+"timeline/act_1_scene_1_a": "res://android/build/assets/dialogic/timeline/act_1_scene_1_a.dtl",
+"timeline/act_1_scene_2_a": "res://android/build/assets/dialogic/timeline/act_1_scene_2_a.dtl",
+"timeline/act_2_fathers challenge": "res://android/build/assets/dialogic/timeline/act_2_fathers challenge.dtl",
+"timeline/axe_dialogue": "res://android/build/assets/dialogic/timeline/axe_dialogue.dtl",
+"timeline/banana_dialogue": "res://android/build/assets/dialogic/timeline/banana_dialogue.dtl",
+"timeline/bow_dialogue": "res://android/build/assets/dialogic/timeline/bow_dialogue.dtl",
+"timeline/coffee_dialogue": "res://android/build/assets/dialogic/timeline/coffee_dialogue.dtl",
+"timeline/dagger_dialogue": "res://android/build/assets/dialogic/timeline/dagger_dialogue.dtl",
+"timeline/herb_dialogue": "res://android/build/assets/dialogic/timeline/herb_dialogue.dtl",
+"timeline/level_1_easy": "res://android/build/assets/dialogic/timeline/level_1_easy.dtl",
+"timeline/liquor_dialogue": "res://android/build/assets/dialogic/timeline/liquor_dialogue.dtl",
+"timeline/prologue": "res://android/build/assets/dialogic/timeline/prologue.dtl",
+"timeline/rooster_thanks": "res://android/build/assets/dialogic/timeline/rooster_thanks.dtl",
+"timeline/shield_dialogue": "res://android/build/assets/dialogic/timeline/shield_dialogue.dtl",
+"timeline/spear_dialogue": "res://android/build/assets/dialogic/timeline/spear_dialogue.dtl",
+"timeline/sword_dialogue": "res://android/build/assets/dialogic/timeline/sword_dialogue.dtl",
+"timeline/tutorial": "res://android/build/assets/dialogic/timeline/tutorial.dtl",
 "tutorial": "res://dialogic/timeline/tutorial.dtl",
-"tutorial and intro/tutorial": "res://dialogic/tutorial and intro/tutorial.dtl"
+"tutorial and intro/introduction": "res://android/build/assets/dialogic/tutorial and intro/introduction.dtl",
+"tutorial and intro/tutorial": "res://dialogic/tutorial and intro/tutorial.dtl",
+"tutorial/ally_doggie": "res://android/build/assets/tutorial/ally_doggie.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01

@@ -3,11 +3,7 @@ class_name  DayAndNightComponent
 @export var node: Node2D
 
 var day_color: Color = Color(0.7, 0.9, 1)   
-<<<<<<< HEAD
 var night_color: Color = Color("#657785")
-=======
-var night_color: Color = Color(0.35, 0.4, 0.6)
->>>>>>> 8ed73d315825f549fd76f91ea52be7a00b377c03
 var total_hours: float = 12
 var day_incremented: bool
 

@@ -159,6 +159,7 @@ traveler_resource = ExtResource("2_3e3it")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_0grt5")
 animation = &"attack"
 autoplay = "idle"
@@ -200,11 +201,10 @@ script = ExtResource("14_yg6gu")
 traveler = NodePath("..")
 stats_component = NodePath("../StatsComponent")
 
-[node name="AttackComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d", "action_component")]
+[node name="AttackComponent" type="Node" parent="." node_paths=PackedStringArray("traveler", "animated_sprite_2d")]
 script = ExtResource("14_084xq")
 traveler = NodePath("..")
 animated_sprite_2d = NodePath("../AnimatedSprite2D")
-action_component = NodePath("../ActionComponent")
 
 [node name="RunComponent" type="Node" parent="." node_paths=PackedStringArray("animated_sprite_2d")]
 script = ExtResource("15_vjopi")

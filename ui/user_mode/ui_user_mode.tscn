@@ -14,7 +14,7 @@ grow_vertical = 2
 script = ExtResource("1_8vclr")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-modulate = Color(0.115415, 0.106155, 0.0324675, 0.576471)
+modulate = Color(0.490196, 0.486275, 0.443137, 1)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -44,32 +44,49 @@ layout_mode = 2
 theme_override_constants/separation = 16
 
 [node name="NameLbl" type="Label" parent="MarginContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 text = "Name"
 uppercase = true
 
 [node name="NameEdit" type="TextEdit" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
+visible = false
 custom_minimum_size = Vector2(0, 35)
 layout_mode = 2
 placeholder_text = "Enter your name"
 
 [node name="AgeLbl" type="Label" parent="MarginContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 text = "Age"
 uppercase = true
 
 [node name="SpinBox" type="SpinBox" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 size_flags_horizontal = 0
 
 [node name="GenderLbl" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Gender"
+text = "📜 Gameplay Overview
+Your objective is to journey through various locations inspired by the Ilocano epic Biag ni Lam-ang. Along the way, you will:
+#Complete Quests
+#Retrieve lost items, solve cultural puzzles, or battle minor foes.
+#Learn Ilocano Vocabulary
+#Some words appear during conversations, signs, or when completing a task.
+#Words will be stored in your Learn tab, which you can access to review what you’ve learned.
+📘 Learning System
+\"\" The ilocano words on the Dialogues are highlighted with a red font and the English translations are highighted with a yellow font. 
+#The game is designed to integrate learning naturally through story progression.
+#Words you've learned will be automatically added to your Word Collection or Learn tab, where you can see translations and usage in context."
+horizontal_alignment = 1
+autowrap_mode = 1
 uppercase = true
 
 [node name="HBoxContainer" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 columns = 2
 

@@ -11,4 +11,4 @@ profile = ExtResource("1_6rnqn")
 description = "Doggie is a loyal, sharp-eyed stray with a mysterious past and a heart full of gratitude. Rescued from captivity, he joins Lam-Ang’s journey not just as a companion, but as a steadfast guardian. Though small in stature, Doggie's instincts, courage, and unwavering loyalty make him an invaluable ally on the long and dangerous road ahead.
 
 "
-actions = Array[String](["fight", "cry"])
+actions = Array[String](["evil", "cry", "scream"])

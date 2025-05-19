@@ -25,6 +25,19 @@
 	  }
 	}
   },
+ "chop": {
+	"name": "To chop",
+	"ilocano_word": "Tagbaten",
+	"action_type": "combat_action",
+	"modifiers": {
+	  "source": {
+		"add": { "stamina": -3 }
+	  },
+	  "target": {
+		"add": { "health": -11 }
+	  }
+	}
+  },
   "go_away": {
 	"name": "To leave, to go away",
 	"ilocano_word": "Pumanaw",
@@ -38,7 +51,7 @@
 	  }
 	}
   },
-  "live": {
+  "heal": {
 	"name": "To Heal",
 	"ilocano_word": "Agasan",
 	"action_type": "support_action",
@@ -47,7 +60,7 @@
 		"add": { "stamina": -2 }
 	  },
 	  "target": {
-		"add": { "health": 10 }
+		"add": { "health": 20 }
 	  }
 	}
   },
@@ -135,10 +148,10 @@
 	"action_type": "combat_action",
 	"modifiers": {
 	  "source": {
-		"add": { "stamina": -5 }
+		"add": { "stamina": -3 }
 	  },
 	  "target": {
-		"add": { "defense": -3 }
+		"add": { "health": -9 }
 	  }
 	}
   },
